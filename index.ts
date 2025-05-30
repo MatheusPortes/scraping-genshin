@@ -27,8 +27,12 @@ const dateScraping = async (urls: string[]) => {
     const __dir = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/characters/${folderName}`;
     // const __dir = path.join(__dirname, `characters/${folder_name}`);
     const { vision_key, weapon_type, ...const_base_info } = baseInfo;
-    const content = {
+
+    const existing_content = file.get<any>(__dir);
+
+    const base_info = {
       ...const_base_info,
+      gender: existing_content.gender,
       skillTalents,
       passiveTalents,
       constellations,
@@ -37,7 +41,7 @@ const dateScraping = async (urls: string[]) => {
       ascension_materials,
     };
 
-    file.save(__dir, JSON.stringify(content), "pt.json");
+    file.save(__dir, JSON.stringify(base_info), "pt.json");
 
     await common.changeLanguage(page, { selected: "EN", name: "English" });
     console.log("# ", folderName, " finaly ✅");

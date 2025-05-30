@@ -8,8 +8,9 @@ import {
   Power,
   SkillTalent,
   Upgrade,
+  ValidPatchVersion,
 } from "../types";
-import { formatBirthday, toKebabCase } from "../utility";
+import { formatBirthday, getGenshinPatchDate, toKebabCase } from "../utility";
 import {
   includeRegion,
   includeWeaponTypeKey,
@@ -19,10 +20,12 @@ import {
 const getUpgrade = async (talentContent: ElementHandle<HTMLDivElement>[]) => {
   let upgrades = [] as Upgrade[];
   for (const [key, element] of talentContent.entries()) {
-    if (key === 0 || key === talentContent.length - 1) continue;
+    if (key === 0) continue;
 
     const thEl = await element.$("th");
     const name = await thEl?.evaluate((el) => el.textContent?.trim(), thEl);
+
+    if (name === "Material de Elevação de Talento") continue;
 
     let powers = [] as Power[];
     const tdEl = await element.$$("td");
@@ -56,12 +59,23 @@ const getSkills = async (
   );
   skillTalent.name = title;
 
-  const etText = await page.evaluate(
-    (el) =>
-      el?.querySelector("div.et-text-tiptap-editor div p")?.textContent?.trim(),
-    talentContent
-  );
-  skillTalent.description = etText;
+  const etText = await page.evaluate((el) => {
+    const childNodes = el?.querySelector(
+      "div.et-text-tiptap-editor div p"
+    )?.childNodes;
+
+    let textContent = "";
+    if (childNodes) {
+      for (const [index, element] of childNodes.entries()) {
+        if (element.nodeName === "#text" || element.nodeName === "SPAN") {
+          textContent = `${textContent}${element.textContent}`;
+        } else if (childNodes[index].nodeName === "BR") {
+          textContent = `${textContent}\n`;
+        }
+      }
+    }
+    return textContent;
+  }, talentContent);
 
   skillTalent.unlock =
     key === 0
@@ -69,8 +83,14 @@ const getSkills = async (
       : key === 1
       ? "Habilidade Elemental"
       : key === 2
-      ? "Habilidade Elemental"
+      ? "Explosão Elemental"
       : "Habilidade Elemental";
+
+  skillTalent.description = etText;
+
+  const upgrades = await getUpgrade(upgradeContent);
+
+  if (upgrades.length) skillTalent.upgrades = upgrades;
 
   skillTalent.type =
     key === 0
@@ -80,10 +100,6 @@ const getSkills = async (
       : key === 2
       ? "ELEMENTAL_BURST"
       : "ELEMENTAL_BURST";
-
-  const upgrades = await getUpgrade(upgradeContent);
-
-  if (upgrades.length) skillTalent.upgrades = upgrades;
 
   console.log("Scraping On Skills ✅");
   return skillTalent as SkillTalent;
@@ -102,6 +118,22 @@ const getPassives = async (
   );
   passiveTalent.name = title;
 
+  let unlock = "";
+  let level: number | undefined;
+  if (key === 3) {
+    level = 1;
+    unlock = "Desbloqueado na Ascenção 1";
+  }
+
+  if (key === 4) {
+    level = 4;
+    unlock = "Desbloqueado na Ascenção 4";
+  }
+
+  if (key === 5) unlock = "Desbloqueado automaticamente";
+
+  passiveTalent.unlock = unlock;
+
   const etText = await page.evaluate(
     (el) =>
       el?.querySelector("div.et-text-tiptap-editor div p")?.textContent?.trim(),
@@ -109,20 +141,7 @@ const getPassives = async (
   );
   passiveTalent.description = etText;
 
-  let unlock = "";
-  if (key === 3) {
-    passiveTalent.level = 1;
-    unlock = "Desbloqueado na Ascenção 1";
-  }
-
-  if (key === 4) {
-    passiveTalent.level = 4;
-    unlock = "Desbloqueado na Ascenção 4";
-  }
-
-  if (key === 5) unlock = "Desbloqueado automaticamente";
-
-  passiveTalent.unlock = unlock;
+  passiveTalent.level = level;
 
   console.log("Scraping On Passives ✅");
   return passiveTalent as PassiveTalent;
@@ -168,7 +187,7 @@ const attributeTable = async (page: Page, base_info: Partial<BaseInfo>) => {
         base_info.specialDish = value;
 
       if (key === "Version Released" || key === "Disponível na Versão")
-        base_info.release = value;
+        base_info.release = getGenshinPatchDate(value as ValidPatchVersion);
 
       if (key === "Vision" || key === "Visão") {
         base_info.vision = value;
@@ -261,13 +280,25 @@ const onConstellation = async (page: Page) => {
     );
     constellation.name = constellation_name;
 
-    const constellation_describe = await page.evaluate(
-      (el) => el.querySelector("p")?.textContent?.trim(),
-      element
-    );
+    const constellation_describe = await page.evaluate((el) => {
+      const childNodes = el.querySelector("p")?.childNodes;
+
+      let textContent = "";
+      if (childNodes) {
+        for (const [index, element] of childNodes.entries()) {
+          if (element.nodeName === "#text" || element.nodeName === "SPAN") {
+            textContent = `${textContent}${element.textContent}`;
+          } else if (childNodes[index].nodeName === "BR") {
+            textContent = `${textContent}\n`;
+          }
+        }
+      }
+      return textContent;
+    }, element);
+
+    constellation.unlock = `Constelação Lv. ${index + 1}`;
     constellation.description = constellation_describe;
     constellation.level = index + 1;
-    constellation.unlock = `Constelação Lv. ${index + 1}`;
 
     baseConstellations = [...baseConstellations, constellation];
   }

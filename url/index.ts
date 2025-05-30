@@ -76,7 +76,7 @@ const get = async () => {
 
 const getFromFile = async () => {
   const data = moment().format("MM-DD-YYYY");
-  const filePath = path.join(__dirname, "logs", `${data}.json`);
+  const filePath = path.join(__dirname, "../logs", `${data}.json`);
   let urls: string[] | undefined;
 
   if (fs.existsSync(filePath)) {
