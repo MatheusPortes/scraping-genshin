@@ -20,4 +20,7 @@ const save = (path: string, content: Content, file: string = "pt.json") => {
   fs.writeFileSync(`${path}/${file}`, content, { encoding: "utf8" });
 };
 
-export const file = { save, get };
+const exists = (path: string, file: string = "pt.json") =>
+  fs.existsSync(`${path}/${file}`);
+
+export const file = { save, get, exists };

@@ -14,10 +14,10 @@ export const weaponTypeKeysMap: WeaponTypeKeysMap[] = [
 ];
 
 export const weaponTypeMap = {
-  espadão: "CATALYST",
+  espadão: "CLAYMORE",
   lança: "POLEARM",
   arco: "BOW",
-  catalisador: "CLAYMORE",
+  catalisador: "CATALYST",
   espada: "SWORD",
 };
 
