@@ -146,3 +146,18 @@ export function getGenshinPatchDate(version: ValidPatchVersion) {
 
   return patchDates[version] || "Versão não encontrada";
 }
+
+export const checkTwoArrays = (
+  array: number[],
+  arrayCheck: number[]
+): boolean => {
+  let count = 0;
+
+  for (const element of arrayCheck) {
+    if (array.includes(element)) count++;
+  }
+
+  if (count === arrayCheck.length) return true;
+
+  return false;
+};

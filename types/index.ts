@@ -124,6 +124,15 @@ export type ValidPatchVersion =
   | "5.7"
   | "5.8";
 
+export type Vision =
+  | "Geo"
+  | "Anemo"
+  | "Cryo"
+  | "Dendro"
+  | "Electro"
+  | "Hydro"
+  | "Pyro";
+
 // export type PatchDates = {
 //   [K in ValidPatchVersion]: string;
 // };

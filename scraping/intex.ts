@@ -10,9 +10,15 @@ import {
   Upgrade,
   ValidPatchVersion,
 } from "../types";
-import { formatBirthday, getGenshinPatchDate, toKebabCase } from "../utility";
+import {
+  checkTwoArrays,
+  formatBirthday,
+  getGenshinPatchDate,
+  toKebabCase,
+} from "../utility";
 import {
   includeRegion,
+  includeVision,
   includeWeaponTypeKey,
   Lang,
   mapTheWeaponType,
@@ -313,7 +319,13 @@ const attributeTable = async (page: Page, base_info: Partial<BaseInfo>) => {
       )
         base_info.release = getGenshinPatchDate(value as ValidPatchVersion);
 
-      if (key === "Vision" || key === "Visão") {
+      if (
+        key === "Vision" ||
+        key === "Visão" ||
+        key === "Gnosis" ||
+        key === "Elemento" ||
+        key === "Element"
+      ) {
         base_info.vision = value;
         base_info.vision_key = value?.toUpperCase();
       }
@@ -362,6 +374,11 @@ const header = async (
 
     if (includeRegion(text, lang))
       base_info.nation = includeRegion(text, lang) ? text : "Snezhnaya";
+
+    if (includeVision(text)) {
+      base_info.vision = text;
+      base_info.vision_key = text.toUpperCase();
+    }
   }
 
   console.log("Scraping On Header ✅");
@@ -478,7 +495,10 @@ const onConstellation = async (page: Page) => {
 
 const onAscensionMaterial = async (page: Page) => {
   await page.waitForSelector("div.d-talent-keys-icon.default-img-wrapper");
-  await page.waitForFunction(() => {
+
+  // await new Promise((res) => setTimeout(res, 2000));
+
+  await page.waitForFunction(async () => {
     const element = document.querySelector("div.d-ascension-material-item");
     const el = element?.querySelector("div.common-game-icon-bottom");
     return el?.textContent?.trim() !== "";
@@ -509,14 +529,33 @@ const onAscensionMaterial = async (page: Page) => {
     }, element);
 
     function checkAscenderLevel(array: number[]) {
-      const jsonArray = JSON.stringify(array);
-
-      if (JSON.stringify([1, 3, 3]) === jsonArray) return 2;
-      if (JSON.stringify([3, 2, 10, 15]) === jsonArray) return 4;
-      if (JSON.stringify([6, 4, 20, 12]) === jsonArray) return 5;
-      if (JSON.stringify([3, 8, 30, 18]) === jsonArray) return 6;
-      if (JSON.stringify([6, 12, 45, 12]) === jsonArray) return 7;
-      if (JSON.stringify([6, 20, 60, 24]) === jsonArray) return 8;
+      if (checkTwoArrays(array, [1, 3, 3]) || checkTwoArrays(array, [1, 3, 3]))
+        return 2;
+      if (
+        checkTwoArrays(array, [3, 2, 10, 15]) ||
+        checkTwoArrays(array, [3, 10, 15])
+      )
+        return 4;
+      if (
+        checkTwoArrays(array, [6, 4, 20, 12]) ||
+        checkTwoArrays(array, [6, 20, 12])
+      )
+        return 5;
+      if (
+        checkTwoArrays(array, [3, 8, 30, 18]) ||
+        checkTwoArrays(array, [3, 30, 18])
+      )
+        return 6;
+      if (
+        checkTwoArrays(array, [6, 12, 45, 12]) ||
+        checkTwoArrays(array, [6, 45, 13])
+      )
+        return 7;
+      if (
+        checkTwoArrays(array, [6, 20, 60, 24]) ||
+        checkTwoArrays(array, [6, 60, 24])
+      )
+        return 8;
 
       return 2;
     }
