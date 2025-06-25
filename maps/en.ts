@@ -14,10 +14,10 @@ export const weaponTypeKeysMap: WeaponTypeKeysMap[] = [
 ];
 
 export const weaponTypeMap = {
-  claymore: "CATALYST",
+  claymore: "CLAYMORE",
   polearm: "POLEARM",
   bow: "BOW",
-  catalyst: "CLAYMORE",
+  catalyst: "CATALYST",
   sword: "SWORD",
 };
 
@@ -29,4 +29,25 @@ export const regionMap = [
   "Sumeru",
   "Fontaine",
   "Natlan",
+];
+
+export type SecondaryAttributesMap =
+  | "CRIT Rate"
+  | "CRIT DMG"
+  | "Physical DMG Bonus"
+  | "Elemental Mastery"
+  | "Energy Recharge"
+  | "HP Percentage"
+  | "DEF Percentage"
+  | "ATK Percentage";
+
+export const secondaryAttributesMap: SecondaryAttributesMap[] = [
+  "CRIT Rate",
+  "CRIT DMG",
+  "Physical DMG Bonus",
+  "Elemental Mastery",
+  "Energy Recharge",
+  "HP Percentage",
+  "DEF Percentage",
+  "ATK Percentage",
 ];

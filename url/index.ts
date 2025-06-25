@@ -1,11 +1,10 @@
 import moment from "moment";
-import fs from "fs";
-import puppeteer, { Browser, Page } from "puppeteer";
-import { common } from "../common";
 import path from "path";
+import fs from "fs";
+import { Browser, Page } from "puppeteer";
 
-const autoScroll = async (page: Page) => {
-  await page.waitForSelector(".genshin-show-character-wrapper");
+const autoScroll = async (page: Page, selector: string, interval: number) => {
+  await page.waitForSelector(selector);
 
   await page.evaluate(async () => {
     await new Promise((resolve) => {
@@ -17,7 +16,7 @@ const autoScroll = async (page: Page) => {
         totalHeight += distance;
 
         // Para quando chegar no final ou após um limite (ex.: 10.000 pixels)
-        if (totalHeight >= scrollHeight || totalHeight >= 10000) {
+        if (totalHeight >= scrollHeight || totalHeight >= interval) {
           clearInterval(timer);
           resolve({});
         }
@@ -27,8 +26,8 @@ const autoScroll = async (page: Page) => {
   console.log("Auto Scroll ✅");
 };
 
-const scraping = async (page: Page, browser: Browser) => {
-  const elements = await page.$$("article.character-card");
+const scraping = async (page: Page, browser: Browser, selector: string) => {
+  const elements = await page.$$(selector);
 
   let navigationURLs = [] as string[];
   for (const el of elements) {
@@ -52,31 +51,13 @@ const scraping = async (page: Page, browser: Browser) => {
   }
 
   console.log("Scraping URLs ✅");
-  const data = moment().format("MM-DD-YYYY");
-  fs.writeFileSync(`logs/${data}.json`, JSON.stringify(navigationURLs));
+
   return navigationURLs;
 };
 
-const get = async () => {
-  const browser = await puppeteer.launch({ headless: false });
-  const page = await browser.newPage();
-
-  await common.startPage(
-    page,
-    "https://wiki.hoyolab.com/pc/genshin/aggregate/2",
-    ".genshin-show-character-wrapper"
-  );
-
-  await common.changeLanguage(page, { selected: "PT", name: "Português" });
-
-  await autoScroll(page); // Executa o scroll
-
-  return await scraping(page, browser);
-};
-
-const getFromFile = async () => {
+const getFromFile = async (folder: "character" | "weapon") => {
   const data = moment().format("MM-DD-YYYY");
-  const filePath = path.join(__dirname, "../logs", `${data}.json`);
+  const filePath = path.join(__dirname, `../logs/${folder}`, `${data}.json`);
   let urls: string[] | undefined;
 
   if (fs.existsSync(filePath)) {
@@ -87,4 +68,4 @@ const getFromFile = async () => {
   return urls;
 };
 
-export const url = { get, scraping, autoScroll, getFromFile };
+export const url = { scraping, autoScroll, getFromFile };

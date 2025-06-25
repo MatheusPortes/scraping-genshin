@@ -89,6 +89,8 @@ export function toKebabCase(str: string) {
   return str
     .toLowerCase() // Converte tudo para minúsculas
     .replace(/\s+/g, "-") // Substitui espaços por hífens
+    .replace(/'/g, "-") // Substitui qualquer outro apóstrofo isolado por "-"
+    .replace(/-+/g, "-") // Substitui múltiplos hífens por um único
     .replace(/[^a-z0-9-]/g, ""); // Remove caracteres especiais (exceto letras, números e hífens)
 }
 
@@ -160,4 +162,8 @@ export const checkTwoArrays = (
   if (count === arrayCheck.length) return true;
 
   return false;
+};
+
+export const exists = (value: string, array: string[]) => {
+  return !!array.find((item) => item === value);
 };

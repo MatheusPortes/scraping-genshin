@@ -48,11 +48,6 @@ export interface AscensionMaterials {
   ascension_data: AscensionData[];
 }
 
-export type AttackType =
-  | "NORMAL_ATTACK"
-  | "ELEMENTAL_SKILL"
-  | "ELEMENTAL_BURST";
-
 export interface Power {
   level: number;
   value: string;
@@ -77,6 +72,46 @@ export interface PassiveTalent {
   description: string;
   level?: number;
 }
+
+export interface BaseDamage {
+  attack: number;
+  subStat: number;
+}
+export interface WeaponInfo {
+  name: string;
+  description: string;
+  type: string;
+  rarity: number;
+  baseAttack: number;
+  subStat: string;
+  passiveName: string;
+  passiveDesc: string;
+  location: string;
+  ascensionMaterial: string;
+  baseDamage: Partial<BaseDamage>;
+}
+
+export type WeaponTypeKeysMap =
+  | "espadão"
+  | "lança"
+  | "arco"
+  | "catalisador"
+  | "espada";
+
+export type SecondaryAttributesMap =
+  | "Recarga de Energia"
+  | "Bônus de Dano Físico"
+  | "Dano Crítico"
+  | "Proficiência Elemental"
+  | "Taxa Crítica"
+  | "Porcentagem de Vida"
+  | "Porcentagem de DEF"
+  | "Porcentagem de ATQ";
+
+export type AttackType =
+  | "NORMAL_ATTACK"
+  | "ELEMENTAL_SKILL"
+  | "ELEMENTAL_BURST";
 
 export type ValidPatchVersion =
   | "1.0"

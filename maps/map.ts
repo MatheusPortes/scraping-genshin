@@ -2,16 +2,22 @@ import {
   weaponTypeMap as en,
   weaponTypeKeysMap as enKeysMap,
   regionMap as enRegionMap,
+  secondaryAttributesMap as enSecondaryAttributesMap,
 } from "./en";
 import {
   weaponTypeMap as pt,
   weaponTypeKeysMap as ptKeysMap,
   regionMap as ptRegionMap,
+  secondaryAttributesMap as ptSecondaryAttributesMap,
 } from "./pt";
 
 export type Lang = "en" | "pt";
 
 const weaponTypeMaps = { en, pt };
+const secondaryAttributesMaps = {
+  en: enSecondaryAttributesMap,
+  pt: ptSecondaryAttributesMap,
+};
 const weaponTypeKeysMap = { enKeysMap, ptKeysMap };
 const regionMap = { enRegionMap, ptRegionMap };
 
@@ -40,6 +46,18 @@ export const mapTheWeaponType = (
   const map = weaponTypeMaps[lang];
 
   for (const element in map) {
-    if (element.toLowerCase() === name) return map[element as keyof typeof map];
+    if (element.toLowerCase() === name.toLowerCase())
+      return map[element as keyof typeof map];
+  }
+};
+
+export const mapSecondaryAttribute = (
+  name: string,
+  lang: Lang
+): string | undefined => {
+  const map = secondaryAttributesMaps[lang];
+
+  for (const attribute of map) {
+    if (attribute === name) return attribute;
   }
 };
