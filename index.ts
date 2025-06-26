@@ -1,5 +1,5 @@
 import { scraping } from "./scraping";
 
 (async () => {
-  await scraping.weapon();
+  await scraping.release();
 })();

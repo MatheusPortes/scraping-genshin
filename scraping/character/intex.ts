@@ -11,6 +11,7 @@ import {
   ValidPatchVersion,
 } from "../../types";
 import {
+  checkingFolderName,
   checkTwoArrays,
   formatBirthday,
   getGenshinPatchDate,
@@ -498,7 +499,7 @@ const onConstellation = async (page: Page) => {
 const onAscensionMaterial = async (page: Page) => {
   await page.waitForSelector("div.d-talent-keys-icon.default-img-wrapper");
 
-  // await new Promise((res) => setTimeout(res, 2000));
+  await new Promise((res) => setTimeout(res, 2000));
 
   await page.waitForFunction(async () => {
     const element = document.querySelector("div.d-ascension-material-item");
@@ -635,31 +636,6 @@ const onTalents = async (page: Page, lang: Lang) => {
   return { passiveTalents, skillTalents };
 };
 
-const checkingFolderName = (key: string) => {
-  switch (key) {
-    case "Kujou Sara":
-      return "Sara";
-
-    case "Kamisato Ayato":
-      return "Ayato";
-
-    case "Kamisato Ayaka":
-      return "Ayaka";
-
-    case "Kaedehara Kazuha":
-      return "Kazuha";
-
-    case "Raiden Shogun":
-      return "Raiden";
-
-    case "Sangonomiya Kokomi":
-      return "Kokomi";
-
-    default:
-      return key;
-  }
-};
-
 const onName = async (page: Page) => {
   const selector = "div.detail-header-cover-name";
   const baseInfoNameEl = await page.$(selector);
@@ -704,7 +680,7 @@ const onScraping = async (
 
 const dateScraping = async (urls: string[]) => {
   const browser = await puppeteer.launch({ headless: false });
-  const ts = ["https://wiki.hoyolab.com/pc/genshin/entry/7627"];
+
   for (const url of urls) {
     const page = await browser.newPage();
 

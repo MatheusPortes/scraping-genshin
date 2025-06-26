@@ -167,3 +167,28 @@ export const checkTwoArrays = (
 export const exists = (value: string, array: string[]) => {
   return !!array.find((item) => item === value);
 };
+
+export const checkingFolderName = (key: string) => {
+  switch (key) {
+    case "Kujou Sara":
+      return "Sara";
+
+    case "Kamisato Ayato":
+      return "Ayato";
+
+    case "Kamisato Ayaka":
+      return "Ayaka";
+
+    case "Kaedehara Kazuha":
+      return "Kazuha";
+
+    case "Raiden Shogun":
+      return "Raiden";
+
+    case "Sangonomiya Kokomi":
+      return "Kokomi";
+
+    default:
+      return key;
+  }
+};

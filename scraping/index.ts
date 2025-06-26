@@ -6,6 +6,7 @@ import { scraping as scrapingWeapon } from "./weapon";
 import puppeteer from "puppeteer";
 import moment from "moment";
 import fs from "fs";
+import { release } from "./release";
 
 const character = async () => {
   await terminal.start();
@@ -66,4 +67,5 @@ const weapon = async () => {
 export const scraping = {
   character,
   weapon,
+  release,
 };
