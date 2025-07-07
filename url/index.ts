@@ -26,28 +26,40 @@ const autoScroll = async (page: Page, selector: string, interval: number) => {
   console.log("Auto Scroll ✅");
 };
 
-const scraping = async (page: Page, browser: Browser, selector: string) => {
+const scraping = async (
+  page: Page,
+  browser: Browser,
+  selector: string,
+  callback?: () => Promise<string[]>
+) => {
   const elements = await page.$$(selector);
 
   let navigationURLs = [] as string[];
-  for (const el of elements) {
-    // Espera por uma nova aba abrir ao clicar
-    const [newPage] = await Promise.all([
-      browser
-        .waitForTarget((target) => target.opener() === page.target())
-        .then((t) => t.page()),
-      el.click(),
-    ]);
 
-    if (!newPage) return;
+  if (!callback) {
+    for (const el of elements) {
+      // Espera por uma nova aba abrir ao clicar
+      const [newPage] = await Promise.all([
+        browser
+          .waitForTarget((target) => target.opener() === page.target())
+          .then((t) => t.page()),
+        el.click(),
+      ]);
 
-    // Espera a nova aba carregar
-    await newPage.waitForNavigation({ timeout: 30000 });
+      if (!newPage) return;
 
-    const newUrl = newPage.url();
-    navigationURLs = [...navigationURLs, newUrl];
+      // Espera a nova aba carregar
+      await newPage.waitForNavigation({ timeout: 30000 });
 
-    await newPage.close(); // Fecha a aba se quiser
+      const newUrl = newPage.url();
+      navigationURLs = [...navigationURLs, newUrl];
+
+      await newPage.close(); // Fecha a aba se quiser
+    }
+  }
+
+  if (callback) {
+    navigationURLs = await callback();
   }
 
   console.log("Scraping URLs ✅");
@@ -55,7 +67,7 @@ const scraping = async (page: Page, browser: Browser, selector: string) => {
   return navigationURLs;
 };
 
-const getFromFile = async (folder: "character" | "weapon") => {
+const getFromFile = async (folder: "character" | "weapon" | "enemy") => {
   const data = moment().format("MM-DD-YYYY");
   const filePath = path.join(__dirname, `../logs/${folder}`, `${data}.json`);
   let urls: string[] | undefined;

@@ -7,6 +7,7 @@ import puppeteer from "puppeteer";
 import moment from "moment";
 import fs from "fs";
 import { release } from "./release";
+import { enemies } from "./enemies";
 
 const character = async () => {
   await terminal.start();
@@ -64,8 +65,26 @@ const weapon = async () => {
   if (urls?.length) await scrapingWeapon.onScraping(urls);
 };
 
+const enemy = async () => {
+  await terminal.start();
+
+  let urls = await url.getFromFile("enemy");
+
+  if (!urls) {
+    urls = await enemies.urls();
+
+    const data = moment().format("MM-DD-YYYY");
+    fs.writeFileSync(`logs/enemy/${data}.json`, JSON.stringify(urls));
+  }
+
+  const enemies_metadade = await enemies.metadade(urls);
+
+  console.log(enemies_metadade);
+};
+
 export const scraping = {
   character,
   weapon,
   release,
+  enemy,
 };
