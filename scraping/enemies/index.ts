@@ -1,7 +1,7 @@
 import puppeteer, { Page } from "puppeteer";
 import { common } from "../../common";
 import fs from "fs";
-import { checkingFolderName } from "../../utility";
+import { toKebabCase } from "../../utility";
 
 const urls = async () => {
   const browser = await puppeteer.launch({ headless: false });
@@ -454,8 +454,8 @@ const metadade = async (urls: string[], callback?: (obj: Metadade) => void) => {
     metadades = [...metadades, metadade];
 
     const path = "metadata";
-    const folder_name = checkingFolderName(metadade.name ?? "");
-    console.log(folder_name);
+    const folder_name = toKebabCase(metadade.name ?? "");
+
     fs.writeFileSync(
       `${path}/${folder_name}.metadade.json`,
       JSON.stringify(metadade)
