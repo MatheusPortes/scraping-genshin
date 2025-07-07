@@ -170,7 +170,7 @@ const onInfobox = async (page: Page) => {
     infos = [...infos, { key, values }];
   }
 
-  console.log("Scraping onInfobox ✅");
+  console.log("Scraping enemy info ✅");
   return { figure, infos };
 };
 
