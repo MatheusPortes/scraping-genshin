@@ -109,8 +109,12 @@ const onInfobox = async (page: Page) => {
 
   const figure = { icon: "", portrait };
 
+  selector = "section.pi-item.pi-panel.pi-border-color.wds-tabber";
+  const section_infobox_el = await page.$(selector);
+
   selector = "div.wds-tab__content.wds-is-current";
-  const div_infobox_el = await page.$(selector);
+  const div_infobox_el = await section_infobox_el?.$(selector);
+
   selector = "div.pi-item.pi-data.pi-item-spacing.pi-border-color";
   const infos_el = await div_infobox_el?.$$(selector);
 
@@ -430,11 +434,7 @@ interface Metadade {
 
 const metadade = async (urls: string[], callback?: (obj: Metadade) => void) => {
   const browser = await puppeteer.launch({ headless: false });
-  const ts = [
-    "https://genshin-impact.fandom.com/wiki/Tenebrous_Papilla",
-    // "https://genshin-impact.fandom.com/wiki/Hydro_Hilichurl_Rogue",
-    "https://genshin-impact.fandom.com/wiki/Childe",
-  ];
+  const ts = ["https://genshin-impact.fandom.com/wiki/Aeonblight_Drake"];
 
   let metadades = [] as Metadade[];
   for (const url of urls) {
