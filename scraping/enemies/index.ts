@@ -3,6 +3,14 @@ import { common } from "../../common";
 import fs from "fs";
 import { toKebabCase } from "../../utility";
 
+const modalEvade = async (page: Page) => {
+  await page.waitForSelector("div button#onetrust-accept-btn-handler");
+
+  const button_modal = await page.$("div button#onetrust-accept-btn-handler");
+
+  await button_modal?.click();
+};
+
 const urls = async () => {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
@@ -13,11 +21,7 @@ const urls = async () => {
     "div.mw-content-ltr.mw-parser-output"
   );
 
-  await page.waitForSelector("div button#onetrust-accept-btn-handler");
-
-  const button_modal = await page.$("div button#onetrust-accept-btn-handler");
-
-  await button_modal?.click();
+  await modalEvade(page);
 
   const card_list = await page.$$("span.card-list-container");
 
@@ -68,7 +72,7 @@ const urls = async () => {
 };
 
 const onName = async (page: Page) => {
-  const selector = "span.mw-page-title-main";
+  const selector = "h1.page-header__title";
   const name_el = await page.$(selector);
 
   if (!name_el)
@@ -434,10 +438,16 @@ const metadade = async (urls: string[], callback?: (obj: Metadade) => void) => {
 
   let metadades = [] as Metadade[];
   for (const url of urls) {
+    console.log("##################\n", url);
     const page = await browser.newPage();
 
-    let selector = "span.widget-header-count";
-    await common.startPage(page, url, selector);
+    try {
+      let selector = "span.widget-header-count";
+
+      await common.startPage(page, url, selector);
+    } catch (error) {
+      await modalEvade(page);
+    }
 
     const name = await onName(page);
     let info = await onInfobox(page);
