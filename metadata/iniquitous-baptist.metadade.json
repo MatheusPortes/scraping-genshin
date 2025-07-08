@@ -1,0 +1,108 @@
+{
+  "name": "Iniquitous Baptist",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/Iniquitous_Baptist_Icon.png/revision/latest/scale-to-width-down/185?cb=20230412020927",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/Enemy_Iniquitous_Baptist.png/revision/latest?cb=20240414144836"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Cryo", "link": "/wiki/Cryo" },
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Gate of Zulqarnain", "link": "/wiki/Gate_of_Zulqarnain" },
+          { "name": "Gavireh Lajavard", "link": "/wiki/Gavireh_Lajavard" },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Ev­er­gloom Ring", "link": "/wiki/Evergloom_Ring" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Ev­er­gloom Ring", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Sli­ver", "rarity": [2] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Vaj­ra­da A­me­thyst Frag­ment", "rarity": [3] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Vaj­ra­da A­me­thyst Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Gem­stone", "rarity": [5] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Prayers for Wisdom", "rarity": [3, 4] },
+    { "name": "Prayers to Springtime", "rarity": [3, 4] },
+    { "name": "Prayers for Il­lu­mi­na­tion", "rarity": [3, 4] },
+    { "name": "Prayers for Destiny", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "210%" },
+            { "name": "pyro", "value": "210%" },
+            { "name": "hydro", "value": "210%" },
+            { "name": "electro", "value": "210%" },
+            { "name": "cryo", "value": "210%" },
+            { "name": "dendro", "value": "210%" },
+            { "name": "anemo", "value": "210%" },
+            { "name": "geo", "value": "210%" }
+          ],
+          "name": "During Entrance Animationor Elemental Rings"
+        }
+      ]
+    }
+  ],
+  "description": "A monster from the Abyss that wields multiple types of Elemental Power and has gained extra limbs from its \"evolution.\"\n\n\"The nature of the 'Abyss' is essentially irreconcilable with the elements. However, even the elements of gods can be entrapped and distorted before they are subsumed to become tools of the abyssal will. Just judging from outcomes and practical use, \"Abyssal powers\" seem little different from elemental items, from ones as paltry as the Treasure Hoarders' elemental containers to those as powerful as Visions...\"\n—Notes left behind in Hangeh Afrasiyab by someone."
+}

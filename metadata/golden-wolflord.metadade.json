@@ -1,0 +1,127 @@
+{
+  "name": "Golden Wolflord",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Golden_Wolflord_Icon.png/revision/latest/scale-to-width-down/185?cb=20211125062713",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/Enemy_Golden_Wolflord.png/revision/latest?cb=20240414151405"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Geo", "link": "/wiki/Geo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Riftwolves", "link": "/wiki/Riftwolves" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Tsurumi Island", "link": "/wiki/Tsurumi_Island" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Golden_Wolflord_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Riftborn Regalia", "link": "/wiki/Riftborn_Regalia" }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Abyss-Corroded Golden Wolflord",
+            "link": "/wiki/Abyss-Corroded_Golden_Wolflord"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Riftborn Regalia", "rarity": [4] },
+    { "name": "Prithiva Topaz Sliver", "rarity": [2] },
+    { "name": "Prithiva Topaz Frag­ment", "rarity": [3] },
+    { "name": "Prithiva Topaz Chunk", "rarity": [4] },
+    { "name": "Prithiva Topaz Gem­stone", "rarity": [5] },
+    { "name": "Traveling Doctor", "rarity": [1, 2, 3] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "25%" },
+            { "name": "pyro", "value": "25%" },
+            { "name": "hydro", "value": "25%" },
+            { "name": "electro", "value": "25%" },
+            { "name": "cryo", "value": "25%" },
+            { "name": "dendro", "value": "25%" },
+            { "name": "anemo", "value": "25%" },
+            { "name": "geo", "value": "25%" }
+          ],
+          "name": "Normal"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "25%" },
+            { "name": "pyro", "value": "25%" },
+            { "name": "hydro", "value": "25%" },
+            { "name": "electro", "value": "25%" },
+            { "name": "cryo", "value": "25%" },
+            { "name": "dendro", "value": "25%" },
+            { "name": "anemo", "value": "25%" },
+            { "name": "geo", "value": "−20%" }
+          ],
+          "name": "Elemental Devourer"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "225%" },
+            { "name": "pyro", "value": "225%" },
+            { "name": "hydro", "value": "225%" },
+            { "name": "electro", "value": "225%" },
+            { "name": "cryo", "value": "225%" },
+            { "name": "dendro", "value": "225%" },
+            { "name": "anemo", "value": "225%" },
+            { "name": "geo", "value": "225%" }
+          ],
+          "name": "Beginning of Fight"
+        }
+      ]
+    }
+  ],
+  "description": "A twisted beast from another world.\nThis creature is the ruler of the Riftwolves, and wields the power to command them to dissolve space itself."
+}

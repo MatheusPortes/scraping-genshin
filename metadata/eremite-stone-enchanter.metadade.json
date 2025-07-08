@@ -1,0 +1,129 @@
+{
+  "name": "Eremite Stone Enchanter",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/Eremite_Stone_Enchanter_Icon.png/revision/latest/scale-to-width-down/185?cb=20220928021502",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/Enemy_Eremite_Stone_Enchanter.png/revision/latest?cb=20221202232426"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Geo", "link": "/wiki/Geo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          {
+            "name": "Other Human Factions",
+            "link": "/wiki/Other_Human_Factions"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "The Eremites", "link": "/wiki/The_Eremites" }]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Eremite_Stone_Enchanter_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=389"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Faded Red Satin", "rarity": [1] },
+    { "name": "Trimmed Red Silk", "rarity": [2] },
+    { "name": "Rich Red Brocade", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "−20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "60%" },
+            { "name": "hydro", "value": "60%" },
+            { "name": "electro", "value": "60%" },
+            { "name": "cryo", "value": "60%" },
+            { "name": "dendro", "value": "60%" },
+            { "name": "anemo", "value": "60%" },
+            { "name": "geo", "value": "60%" }
+          ],
+          "name": "Enhanced"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "−20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "−50%" }
+          ],
+          "name": "Stunned"
+        }
+      ]
+    },
+    {
+      "phase": "Warrior's Spirit",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "−20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A person hailing from the loosely-organized mercenary bands of the desert. Will work for anyone as long as the pay is good.\nIn ancient days, these heavily-equipped warriors were the domain of the personal, trusted guards of the Lord of the Blazing Sun. It is perhaps on this account that they gleam like the golden sun itself to this day.\nOminous, fragmented spirits are sealed within the weapons they use, awakening in moments of peril. Once these weapons awaken, they can only be silenced by the cries of the vanquished — whether that be their wielders or their wielders' foes."
+}

@@ -1,0 +1,77 @@
+{
+  "name": "Large Electro Slime",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/Large_Electro_Slime_Icon.png/revision/latest/scale-to-width-down/185?cb=20240505152734",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a2/Enemy_Large_Electro_Slime.png/revision/latest?cb=20240502184405"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Electro", "link": "/wiki/Electro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Slimes", "link": "/wiki/Slimes" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [{ "name": "Multiple", "link": null }]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=59"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Sli­me Con­den­sate", "rarity": [1] },
+    { "name": "Slime Secretions", "rarity": [2] },
+    { "name": "Sli­me Con­cen­trate", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "Immune" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A monster created by the coalescing of Electro dispersed throughout nature.\nDue to the abundant Electro within its form, it will deliver an electric shock to its surroundings from time to time. At present, some have attempted to harness this energy to aid in production activities. Perhaps some new science will be born from this...?"
+}

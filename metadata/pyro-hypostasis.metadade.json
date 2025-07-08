@@ -1,0 +1,80 @@
+{
+  "name": "Pyro Hypostasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Pyro_Hypostasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20210721055437",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/d/d0/Enemy_Pyro_Hypostasis.png/revision/latest?cb=20210817033405"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Pyro", "link": "/wiki/Pyro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hypostases", "link": "/wiki/Hypostases" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Kannazuka", "link": "/wiki/Kannazuka" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Smol­der­ing Pearl", "link": "/wiki/Smoldering_Pearl" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Smol­der­ing Pearl", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "Prayers for Il­lu­mi­na­tion", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "Immune" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Code Name: Ayin. A high-purity Pyro entity.\nElemental hypostases have the ability to often enter a sort of \"emergency restart\" phase when they are about to be destroyed and can revive themselves in this way. Such rapid regeneration is not possessed even by most creatures for whom survival is the top priority."
+}

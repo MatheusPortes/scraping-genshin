@@ -1,0 +1,62 @@
+{
+  "name": "Electro Cicin",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/d/d7/Electro_Cicin_Icon.png/revision/latest/scale-to-width-down/185?cb=20201206015206",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/Enemy_Electro_Cicin.png/revision/latest?cb=20241003023239"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Electro", "link": "/wiki/Electro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Cicins", "link": "/wiki/Cicins" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [{ "name": "Multiple", "link": null }]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "−50%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "50%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Little creatures that can ever so slightly manipulate Electro.\nThey and other such creatures are known collectively as Cicins, and though they are individually weak, they can cause significant damage under the right circumstances."
+}

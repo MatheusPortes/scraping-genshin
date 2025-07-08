@@ -1,0 +1,59 @@
+{
+  "name": "Qucusaurus Chick",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/aa/Qucusaurus_Chick_Icon.png/revision/latest/scale-to-width-down/185?cb=20241120023200",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/7f/Enemy_Qucusaurus_Chick.png/revision/latest?cb=20241120073332"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Pyro", "link": "/wiki/Pyro" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Juvenile Fang", "rarity": [1] },
+    { "name": "Seasoned Fang", "rarity": [2] },
+    { "name": "Tyrant's Fang", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "30%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A young Qucusaur with a light, agile body.\nIts neck and wings have yet to fully develop, and it still has a long way to go before it can wield gaseous phlogiston. There are stories of older Qucusaurs pushing younglings off cliffs to encourage them to fly. While the truth of such tales is uncertain, as long as it keeps practicing day and night, there can be no doubt that the soft-feathered fledgling will eventually grow strong and resilient."
+}

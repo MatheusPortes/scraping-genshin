@@ -1,0 +1,103 @@
+{
+  "name": "Wayward Hermetic Spiritspeaker",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Wayward_Hermetic_Spiritspeaker_Icon.png/revision/latest/scale-to-width-down/185?cb=20250101020419",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/e/ed/Enemy_Wayward_Hermetic_Spiritspeaker.png/revision/latest?cb=20250117203217"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Cryo", "link": "/wiki/Cryo" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          {
+            "name": "Other Human Factions",
+            "link": "/wiki/Other_Human_Factions"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          {
+            "name": "Sauroform Tribal Warriors",
+            "link": "/wiki/Sauroform_Tribal_Warriors"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Tezcatepetonco Range",
+            "link": "/wiki/Tezcatepetonco_Range"
+          },
+          { "name": "Natlan", "link": "/wiki/Natlan" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Talisman of the Enigmatic Land",
+            "link": "/wiki/Talisman_of_the_Enigmatic_Land"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Talisman of the Enigmatic Land", "rarity": [4] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "Prayers to Springtime", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "70%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-30%" },
+            { "name": "pyro", "value": "-30%" },
+            { "name": "hydro", "value": "-30%" },
+            { "name": "electro", "value": "-30%" },
+            { "name": "cryo", "value": "30%" },
+            { "name": "dendro", "value": "-30%" },
+            { "name": "anemo", "value": "-30%" },
+            { "name": "geo", "value": "-30%" }
+          ],
+          "name": "Paralyzed"
+        }
+      ]
+    }
+  ],
+  "description": "A priestess of the Masters of the Night-Wind who has lived apart from her tribe, honing her abilities in utter solitude. It is said that her Spiritspeaking powers surpass those of ordinary priests and shamans, a result of having had the protection of the Masters of the Night-Wind's Wayob bestowed upon her. Both a blessing and a curse, these powers were at first beyond her ability to control, which was why she set out to master them in isolation from her tribe. Though she has since done so, to this day she still lives in seclusion, a habit that has earned her a reputation as a loner and a recluse. Rumor has it, however, that she is more than willing to teach those who seek her guidance — though always on her own terms..."
+}

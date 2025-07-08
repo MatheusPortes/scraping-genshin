@@ -1,0 +1,61 @@
+{
+  "name": "Shadowy Husk: Defender",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Shadowy_Husk_Defender_Icon.png/revision/latest/scale-to-width-down/185?cb=20220218193027",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Enemy_Shadowy_Husk_Defender.png/revision/latest?cb=20220219164752"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Cryo", "link": "/wiki/Cryo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "The Black Serpents", "link": "/wiki/The_Black_Serpents" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Gloomy Statuette", "rarity": [2] },
+    { "name": "Dark Statuette", "rarity": [3] },
+    { "name": "Deathly Statuette", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "30%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A pitch-dark soldier. Once a proud warrior of an ancient underground nation, it is now nothing but a husk that only bears memories of battle. All shall decay in the end, and this is all that is left of the Black Serpent Knights amidst the merciless march of their sins, curses, and time itself."
+}

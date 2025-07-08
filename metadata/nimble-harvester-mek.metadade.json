@@ -1,0 +1,63 @@
+{
+  "name": "Nimble Harvester Mek",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/3/3c/Nimble_Harvester_Mek_Icon.png/revision/latest/scale-to-width-down/185?cb=20230816022800",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/Enemy_Nimble_Harvester_Mek.png/revision/latest?cb=20240915095910"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Geo", "link": "/wiki/Geo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Clockwork Meka", "link": "/wiki/Clockwork_Meka" }]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Meshing Gear", "rarity": [1] },
+    { "name": "Mechanical Spur Gear", "rarity": [2] },
+    { "name": "Artificed Dynamic Gear", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A clockwork meka designed to dig up and transport soil.\nDue to the inherent ability of the local water and soil to store and transmit ousia and pneuma, clockwork meka powered by the annihilation of these energies are highly favored in Fontaine. This also explains why adventurers may come across Ousia and Pneuma Blocks from time to time."
+}

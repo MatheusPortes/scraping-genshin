@@ -1,0 +1,96 @@
+{
+  "name": "Fatui Cryo Cicin Mage",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/af/Fatui_Cryo_Cicin_Mage_Dragonspine_Locations.png/revision/latest/scale-to-width-down/185?cb=20221106175534",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/Enemy_Fatui_Cryo_Cicin_Mage.png/revision/latest?cb=20210717050525"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Cryo", "link": "/wiki/Cryo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Fatui", "link": "/wiki/Fatui/Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Fatui Cicin Mages", "link": "/wiki/Fatui_Cicin_Mages" }
+        ]
+      },
+      {
+        "key": { "name": "Faction", "link": "" },
+        "values": [{ "name": "Fatui", "link": "/wiki/Fatui" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Dragonspine", "link": "/wiki/Dragonspine" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Fatui_Cryo_Cicin_Mage_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=26"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Mist Grass Pollen", "rarity": [2] },
+    { "name": "Mist Grass", "rarity": [3] },
+    { "name": "Mist Grass Wick", "rarity": [4] },
+    { "name": "Recruit's Insignia", "rarity": [1] },
+    { "name": "Sergeant's Insignia", "rarity": [2] },
+    { "name": "Lieutenant's Insignia", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "-20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "50%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A Fatui mage who can command Cryo Cicins in battle. Their origins and what they look like under that mask are both mysteries.\nReason dictates that those who lack Visions should not be able to control the elements as these mages do. However, in addition to using Mist Grass to control the Cryo Cicins, they also boldly wield the might of frost. Seeing them as they wander the land in their seemingly aimless way, one can't help but wonder about the duty that must compel them."
+}

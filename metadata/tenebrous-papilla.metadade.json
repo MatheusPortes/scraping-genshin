@@ -1,0 +1,156 @@
+{
+  "name": "Tenebrous Papilla",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/Tenebrous_Papilla_Icon.png/revision/latest/scale-to-width-down/185?cb=20241120023210",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Enemy_Tenebrous_Papilla.png/revision/latest?cb=20241120052724"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" },
+          { "name": "Dendro", "link": "/wiki/Dendro" },
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Geo", "link": "/wiki/Geo" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Tenebrous Mimesis", "link": "/wiki/Tenebrous_Mimesis" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Quahuacan Cliff", "link": "/wiki/Quahuacan_Cliff" },
+          { "name": "Natlan", "link": "/wiki/Natlan" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [{ "name": "Ensnaring Gaze", "link": "/wiki/Ensnaring_Gaze" }]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Ensnaring Gaze", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Vaj­ra­da A­me­thyst Sli­ver", "rarity": [2] },
+    { "name": "Va­yu­da Tur­quoise Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Vaj­ra­da A­me­thyst Frag­ment", "rarity": [3] },
+    { "name": "Va­yu­da Tur­quoise Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Chunk", "rarity": [4] },
+    { "name": "Vayuda Turquoise Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Vaj­ra­da A­me­thyst Gem­stone", "rarity": [5] },
+    { "name": "Vayuda Turquoise Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Prayers for Il­lu­mi­na­tion", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "20%" },
+            { "name": "pyro", "value": "20%" },
+            { "name": "hydro", "value": "20%" },
+            { "name": "electro", "value": "20%" },
+            { "name": "cryo", "value": "20%" },
+            { "name": "dendro", "value": "20%" },
+            { "name": "anemo", "value": "20%" },
+            { "name": "geo", "value": "20%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-50%" },
+            { "name": "pyro", "value": "-50%" },
+            { "name": "hydro", "value": "-50%" },
+            { "name": "electro", "value": "-50%" },
+            { "name": "cryo", "value": "-50%" },
+            { "name": "dendro", "value": "-50%" },
+            { "name": "anemo", "value": "-50%" },
+            { "name": "geo", "value": "-50%" }
+          ],
+          "name": "Paralyzed"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-15%" },
+            { "name": "pyro", "value": "-15%" },
+            { "name": "hydro", "value": "-15%" },
+            { "name": "electro", "value": "-15%" },
+            { "name": "cryo", "value": "-15%" },
+            { "name": "dendro", "value": "-15%" },
+            { "name": "anemo", "value": "-15%" },
+            { "name": "geo", "value": "-15%" }
+          ],
+          "name": "Recovered from Paralysis"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "70%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "70%" },
+            { "name": "electro", "value": "70%" },
+            { "name": "cryo", "value": "70%" },
+            { "name": "dendro", "value": "70%" },
+            { "name": "anemo", "value": "70%" },
+            { "name": "geo", "value": "70%" }
+          ],
+          "name": "Base (Spiral Abyss)"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "0%" },
+            { "name": "pyro", "value": "0%" },
+            { "name": "hydro", "value": "0%" },
+            { "name": "electro", "value": "0%" },
+            { "name": "cryo", "value": "0%" },
+            { "name": "dendro", "value": "0%" },
+            { "name": "anemo", "value": "0%" },
+            { "name": "geo", "value": "0%" }
+          ],
+          "name": "Paralyzed (Spiral Abyss)"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "35%" },
+            { "name": "pyro", "value": "35%" },
+            { "name": "hydro", "value": "35%" },
+            { "name": "electro", "value": "35%" },
+            { "name": "cryo", "value": "35%" },
+            { "name": "dendro", "value": "35%" },
+            { "name": "anemo", "value": "35%" },
+            { "name": "geo", "value": "35%" }
+          ],
+          "name": "Recovered from Paralysis (Spiral Abyss)"
+        }
+      ]
+    }
+  ],
+  "description": "Abyssal creatures with plant-like forms that have descended from a deep, dark, unfathomable, contorted otherworld.\nThese twisted monstrosities are capable of infiltrating deep down into the bowels of the earth, extracting memories to imitate and manipulate. Through this process of distorting the past's memories into more abstruse and sordid forms, they gradually draw closer to Irminsul's core, threatening to undermine its very existence.\nSome say that these aberrations work constantly to corrupt the many colors of light, leaving only pitch-black information in their stead. Such a hypothesis seems to be confirmed by the branches they extend outward, as if to pierce the void itself..."
+}

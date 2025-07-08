@@ -1,0 +1,143 @@
+{
+  "name": "Lava Dragon Statue",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Lava_Dragon_Statue_Icon.png/revision/latest/scale-to-width-down/185?cb=20250326014644",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/e/ee/Enemy_Lava_Dragon_Statue.png/revision/latest?cb=20250326024556"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Avatar of Lava", "link": "/wiki/Avatar_of_Lava" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [{ "name": "Natlan", "link": "/wiki/Natlan" }]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Sparkless Statue Core",
+            "link": "/wiki/Sparkless_Statue_Core"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Sparkless Statue Core", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "70%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "70%" },
+            { "name": "electro", "value": "70%" },
+            { "name": "cryo", "value": "70%" },
+            { "name": "dendro", "value": "70%" },
+            { "name": "anemo", "value": "70%" },
+            { "name": "geo", "value": "70%" }
+          ],
+          "name": "Geohuman"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-30%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "-30%" },
+            { "name": "electro", "value": "-30%" },
+            { "name": "cryo", "value": "-30%" },
+            { "name": "dendro", "value": "-30%" },
+            { "name": "anemo", "value": "-30%" },
+            { "name": "geo", "value": "-30%" }
+          ],
+          "name": "Molten Dragon"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-60%" },
+            { "name": "pyro", "value": "-60%" },
+            { "name": "hydro", "value": "-60%" },
+            { "name": "electro", "value": "-60%" },
+            { "name": "cryo", "value": "-60%" },
+            { "name": "dendro", "value": "-60%" },
+            { "name": "anemo", "value": "-60%" },
+            { "name": "geo", "value": "-60%" }
+          ],
+          "name": "Overburn"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "150%" },
+            { "name": "pyro", "value": "150%" },
+            { "name": "hydro", "value": "150%" },
+            { "name": "electro", "value": "150%" },
+            { "name": "cryo", "value": "150%" },
+            { "name": "dendro", "value": "150%" },
+            { "name": "anemo", "value": "150%" },
+            { "name": "geo", "value": "150%" }
+          ],
+          "name": "Geohuman (Spiral Abyss)"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "45%" },
+            { "name": "pyro", "value": "150%" },
+            { "name": "hydro", "value": "45%" },
+            { "name": "electro", "value": "45%" },
+            { "name": "cryo", "value": "45%" },
+            { "name": "dendro", "value": "45%" },
+            { "name": "anemo", "value": "45%" },
+            { "name": "geo", "value": "45%" }
+          ],
+          "name": "Molten Dragon (Spiral Abyss)"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Overburn (Spiral Abyss)"
+        }
+      ]
+    }
+  ],
+  "description": "A monster that can continuously generate heat to sustain its activities.\nLegends say these monsters with lava at their cores are the products of a distinct line of research to the Source Mechanisms that followed them — research into whether the primal flame could be used to create a new race based on humans. This research undoubtedly failed, for once the reaver arrived with their throne from beyond the skies, all that the primal flame could birth were hollow shells whose nominal lifeforce granted them no more consciousness than a stone."
+}

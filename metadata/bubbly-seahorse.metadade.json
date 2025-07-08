@@ -1,0 +1,63 @@
+{
+  "name": "Bubbly Seahorse",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/1/15/Bubbly_Seahorse_Icon.png/revision/latest/scale-to-width-down/185?cb=20230816022737",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Enemy_Bubbly_Seahorse.png/revision/latest?cb=20240619143616"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Hydro", "link": "/wiki/Hydro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Fontemer Aberrants", "link": "/wiki/Fontemer_Aberrants" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Trans­ocean­ic Pearl", "rarity": [1] },
+    { "name": "Trans­ocean­ic Chunk", "rarity": [2] },
+    { "name": "Xeno­chrom­at­ic Cryst­al", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "An aquatic creature that hunts by firing watery projectiles.\nAmong the (admittedly somewhat sparse) ranks of Fontemer Aberrant enthusiasts, Bubbly Seahorses have many fans. As with clockwork meka enthusiasts, a small minority of Fontemer Aberrant enthusiasts can be very standoffish when it comes to people whose opinions differ from their own."
+}

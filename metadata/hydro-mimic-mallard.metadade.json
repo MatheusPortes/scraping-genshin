@@ -1,0 +1,80 @@
+{
+  "name": "Hydro Mimic Mallard",
+  "info": {
+    "figure": {
+      "icon": "",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/Enemy_Hydro_Mimic_Mallard.png/revision/latest?cb=20210531234940"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Hydro", "link": "/wiki/Hydro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [
+          { "name": "Special Enemies", "link": "/wiki/Special_Enemies" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hydro Mimics", "link": "/wiki/Hydro_Mimics" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Oceanid", "link": "/wiki/Rhodeia_of_Loch" },
+          { "name": "Spiral Abyss", "link": "/wiki/Spiral_Abyss" }
+        ]
+      }
+    ]
+  },
+  "drop": [],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "15%" },
+            { "name": "pyro", "value": "15%" },
+            { "name": "hydro", "value": "Immune" },
+            { "name": "electro", "value": "15%" },
+            { "name": "cryo", "value": "−40%" },
+            { "name": "dendro", "value": "15%" },
+            { "name": "anemo", "value": "15%" },
+            { "name": "geo", "value": "15%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "Immune" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ]
+}

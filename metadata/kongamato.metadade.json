@@ -1,0 +1,83 @@
+{
+  "name": "Kongamato",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/Kongamato_Icon.png/revision/latest/scale-to-width-down/185?cb=20240828020122",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Enemy_Kongamato.png/revision/latest?cb=20241002043205"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Dendro", "link": "/wiki/Dendro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Tequemecan Valley", "link": "/wiki/Tequemecan_Valley" },
+          { "name": "Natlan", "link": "/wiki/Natlan" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Over­ripe Flame­gra­nate",
+            "link": "/wiki/Overripe_Flamegranate"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Over­ripe Flame­gra­nate", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Sliver", "rarity": [2] },
+    { "name": "Na­ga­dus Em­er­ald Fragment", "rarity": [3] },
+    { "name": "Na­ga­dus Em­er­ald Chunk", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Gem­stone", "rarity": [5] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "70%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A mighty Yumkasaurus that has survived since ancient times and seen countless battles. It owes its huge size to its rampant gluttony."
+}

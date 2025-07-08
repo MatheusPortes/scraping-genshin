@@ -1,0 +1,98 @@
+{
+  "name": "Holawaqa Ngoubou",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/1/10/Holawaqa_Ngoubou_Icon.png/revision/latest/scale-to-width-down/185?cb=20240828020111",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/21/Enemy_Holawaqa_Ngoubou.png/revision/latest?cb=20241002043221"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Pyro", "link": "/wiki/Pyro" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Huitztli Hill", "link": "/wiki/Huitztli_Hill" },
+          {
+            "name": "Basin of Unnumbered Flames",
+            "link": "/wiki/Basin_of_Unnumbered_Flames"
+          },
+          { "name": "Natlan", "link": "/wiki/Natlan" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Mark of the Binding Blessing",
+            "link": "/wiki/Mark_of_the_Binding_Blessing"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mark of the Binding Blessing", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Prayers for Il­lu­mi­na­tion", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "310%" },
+            { "name": "pyro", "value": "370%" },
+            { "name": "hydro", "value": "310%" },
+            { "name": "electro", "value": "310%" },
+            { "name": "cryo", "value": "310%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "310%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Entering Battle"
+        }
+      ]
+    }
+  ],
+  "description": "A mutated Qucusaurus that has taken on special powers of great magnitude. It stands tall in battle with its majestic panoply of golden flames."
+}

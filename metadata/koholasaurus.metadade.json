@@ -1,0 +1,79 @@
+{
+  "name": "Koholasaurus",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/Koholasaurus_Icon.png/revision/latest/scale-to-width-down/185?cb=20240828020115",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/Enemy_Koholasaurus.png/revision/latest?cb=20241009001953"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Hydro", "link": "/wiki/Hydro" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Juvenile Fang", "rarity": [1] },
+    { "name": "Seasoned Fang", "rarity": [2] },
+    { "name": "Tyrant's Fang", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "50%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "0%" },
+            { "name": "pyro", "value": "0%" },
+            { "name": "hydro", "value": "0%" },
+            { "name": "electro", "value": "0%" },
+            { "name": "cryo", "value": "0%" },
+            { "name": "dendro", "value": "0%" },
+            { "name": "anemo", "value": "0%" },
+            { "name": "geo", "value": "0%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A Saurian with thick, strong flippers and a long tail that can swim in water and liquid phlogiston.\nAccording to legend, more ancient dragons were even more able to adapt to their environments, and when the largest dragon in the ocean of the age floated on the surface, it could even be mistaken for an island. It is said that today's Koholasaurus are the descendants of that great sea dragon, and in their broad backs the colossal forms of those ancient sea beasts may yet be glimpsed."
+}

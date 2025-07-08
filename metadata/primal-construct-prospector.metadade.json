@@ -1,0 +1,87 @@
+{
+  "name": "Primal Construct: Prospector",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Primal_Construct_Icon.png/revision/latest/scale-to-width-down/185?cb=20220928021508",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Enemy_Primal_Construct_Prospector.png/revision/latest?cb=20240327160249"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Physical", "link": "/wiki/Physical" }]
+      },
+      {
+        "key": { "name": "Other Elements", "link": "/wiki/Element" },
+        "values": [{ "name": "Dendro", "link": "/wiki/Dendro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Primal Constructs", "link": "/wiki/Primal_Constructs" }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=434"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Damaged Prism", "rarity": [2] },
+    { "name": "Turbid Prism", "rarity": [3] },
+    { "name": "Radiant Prism", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "60%" },
+            { "name": "pyro", "value": "60%" },
+            { "name": "hydro", "value": "60%" },
+            { "name": "electro", "value": "60%" },
+            { "name": "cryo", "value": "60%" },
+            { "name": "dendro", "value": "60%" },
+            { "name": "anemo", "value": "60%" },
+            { "name": "geo", "value": "60%" }
+          ],
+          "name": "Invisible"
+        }
+      ]
+    }
+  ],
+  "description": "The guardians of the lost ancient desert ruins have power enough to punish any who would presume to disturb the pure dreams of their lord.\nThe master of the sands once took to studying taboo knowledge in an effort to create a dream paradise, and these machines may or may not have been the fruits of that research.\nToday, that utopia is long gone, and the dreams and oaths, forgotten by the world, are now only found in the mantras inscribed upon these machines."
+}

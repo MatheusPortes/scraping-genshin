@@ -1,0 +1,85 @@
+{
+  "name": "Lord of Eroded Primal Fire",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Lord_of_Eroded_Primal_Fire_Icon.png/revision/latest/scale-to-width-down/185?cb=20250101020418",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/Enemy_Lord_of_Eroded_Primal_Fire.png/revision/latest?cb=20250101091226"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Tenebrous Mimesis", "link": "/wiki/Tenebrous_Mimesis" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Stone Stele Records", "link": "/wiki/Stone_Stele_Records" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Eroded Horn", "rarity": [5] },
+    { "name": "Eroded Sunfire", "rarity": [5] },
+    { "name": "Eroded Scale-Feather", "rarity": [5] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "Bor­der­land Sword Bil­let", "rarity": [4] },
+    { "name": "Borderland Bow Billet", "rarity": [4] },
+    { "name": "Borderland Claymore Billet", "rarity": [4] },
+    { "name": "Borderland Catalyst Billet", "rarity": [4] },
+    { "name": "Borderland Polearm Billet", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A fell dragon, congealed from the power of pitch-black darkness."
+}

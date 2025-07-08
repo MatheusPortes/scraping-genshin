@@ -1,0 +1,86 @@
+{
+  "name": "Hydro Samachurl",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Hydro_Samachurl_Icon.png/revision/latest/scale-to-width-down/185?cb=20200724112057",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/3c/Enemy_Hydro_Samachurl.png/revision/latest?cb=20210523072505"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Hydro", "link": "/wiki/Hydro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Hilichurls", "link": "/wiki/Hilichurls" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Samachurls", "link": "/wiki/Samachurls" }]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Hydro_Samachurl_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=57"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Divining Scroll", "rarity": [1] },
+    { "name": "Sealed Scroll", "rarity": [2] },
+    { "name": "Forbidden Curse Scroll", "rarity": [3] },
+    { "name": "Damaged Mask", "rarity": [1] },
+    { "name": "Stained Mask", "rarity": [2] },
+    { "name": "Ominous Mask", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "50%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A wizened, mumbling hilichurl, one that chants of the power of Hydro.\nHilichurls especially gifted in commanding the elements who often reach the zenith of their skill in their twilight years. What sort of life would lead to such simple creatures being able to summon water and rains?"
+}

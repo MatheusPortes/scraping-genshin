@@ -1,0 +1,97 @@
+{
+  "name": "Consecrated Horned Crocodile",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/0/04/Consecrated_Horned_Crocodile_Icon.png/revision/latest/scale-to-width-down/185?cb=20230412020914",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/Enemy_Consecrated_Horned_Crocodile.png/revision/latest?cb=20241019182252"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Hydro", "link": "/wiki/Hydro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Consecrated Beasts", "link": "/wiki/Consecrated_Beasts" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Consecrated_Horned_Crocodile_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=454"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Desiccated Shell", "rarity": [2] },
+    { "name": "Sturdy Shell", "rarity": [3] },
+    { "name": "Marked Shell", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "40%" },
+            { "name": "pyro", "value": "40%" },
+            { "name": "hydro", "value": "70%" },
+            { "name": "electro", "value": "40%" },
+            { "name": "cryo", "value": "40%" },
+            { "name": "dendro", "value": "40%" },
+            { "name": "anemo", "value": "40%" },
+            { "name": "geo", "value": "40%" }
+          ],
+          "name": "Phagocytic Form"
+        }
+      ]
+    }
+  ],
+  "description": "A reptile that has mutated after feeding from greater lifeforms.\nMajestic beasts are sometimes revered by human beings as the embodiment of a greater power, their visages turned to analogy to feed in reference to a person, feeding their ego. However, the majority of beasts that have absorbed the \"greater power\" were slain by the overwhelming nature of the power itself. Only a few among their number evolved new forms."
+}

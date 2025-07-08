@@ -1,0 +1,213 @@
+{
+  "name": "The Game Before the Gate",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/The_Game_Before_the_Gate_Icon.png/revision/latest/scale-to-width-down/185?cb=20250507021624",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/Enemy_The_Game_Before_the_Gate.png/revision/latest?cb=20250507142809"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Unresolved Chess Game",
+            "link": "/wiki/Unresolved_Chess_Game"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Ascended Sample: Knight",
+            "link": "/wiki/Ascended_Sample:_Knight"
+          },
+          {
+            "name": "Ascended Sample: Rook",
+            "link": "/wiki/Ascended_Sample:_Rook"
+          },
+          {
+            "name": "Ascended Sample: Queen",
+            "link": "/wiki/Ascended_Sample:_Queen"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Ascended Sample: Knight", "rarity": [5] },
+    { "name": "Ascended Sample: Rook", "rarity": [5] },
+    { "name": "Ascended Sample: Queen", "rarity": [5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Chess Game: King Piece",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "310%" },
+            { "name": "pyro", "value": "370%" },
+            { "name": "hydro", "value": "310%" },
+            { "name": "electro", "value": "310%" },
+            { "name": "cryo", "value": "310%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "310%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Summmoning Queen"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-70%" },
+            { "name": "pyro", "value": "-10%" },
+            { "name": "hydro", "value": "-70%" },
+            { "name": "electro", "value": "-70%" },
+            { "name": "cryo", "value": "-70%" },
+            { "name": "dendro", "value": "-70%" },
+            { "name": "anemo", "value": "-70%" },
+            { "name": "geo", "value": "-70%" }
+          ],
+          "name": "Queen Defeated"
+        }
+      ]
+    },
+    {
+      "phase": "Chess Game: Queen Piece",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Ascended King",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "310%" },
+            { "name": "pyro", "value": "370%" },
+            { "name": "hydro", "value": "310%" },
+            { "name": "electro", "value": "310%" },
+            { "name": "cryo", "value": "310%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "310%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Reviving"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-70%" },
+            { "name": "pyro", "value": "-10%" },
+            { "name": "hydro", "value": "-70%" },
+            { "name": "electro", "value": "-70%" },
+            { "name": "cryo", "value": "-70%" },
+            { "name": "dendro", "value": "-70%" },
+            { "name": "anemo", "value": "-70%" },
+            { "name": "geo", "value": "-70%" }
+          ],
+          "name": "Berserk"
+        }
+      ]
+    },
+    {
+      "phase": "Sublimated Queen",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "70%" },
+            { "name": "electro", "value": "70%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "310%" },
+            { "name": "pyro", "value": "310%" },
+            { "name": "hydro", "value": "370%" },
+            { "name": "electro", "value": "370%" },
+            { "name": "cryo", "value": "310%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "310%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Reviving"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "-70%" },
+            { "name": "pyro", "value": "-70%" },
+            { "name": "hydro", "value": "-10%" },
+            { "name": "electro", "value": "-10%" },
+            { "name": "cryo", "value": "-70%" },
+            { "name": "dendro", "value": "-70%" },
+            { "name": "anemo", "value": "-70%" },
+            { "name": "geo", "value": "-70%" }
+          ],
+          "name": "Berserk"
+        }
+      ]
+    }
+  ],
+  "description": "A soldier-entity born into being through the skills of various members of the Hexenzirkel.\nAlthough their technological underpinnings are far from abstruse, and touch not upon the profound wisdom at the universe's core, yet as guards of the gate's final threshold, they are a metaphor in and of themselves.\nThis world may be governed by rules, but for those who manage to cross its verge, such constraints no longer apply."
+}

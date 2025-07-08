@@ -1,0 +1,139 @@
+{
+  "name": "Maguu Kenki",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/Maguu_Kenki_Icon.png/revision/latest/scale-to-width-down/185?cb=20210614030505",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/Enemy_Maguu_Kenki.png/revision/latest?cb=20211005182254"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Serpent's Head", "link": "/wiki/Serpent%27s_Head" },
+          { "name": "Yashiori Island", "link": "/wiki/Yashiori_Island" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" },
+          { "name": "Twinning Isle", "link": "/wiki/Twinning_Isle/1.6" },
+          {
+            "name": "Golden Apple Archipelago",
+            "link": "/wiki/Golden_Apple_Archipelago/1.6"
+          },
+          { "name": "Version 1.6", "link": "/wiki/Version_1.6" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Maguu_Kenki_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Mar­i­onette Core", "link": "/wiki/Marionette_Core" }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Maguu Kenki: Lone Gale",
+            "link": "/wiki/Maguu_Kenki:_Lone_Gale"
+          },
+          {
+            "name": "Maguu Kenki: Galloping Frost",
+            "link": "/wiki/Maguu_Kenki:_Galloping_Frost"
+          },
+          {
+            "name": "Maguu Kenki: Mask of Terror",
+            "link": "/wiki/Maguu_Kenki:_Mask_of_Terror"
+          },
+          {
+            "name": "Machine Marionette: Heart of the Blade",
+            "link": "/wiki/Machine_Marionette:_Heart_of_the_Blade"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mar­i­onette Core", "rarity": [4] },
+    { "name": "Va­yu­da Tur­quoise Sli­ver", "rarity": [2] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Va­yu­da Tur­quoise Frag­ment", "rarity": [3] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Vayuda Turquoise Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Vayuda Turquoise Gem­stone", "rarity": [5] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Warrior's Spirit",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "An autonomous humanoid swordsman. It is said that this machine was made using the culminative memory of the first-generation master of a certain sword technique known for its secret technique, the Tengu Sweeper. However, it malfunctioned, lost control, and was ultimately discarded. Some sing that this blade-ghost wanders about in a place where fate was severed."
+}

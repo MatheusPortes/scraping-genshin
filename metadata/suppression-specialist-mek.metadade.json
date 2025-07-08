@@ -1,0 +1,75 @@
+{
+  "name": "Suppression Specialist Mek",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/a7/Suppression_Specialist_Mek_Icon.png/revision/latest/scale-to-width-down/185?cb=20230816022809",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/d/da/Enemy_Suppression_Specialist_Mek.png/revision/latest?cb=20240921063448"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Dendro", "link": "/wiki/Dendro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Clockwork Meka", "link": "/wiki/Clockwork_Meka" }]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Suppression_Specialist_Mek_(Character_Card)"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Meshing Gear", "rarity": [1] },
+    { "name": "Mechanical Spur Gear", "rarity": [2] },
+    { "name": "Artificed Dynamic Gear", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A clockwork meka adapted from the Cal. Scherbius type. Unfortunately, aside from its ability to attack, it has no other capabilities.\nClockwork meka based on annihilation energy normally produce their energy by utilizing Repeaters composed of special crystals to refine ousia and pneuma from Fontaine's environment. But outside of Fontaine, they can use pre-prepared Energy Blocks to move over short distances for short periods of time. The difference can be observed from the shape of the crystal components on the meka."
+}

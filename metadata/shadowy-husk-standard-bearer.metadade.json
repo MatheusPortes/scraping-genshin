@@ -1,0 +1,61 @@
+{
+  "name": "Shadowy Husk: Standard Bearer",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/Shadowy_Husk_Standard_Bearer_Icon.png/revision/latest/scale-to-width-down/185?cb=20220218193138",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/Enemy_Shadowy_Husk_Standard_Bearer.png/revision/latest?cb=20220219162606"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Pyro", "link": "/wiki/Pyro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "The Black Serpents", "link": "/wiki/The_Black_Serpents" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Gloomy Statuette", "rarity": [2] },
+    { "name": "Dark Statuette", "rarity": [3] },
+    { "name": "Deathly Statuette", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "30%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A pitch-dark soldier. Once a proud warrior of an ancient underground nation, it has now lost any awareness of memory. But even so, it holds the banner of the royal house aloft into battle. Though it has forgotten its comrades or any royal blessing they may have been given, it will never lay this banner down."
+}
