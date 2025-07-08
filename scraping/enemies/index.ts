@@ -1,4 +1,4 @@
-import puppeteer, { Page } from "puppeteer";
+import puppeteer, { ElementHandle, Page } from "puppeteer";
 import { common } from "../../common";
 import fs from "fs";
 import { toKebabCase } from "../../utility";
@@ -188,65 +188,22 @@ export interface DropCards {
 }
 
 const onDrop = async (page: Page) => {
-  const dropCards = async (selector: string) => {
-    const cards = await page.$$(selector);
-
+  const drop = async (cards: ElementHandle<Element>[]) => {
     let drop_card = [] as DropCards[];
     let list_name = [] as string[];
+
     for (const card of cards) {
-      const drop_name = await card.evaluate(
-        (el) => el.textContent?.trim(),
-        card
-      );
+      const drop_name = await card.evaluate((el) => {
+        const card_text_el = el.querySelector("span.card-caption");
+
+        return card_text_el?.textContent?.trim();
+      }, card);
 
       if (!drop_name || list_name.includes(drop_name)) continue;
 
       list_name = [...list_name, drop_name];
 
-      const drop_rarity = await card.evaluate((el) => {
-        const image_container = el.querySelector("span.card-image-container");
-        const class_ = image_container?.classList;
-
-        if (!class_) return;
-
-        let num = "";
-        for (const str of class_) {
-          num = `${num}${str.replace(/\D+/g, "")}`;
-        }
-
-        return num.split("").map((str) => Number(str));
-      }, card);
-
-      if (!drop_rarity) return;
-
-      if (drop_rarity.length > 1) {
-      }
-
-      drop_card = [...drop_card, { name: drop_name, rarity: drop_rarity }];
-    }
-    return drop_card;
-  };
-
-  const dropTable = async (selector: string) => {
-    const drop_table_el = await page.$(selector);
-
-    selector = "div.card-container.mini-card";
-    const card_container_el = await drop_table_el?.$$(selector);
-
-    if (!card_container_el) return;
-
-    let drop_card = [] as DropCards[];
-    for (const element of card_container_el) {
-      const name = await element.evaluate(
-        (el) => el.textContent?.trim(),
-        element
-      );
-
-      const ignore = ["Mora", "Character EXP"];
-
-      if (name && ignore.includes(name)) continue;
-
-      const image_container = await element.$("span.card-image-container");
+      const image_container = await card.$("span.card-image-container");
 
       if (!image_container) continue;
 
@@ -261,15 +218,33 @@ const onDrop = async (page: Page) => {
         return num.split("").map((str) => Number(str));
       }, image_container);
 
-      drop_card = [...drop_card, { name, rarity }];
+      if (!rarity) return;
+
+      drop_card = [...drop_card, { name: drop_name, rarity }];
     }
 
     return drop_card;
   };
 
-  let drops = await dropCards("div.card-container.mini-card");
+  const cards = await page.$$("div.card-container.mini-card");
 
-  if (!drops) drops = await dropTable("table.fandom-table");
+  let drops = await drop(cards);
+
+  if (!drops || !drops.length) {
+    let selector = "table.fandom-table";
+    const drop_table_el = await page.$(selector);
+
+    selector = "div.card-container.mini-card";
+    const cards = await drop_table_el?.$$(selector);
+
+    if (cards?.length) drops = await drop(cards);
+  }
+
+  if (!drops || !drops.length) {
+    const cards = await page.$$("div.card-container");
+
+    drops = await drop(cards);
+  }
 
   console.log("Scraping enemy drops ✅");
   return drops;
@@ -364,7 +339,7 @@ const onDescription = async (page: Page) => {
   const selector = "div.description-source";
   const archive_el = await page.$(selector);
 
-  const description = archive_el?.evaluate((el) => {
+  let description = archive_el?.evaluate((el) => {
     function extractTextSingleTag(childNodes: NodeListOf<ChildNode>) {
       let text = "";
 
@@ -387,10 +362,33 @@ const onDescription = async (page: Page) => {
       "div.description-content"
     )?.childNodes;
 
-    if (!description_child_nodes_el) return;
-
-    return extractTextSingleTag(description_child_nodes_el);
+    if (description_child_nodes_el)
+      return extractTextSingleTag(description_child_nodes_el);
   });
+
+  if (!description) {
+    const description_content_el = await page.$("div.description-content");
+
+    description = description_content_el?.evaluate((el) => {
+      function extractTextSingleTag(childNodes: NodeListOf<ChildNode>) {
+        let text = "";
+
+        const tags_list = ["#text", "SPAN", "EM", "A", "I"];
+
+        for (const [index, element] of childNodes.entries()) {
+          if (tags_list.includes(element.nodeName)) {
+            text = `${text}${element.textContent}`;
+          } else if (childNodes[index].nodeName === "BR") {
+            text = `${text}\n`;
+          }
+        }
+
+        return text;
+      }
+
+      return extractTextSingleTag(el.childNodes);
+    });
+  }
 
   console.log("Scraping enemy description ✅");
   return description;
@@ -432,9 +430,9 @@ interface Metadade {
   description: string | undefined;
 }
 
-const metadade = async (urls: string[], callback?: (obj: Metadade) => void) => {
+const metadade = async (urls: string[]) => {
   const browser = await puppeteer.launch({ headless: false });
-  const ts = ["https://genshin-impact.fandom.com/wiki/Aeonblight_Drake"];
+  const ts = ["https://genshin-impact.fandom.com/wiki/Yumkasaur_Whelp"];
 
   let metadades = [] as Metadade[];
   for (const url of urls) {
