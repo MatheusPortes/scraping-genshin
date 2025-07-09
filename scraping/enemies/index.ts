@@ -2,6 +2,16 @@ import puppeteer, { ElementHandle, Page } from "puppeteer";
 import { common } from "../../common";
 import fs from "fs";
 import { toKebabCase } from "../../utility";
+import {
+  Drop,
+  DropCards,
+  Infos,
+  Key,
+  Metadade,
+  Resistance,
+  Stage,
+  Value,
+} from "../../types";
 
 const modalEvade = async (page: Page) => {
   await page.waitForSelector("div button#onetrust-accept-btn-handler");
@@ -48,7 +58,7 @@ const urls = async () => {
       const [tab] = await Promise.all<Page | null>([
         new Promise((resolve) =>
           browser.once("targetcreated", async (target) => {
-            await new Promise((res) => setTimeout(res, 3000));
+            await new Promise((res) => setTimeout(res, 4000));
             resolve(target.page());
           })
         ),
@@ -81,21 +91,6 @@ const onName = async (page: Page) => {
   console.log("Scraping enemy name ✅");
   return await name_el?.evaluate((el) => el.textContent?.trim(), name_el);
 };
-
-export interface Key {
-  name: string;
-  link: string;
-}
-
-export interface Value {
-  name: string;
-  link: string;
-}
-
-export interface Infos {
-  key: Key;
-  values: Value[];
-}
 
 const onInfobox = async (page: Page) => {
   let selector =
@@ -182,11 +177,6 @@ const onInfobox = async (page: Page) => {
   return { figure, infos };
 };
 
-export interface DropCards {
-  name?: string;
-  rarity: number[];
-}
-
 const onDrop = async (page: Page) => {
   const drop = async (cards: ElementHandle<Element>[]) => {
     let drop_card = [] as DropCards[];
@@ -249,21 +239,6 @@ const onDrop = async (page: Page) => {
   console.log("Scraping enemy drops ✅");
   return drops;
 };
-
-interface Resistance {
-  name: string;
-  value: string;
-}
-
-interface Stage {
-  name: string;
-  resistance: Resistance[];
-}
-
-interface Drop {
-  phase?: string;
-  stages: Stage[];
-}
 
 const onResistance = async (page: Page) => {
   const selector = "tbody tr th";
@@ -416,23 +391,34 @@ const onGallery = async (page: Page) => {
   }
 };
 
-interface Metadade {
-  name: string | undefined;
-  info: {
-    figure: {
-      icon: string | undefined;
-      portrait: string | null | undefined;
-    };
-    infos: Infos[];
-  };
-  drop: DropCards[] | undefined;
-  resistance: Drop[];
-  description: string | undefined;
-}
+const onEnergyType = async (page: Page) => {
+  const selector = "tbody tr th";
+  const els = await page.$$(selector);
+
+  let energy_type = undefined as string | undefined;
+  for (const element of els) {
+    energy_type = await element.evaluate((el) => {
+      const text = el.textContent?.trim();
+
+      if (text === "Energy Drops") {
+        const table_el = el.offsetParent;
+        const trs_el = table_el?.querySelectorAll("tr");
+        const a_el = trs_el?.[2].querySelector("a");
+
+        if (a_el?.textContent?.trim()) return a_el?.textContent?.trim();
+      }
+    });
+
+    if (energy_type) return energy_type;
+  }
+
+  console.log("Scraping enemy energy type ✅");
+  return energy_type;
+};
 
 const metadade = async (urls: string[]) => {
   const browser = await puppeteer.launch({ headless: false });
-  const ts = ["https://genshin-impact.fandom.com/wiki/Yumkasaur_Whelp"];
+  const ts = ["https://genshin-impact.fandom.com/wiki/Holawaqa_Ngoubou"];
 
   let metadades = [] as Metadade[];
   for (const url of urls) {
@@ -453,11 +439,12 @@ const metadade = async (urls: string[]) => {
     const resistance = await onResistance(page);
     const description = await onDescription(page);
     const gallery = await onGallery(page);
+    const element = await onEnergyType(page);
 
     page.close();
     info.figure.icon = gallery ?? "";
 
-    const metadade = { name, info, drop, resistance, description };
+    const metadade = { name, info, drop, resistance, description, element };
 
     metadades = [...metadades, metadade];
 
@@ -473,6 +460,4 @@ const metadade = async (urls: string[]) => {
   return metadades;
 };
 
-const scraping = async () => {};
-
-export const enemies = { urls, scraping, metadade };
+export const enemies = { urls, metadade };

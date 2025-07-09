@@ -91,6 +91,56 @@ export interface WeaponInfo {
   baseDamage: Partial<BaseDamage>;
 }
 
+export interface Key {
+  name: string;
+  link: string;
+}
+
+export interface Value {
+  name: string;
+  link: string;
+}
+
+export interface Infos {
+  key: Key;
+  values: Value[];
+}
+
+export interface DropCards {
+  name?: string;
+  rarity: number[];
+}
+
+export interface Resistance {
+  name: string;
+  value: string;
+}
+
+export interface Stage {
+  name: string;
+  resistance: Resistance[];
+}
+
+export interface Drop {
+  phase?: string;
+  stages: Stage[];
+}
+
+export interface Metadade {
+  name: string | undefined;
+  info: {
+    figure: {
+      icon: string | undefined;
+      portrait: string | null | undefined;
+    };
+    infos: Infos[];
+  };
+  drop: DropCards[] | undefined;
+  resistance: Drop[];
+  description: string | undefined;
+  element: string | undefined;
+}
+
 export type WeaponTypeKeysMap =
   | "espadão"
   | "lança"
