@@ -98,5 +98,6 @@
       ]
     }
   ],
-  "description": "Today, with the Oceanids extirpated from Fontaine, strange elemental life forms have appeared in the waters.\nThe elemental spirits that appeared after the calamity lack the elegance and beauty of the Oceanids, and thus have been called \"tainted.\" Though the toxins dissolved in the water have long since been diluted and cleansed, unless there are still containers of pure water somewhere, Fontaine's waters will never again naturally birth Oceanids."
+  "description": "Today, with the Oceanids extirpated from Fontaine, strange elemental life forms have appeared in the waters.\nThe elemental spirits that appeared after the calamity lack the elegance and beauty of the Oceanids, and thus have been called \"tainted.\" Though the toxins dissolved in the water have long since been diluted and cleansed, unless there are still containers of pure water somewhere, Fontaine's waters will never again naturally birth Oceanids.",
+  "element": "Hydro"
 }

@@ -73,5 +73,6 @@
       ]
     }
   ],
-  "description": "The primitive wandering inhabitants of Teyvat's wildernesses.\nElectro Slimes don't seem to have as many applications as Pyro Slimes or Anemo Slimes in the benighted lives of the Hilichurls.\nPerhaps one day they may discover the flow of Elements between Electro Slime and Mutant Electro Slime and make some great progress...?"
+  "description": "The primitive wandering inhabitants of Teyvat's wildernesses.\nElectro Slimes don't seem to have as many applications as Pyro Slimes or Anemo Slimes in the benighted lives of the Hilichurls.\nPerhaps one day they may discover the flow of Elements between Electro Slime and Mutant Electro Slime and make some great progress...?",
+  "element": "Non-Elemental"
 }

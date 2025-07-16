@@ -38,7 +38,13 @@
       }
     ]
   },
-  "drop": [],
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Sentry's Wooden Whistle", "rarity": [1] },
+    { "name": "Warrior's Metal Whistle", "rarity": [2] },
+    { "name": "Saurian-Crowned Warrior's Golden Whistle", "rarity": [3] }
+  ],
   "resistance": [
     {
       "phase": "Normal",
@@ -77,5 +83,6 @@
       ]
     }
   ],
-  "description": "A powerful warrior from the Night-Wind, whose bravery has been acknowledged and for which they may wear the Saurian Crown.\nWithout exception, it is said that tribal warriors who win the acknowledgment of the Iktomisaurs must possess extraordinarily keen senses and formidable mental strength. They can even use their power to make slight alterations to the trajectory of the projectiles that they fire from their cannons."
+  "description": "A powerful warrior from the Night-Wind, whose bravery has been acknowledged and for which they may wear the Saurian Crown.\nWithout exception, it is said that tribal warriors who win the acknowledgment of the Iktomisaurs must possess extraordinarily keen senses and formidable mental strength. They can even use their power to make slight alterations to the trajectory of the projectiles that they fire from their cannons.",
+  "element": "Cryo"
 }

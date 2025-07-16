@@ -73,5 +73,6 @@
       ]
     }
   ],
-  "description": "The primitive wandering inhabitants of Teyvat's wildernesses.\nHilichurls have discovered the use of Cryo Slimes in effectively keeping food fresh. Hilichurls have surprising amounts of wisdom in the practical use of Slimes, whether it be the use of Pyro and Cryo slimes to make Exploding Barrels, or the use of Anemo Slimes in vehicles... Perhaps this is their way of adapting to their hard lot in life."
+  "description": "The primitive wandering inhabitants of Teyvat's wildernesses.\nHilichurls have discovered the use of Cryo Slimes in effectively keeping food fresh. Hilichurls have surprising amounts of wisdom in the practical use of Slimes, whether it be the use of Pyro and Cryo slimes to make Exploding Barrels, or the use of Anemo Slimes in vehicles... Perhaps this is their way of adapting to their hard lot in life.",
+  "element": "Non-Elemental"
 }

@@ -41,7 +41,13 @@
       }
     ]
   },
-  "drop": [],
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Sentry's Wooden Whistle", "rarity": [1] },
+    { "name": "Warrior's Metal Whistle", "rarity": [2] },
+    { "name": "Saurian-Crowned Warrior's Golden Whistle", "rarity": [3] }
+  ],
   "resistance": [
     {
       "phase": "Stats",
@@ -62,5 +68,6 @@
       ]
     }
   ],
-  "description": "A warrior from the plains and a tribal guardian who watches over the golden fields.\nThe art of unarmed combat is regarded with great honor among the Collective of Plenty. Warriors who embark on the long path of training for such an art must possess the strength to hurl a spear a thousand yards."
+  "description": "A warrior from the plains and a tribal guardian who watches over the golden fields.\nThe art of unarmed combat is regarded with great honor among the Collective of Plenty. Warriors who embark on the long path of training for such an art must possess the strength to hurl a spear a thousand yards.",
+  "element": "Non-Elemental"
 }

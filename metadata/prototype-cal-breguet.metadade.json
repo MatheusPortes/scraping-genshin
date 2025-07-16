@@ -86,5 +86,6 @@
       ]
     }
   ],
-  "description": "A product of the Fontaine Research Institute of Kinetic Energy Engineering that has gone out of control due to an accident."
+  "description": "A product of the Fontaine Research Institute of Kinetic Energy Engineering that has gone out of control due to an accident.",
+  "element": "Geo"
 }

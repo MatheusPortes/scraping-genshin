@@ -31,7 +31,17 @@
       }
     ]
   },
-  "drop": [],
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Shard of a Shattered Will", "rarity": [2] },
+    { "name": "Locus of a Clear Will", "rarity": [3] },
+    { "name": "Sigil of a Striding Will", "rarity": [4] },
+    { "name": "Traveling Doctor", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] }
+  ],
   "resistance": [
     {
       "phase": "Normal",
@@ -88,5 +98,6 @@
       ]
     }
   ],
-  "description": "The Masters of the Night-Wind believe in and worship the Wayob, which manifests upon the land with the power of totems and Nightsouls.\nThe Masters of the Night-Wind have tried using many mediums to communicate with the Night Kingdom. Eventually, they discovered that the medium that allowed them to establish the most stable connection with the Wayob was obsidian. This may explain why, over the ages, Wayob Manifestations have taken on a form that resembles a stone statue. The Masters of the Night-Wind believe their Wayob has the power to control the process of freezing and crystallization, and can also command both fixedness and mutability."
+  "description": "The Masters of the Night-Wind believe in and worship the Wayob, which manifests upon the land with the power of totems and Nightsouls.\nThe Masters of the Night-Wind have tried using many mediums to communicate with the Night Kingdom. Eventually, they discovered that the medium that allowed them to establish the most stable connection with the Wayob was obsidian. This may explain why, over the ages, Wayob Manifestations have taken on a form that resembles a stone statue. The Masters of the Night-Wind believe their Wayob has the power to control the process of freezing and crystallization, and can also command both fixedness and mutability.",
+  "element": "Cryo"
 }

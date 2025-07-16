@@ -80,5 +80,6 @@
       ]
     }
   ],
-  "description": "Code Name: Gimel. A high-purity Geo entity.\nElemental hypostases are ultra-compact structures with a high mass.\nConcentrated elemental energy forms a solid shell around the core of the hypostasis, leaving only the core reactive to the elemental stimuli."
+  "description": "Code Name: Gimel. A high-purity Geo entity.\nElemental hypostases are ultra-compact structures with a high mass.\nConcentrated elemental energy forms a solid shell around the core of the hypostasis, leaving only the core reactive to the elemental stimuli.",
+  "element": "Geo"
 }

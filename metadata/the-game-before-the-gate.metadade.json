@@ -55,7 +55,30 @@
   "drop": [
     { "name": "Ascended Sample: Knight", "rarity": [5] },
     { "name": "Ascended Sample: Rook", "rarity": [5] },
-    { "name": "Ascended Sample: Queen", "rarity": [5] }
+    { "name": "Ascended Sample: Queen", "rarity": [5] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Vaj­ra­da A­me­thyst Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Vaj­ra­da A­me­thyst Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Vaj­ra­da A­me­thyst Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "North­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Pole­arm Bil­let", "rarity": [4] }
   ],
   "resistance": [
     {

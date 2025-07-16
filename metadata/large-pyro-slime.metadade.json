@@ -73,5 +73,6 @@
       ]
     }
   ],
-  "description": "A monster created by the sedimentation of Pyro dispersed throughout nature.\nThough its intelligence has not increased with its size, it is very hot. During dry seasons, it can cause wildfires. It will spit forth blazing fireballs when angered, and will turn dark when it is feeling down. A most expressive slime, indeed."
+  "description": "A monster created by the sedimentation of Pyro dispersed throughout nature.\nThough its intelligence has not increased with its size, it is very hot. During dry seasons, it can cause wildfires. It will spit forth blazing fireballs when angered, and will turn dark when it is feeling down. A most expressive slime, indeed.",
+  "element": "Pyro"
 }

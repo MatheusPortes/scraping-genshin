@@ -98,5 +98,6 @@
       ]
     }
   ],
-  "description": "Today, with the Oceanids extirpated from Fontaine, strange elemental life forms have appeared in the waters.\nIt is said that in Egeria's era, the Oceanids often lived alongside humans, and lived in the springs of clear waters dotted across the lands, and through this, they connected the waters of the world. But most died with their god, and for the survivors, the world no longer has any god they recognize."
+  "description": "Today, with the Oceanids extirpated from Fontaine, strange elemental life forms have appeared in the waters.\nIt is said that in Egeria's era, the Oceanids often lived alongside humans, and lived in the springs of clear waters dotted across the lands, and through this, they connected the waters of the world. But most died with their god, and for the survivors, the world no longer has any god they recognize.",
+  "element": "Hydro"
 }

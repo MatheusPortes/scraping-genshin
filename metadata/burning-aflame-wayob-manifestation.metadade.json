@@ -32,6 +32,8 @@
     ]
   },
   "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
     { "name": "Shard of a Shattered Will", "rarity": [2] },
     { "name": "Locus of a Clear Will", "rarity": [3] },
     { "name": "Sigil of a Striding Will", "rarity": [4] },
@@ -78,5 +80,6 @@
       ]
     }
   ],
-  "description": "The Flower-Feather Clan believe in and worship the Wayob, which manifests upon the land with the power of totems and Nightsouls.\nThey say that long ago, Wayob Manifestations looked very different from how they do today, taking on a rougher form that was more akin to that of an obsidian statue. But once their outline had been recorded in woven scrolls, there have been few changes in their appearance since.\nThe people of the Flower-Feather Clan believe their Wayob has the power to control fire and burning flames, and can also control the flow of heat and blazing winds."
+  "description": "The Flower-Feather Clan believe in and worship the Wayob, which manifests upon the land with the power of totems and Nightsouls.\nThey say that long ago, Wayob Manifestations looked very different from how they do today, taking on a rougher form that was more akin to that of an obsidian statue. But once their outline had been recorded in woven scrolls, there have been few changes in their appearance since.\nThe people of the Flower-Feather Clan believe their Wayob has the power to control fire and burning flames, and can also control the flow of heat and blazing winds.",
+  "element": "Pyro"
 }

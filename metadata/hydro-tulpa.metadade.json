@@ -126,5 +126,6 @@
       ]
     }
   ],
-  "description": "A human-shaped monster formed from the agglomeration of countless drops of water."
+  "description": "A human-shaped monster formed from the agglomeration of countless drops of water.",
+  "element": "Hydro"
 }

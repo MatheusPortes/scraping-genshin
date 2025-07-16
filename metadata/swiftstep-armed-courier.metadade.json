@@ -64,5 +64,6 @@
       ]
     }
   ],
-  "description": "A warrior from the Canopy, and a tribal guardian that patrols the forest valleys and mountain streams.\nMany wonder if claymores are too heavy to be wielded by the couriers of the Scions of the Canopy, but perhaps it is precisely because their duties are heavier still that a weapon more capable of deterrence is a necessity."
+  "description": "A warrior from the Canopy, and a tribal guardian that patrols the forest valleys and mountain streams.\nMany wonder if claymores are too heavy to be wielded by the couriers of the Scions of the Canopy, but perhaps it is precisely because their duties are heavier still that a weapon more capable of deterrence is a necessity.",
+  "element": "Non-Elemental"
 }

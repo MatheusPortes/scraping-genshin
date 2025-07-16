@@ -98,5 +98,6 @@
       ]
     }
   ],
-  "description": "Code name: Aleph. A high-purity Electro entity.\nElemental hypostases are the highest forms of elemental structures, usually formed either at a location bursting with elemental energy or at a clogged ley line.\nElemental hypostases have developed defensive mechanisms based on their elemental attributes."
+  "description": "Code name: Aleph. A high-purity Electro entity.\nElemental hypostases are the highest forms of elemental structures, usually formed either at a location bursting with elemental energy or at a clogged ley line.\nElemental hypostases have developed defensive mechanisms based on their elemental attributes.",
+  "element": "Electro"
 }
