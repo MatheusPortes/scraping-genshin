@@ -403,9 +403,9 @@ const onEnergyType = async (page: Page) => {
       if (text === "Energy Drops") {
         const table_el = el.offsetParent;
         const trs_el = table_el?.querySelectorAll("tr");
-        const a_el = trs_el?.[2].querySelector("a");
+        const td_el = trs_el?.[2].querySelector("td");
 
-        if (a_el?.textContent?.trim()) return a_el?.textContent?.trim();
+        if (td_el?.textContent?.trim()) return td_el?.textContent?.trim();
       }
     });
 
@@ -418,7 +418,9 @@ const onEnergyType = async (page: Page) => {
 
 const metadade = async (urls: string[]) => {
   const browser = await puppeteer.launch({ headless: false });
-  const ts = ["https://genshin-impact.fandom.com/wiki/Holawaqa_Ngoubou"];
+  const ts = [
+    "https://genshin-impact.fandom.com/wiki/Electro_Hilichurl_Grenadier",
+  ];
 
   let metadades = [] as Metadade[];
   for (const url of urls) {

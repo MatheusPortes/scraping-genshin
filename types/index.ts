@@ -138,7 +138,13 @@ export interface Metadade {
   drop: DropCards[] | undefined;
   resistance: Drop[];
   description: string | undefined;
-  element: string | undefined;
+  element?: string;
+}
+
+export interface ListLivingBeing {
+  name: string;
+  link: string;
+  position?: number[];
 }
 
 export type WeaponTypeKeysMap =
