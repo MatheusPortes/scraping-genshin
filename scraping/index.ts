@@ -1,6 +1,6 @@
 import { terminal } from "../terminal";
 import { common } from "../common";
-import { similarity, url } from "../url";
+import { url } from "../url";
 import { scraping as scrapingCharacter } from "./character/intex";
 import { scraping as scrapingWeapon } from "./weapon";
 import puppeteer from "puppeteer";
@@ -9,11 +9,10 @@ import fs from "fs";
 import { release } from "./release";
 import { enemies } from "./enemies";
 import path from "path";
-import { Metadade } from "../types";
-// import { collections } from "./collection";
+import { ListBeing, Metadade } from "../types";
 import { file } from "../file";
-import { toKebabCase } from "../utility";
 import { collections } from "./collection";
+import { beings } from "./beings/intex";
 
 const character = async () => {
   await terminal.start();
@@ -100,108 +99,20 @@ const collection = async () => {
     if (data) metadades = [...metadades, data];
   }
 
-  collections.groupingEnemies(metadades);
-  // interface List {
-  //   name: string;
-  //   link: string;
-  //   position?: number[];
-  // }
+  const { family, group, type } = await collections.groupingEnemies(metadades);
 
-  // let living_being_group = [] as List[];
-  // let living_being_type = [] as List[];
-  // let living_being_family = [] as List[];
+  diretorio = path.join(__dirname, "../being");
 
-  // let living_being_group_position = [] as number[];
-  // let living_being_type_position = [] as number[];
-  // let living_being_family_position = [] as number[];
-  // for (const [index, data] of metadades.entries()) {
-  //   const infos = data.info.infos;
-  //   console.log("*** " + data.name + " ***");
+  let beings_group = file.get<ListBeing[]>(`${diretorio}`, "group.json");
+  if (!beings_group) beings_group = await beings.group(group);
 
-  //   let enter = false;
-  //   for (const { key, values } of infos) {
-  //     const name = toKebabCase(values[0].name);
-  //     const link = `https://genshin-impact.fandom.com${values[0].link}`;
+  let beings_family = file.get<ListBeing[]>(`${diretorio}`, "family.json");
+  if (!beings_family) beings_family = await beings.family(family);
 
-  //     if (key.name === "Living Being Group") {
-  //       enter = true;
+  let beings_type = file.get<ListBeing[]>(`${diretorio}`, "type.json");
+  if (!beings_type) beings_type = await beings.type(type);
 
-  //       // const group = living_being_group.find(
-  //       //   (item) => name === item.name || similarity(name, item.name) > 0.9
-  //       // );
-
-  //       // if (!group) {
-  //       //   living_being_group = [
-  //       //     ...living_being_group,
-  //       //     { name, link, position: [index] },
-  //       //   ];
-  //       // }
-
-  //       // if (group) {
-  //       //   if (!group.position) group.position = [index];
-
-  //       //   if (group.position) group.position = [...group.position, index];
-  //       // }
-  //       collections.groupingEnemies()
-
-  //       living_being_group_position = [...living_being_group_position, index];
-  //     }
-
-  //     if (key.name === "Living Being Type") {
-  //       enter = true;
-
-  //       const type = living_being_type.find((item) => name === item.name);
-  //       if (!type) {
-  //         living_being_type = [
-  //           ...living_being_type,
-  //           { name, link, position: [index] },
-  //         ];
-  //       }
-
-  //       if (type) {
-  //         if (!type.position) {
-  //           type.position = [];
-  //           type.position = [...type.position, index];
-  //         }
-
-  //         if (type.position) type.position = [...type.position, index];
-  //       }
-
-  //       living_being_type_position = [...living_being_type_position, index];
-  //     }
-
-  //     if (key.name === "Living Being Family") {
-  //       enter = true;
-
-  //       const family = living_being_family.find((item) => name === item.name);
-  //       if (!family) {
-  //         living_being_family = [
-  //           ...living_being_family,
-  //           { name, link, position: [index] },
-  //         ];
-  //       }
-
-  //       if (family) {
-  //         if (!family.position) {
-  //           family.position = [];
-  //           family.position = [...family.position, index];
-  //         }
-
-  //         if (family.position) family.position = [...family.position, index];
-  //       }
-
-  //       living_being_family_position = [...living_being_family_position, index];
-  //     }
-  //   }
-
-  //   if (!enter) console.log("Obss!!!");
-  // }
-
-  // // console.log(metadades[212].info.infos[4]);
-  // console.log(metadades[216]);
-  // console.log("living_being_group", living_being_group);
-  // console.log("living_being_type", living_being_type);
-  // console.log("living_being_family", living_being_family);
+  return { beings_family, beings_group, beings_type };
 };
 
 export const scraping = {

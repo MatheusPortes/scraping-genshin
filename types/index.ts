@@ -109,6 +109,8 @@ export interface Infos {
 export interface DropCards {
   name?: string;
   rarity: number[];
+  link?: string | null;
+  enemy?: string;
 }
 
 export interface Resistance {
@@ -127,7 +129,7 @@ export interface Drop {
 }
 
 export interface Metadade {
-  name: string | undefined;
+  name: string;
   info: {
     figure: {
       icon: string | undefined;
@@ -141,10 +143,34 @@ export interface Metadade {
   element?: string;
 }
 
+export interface Card {
+  name?: string;
+  rarity: number[];
+  link?: string | null;
+}
+
+export interface CardList {
+  name: string;
+  artefact: Card[];
+}
+
+export interface MetadadeEl {
+  tag: string;
+  text: string | undefined;
+}
+
 export interface ListLivingBeing {
+  id: string;
+  enemies: string[];
   name: string;
   link: string;
   position?: number[];
+}
+
+export interface ListBeing extends Omit<ListLivingBeing, "link"> {
+  adventurer_handbook?: string;
+  description: string;
+  list?: CardList[];
 }
 
 export type WeaponTypeKeysMap =

@@ -88,8 +88,12 @@ const onName = async (page: Page) => {
   if (!name_el)
     throw new Error("element not exist for name!element:" + name_el);
 
+  const name = await name_el?.evaluate((el) => el.textContent?.trim(), name_el);
+
+  if (!name) throw new Error("name not exist for name!element:" + name);
+
   console.log("Scraping enemy name ✅");
-  return await name_el?.evaluate((el) => el.textContent?.trim(), name_el);
+  return name;
 };
 
 const onInfobox = async (page: Page) => {
