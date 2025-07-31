@@ -1,4 +1,4 @@
-import { scraping } from "./scraping";
+import { scraping } from "./src/scraping";
 
 (async () => {
   await scraping.collection();

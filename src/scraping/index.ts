@@ -11,7 +11,7 @@ import { enemies } from "./enemies";
 import path from "path";
 import { ListBeing, Metadade } from "../types";
 import { file } from "../file";
-import { collections } from "./collection";
+import { collections } from "./collection/collection";
 import { beings } from "./beings/intex";
 
 const character = async () => {
@@ -88,7 +88,7 @@ const enemy = async () => {
 };
 
 const collection = async () => {
-  let diretorio = path.join(__dirname, "../metadata");
+  let diretorio = path.join(__dirname, "../../logs/metadata");
   let metadades = [] as Metadade[];
 
   const file_name = fs.readdirSync(diretorio, { encoding: "utf-8" });
@@ -101,7 +101,7 @@ const collection = async () => {
 
   const { family, group, type } = await collections.groupingEnemies(metadades);
 
-  diretorio = path.join(__dirname, "../being");
+  diretorio = path.join(__dirname, "../../logs/being");
 
   let beings_group = file.get<ListBeing[]>(`${diretorio}`, "group.json");
   if (!beings_group) beings_group = await beings.group(group);

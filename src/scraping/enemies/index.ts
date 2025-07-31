@@ -12,6 +12,7 @@ import {
   Stage,
   Value,
 } from "../../types";
+import { file } from "../../file";
 
 const modalEvade = async (page: Page) => {
   await page.waitForSelector("div button#onetrust-accept-btn-handler");
@@ -22,7 +23,7 @@ const modalEvade = async (page: Page) => {
 };
 
 const urls = async () => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
   await common.startPage(
@@ -58,7 +59,7 @@ const urls = async () => {
       const [tab] = await Promise.all<Page | null>([
         new Promise((resolve) =>
           browser.once("targetcreated", async (target) => {
-            await new Promise((res) => setTimeout(res, 4000));
+            await new Promise((res) => setTimeout(res, 3000));
             resolve(target.page());
           })
         ),
@@ -67,7 +68,9 @@ const urls = async () => {
       if (!tab) throw new Error("tab not exist!\ntab: " + tab);
 
       // Espera a nova aba carregar
-      await tab.waitForSelector("div div.widget-header");
+      // div.rail-module.recent-images-module
+      // div div.widget-header
+      await tab.waitForSelector("div.rail-module.recent-images-module");
 
       const newUrl = tab.url();
       navigationURLs = [...navigationURLs, newUrl];
@@ -421,7 +424,7 @@ const onEnergyType = async (page: Page) => {
 };
 
 const metadade = async (urls: string[]) => {
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const ts = [
     "https://genshin-impact.fandom.com/wiki/Electro_Hilichurl_Grenadier",
   ];
@@ -432,7 +435,8 @@ const metadade = async (urls: string[]) => {
     const page = await browser.newPage();
 
     try {
-      let selector = "span.widget-header-count";
+      // let selector = "span.widget-header-count";
+      let selector = "div.rail-module.recent-images-module";
 
       await common.startPage(page, url, selector);
     } catch (error) {
@@ -454,13 +458,10 @@ const metadade = async (urls: string[]) => {
 
     metadades = [...metadades, metadade];
 
-    const path = "metadata";
+    const path = "logs/metadata";
     const folder_name = toKebabCase(metadade.name ?? "");
 
-    fs.writeFileSync(
-      `${path}/${folder_name}.metadade.json`,
-      JSON.stringify(metadade)
-    );
+    file.save(path, JSON.stringify(metadade), `${folder_name}.metadade.json`);
   }
 
   return metadades;

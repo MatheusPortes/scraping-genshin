@@ -1,6 +1,6 @@
-import { ListLivingBeing, Metadade, Value } from "../types";
-import { similarity } from "../url";
-import { toKebabCase } from "../utility";
+import { ListLivingBeing, Metadade, Value } from "../../types";
+import { similarity } from "../../url";
+import { toKebabCase } from "../../utility";
 
 const grouping = (
   values: Value,

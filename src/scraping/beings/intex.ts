@@ -117,7 +117,7 @@ const group = async (beings: ListLivingBeing[]) => {
   let __dir = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/living-being/groups/`;
   save(list_living_being, __dir, "en.json");
 
-  __dir = path.join(__dirname, "../../being");
+  __dir = path.join(__dirname, "../../../logs/being");
   file.save(__dir, JSON.stringify(list_living_being), "group.json");
 
   return list_living_being;
@@ -220,7 +220,7 @@ const family = async (beings: ListLivingBeing[]) => {
   let __dir = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/living-being/families/`;
   save(list_living_being, __dir, "en.json");
 
-  __dir = path.join(__dirname, "../../being");
+  __dir = path.join(__dirname, "../../../logs/being");
   file.save(__dir, JSON.stringify(list_living_being), "family.json");
 
   return list_living_being;
@@ -405,7 +405,7 @@ const type = async (beings: ListLivingBeing[]) => {
   let __dir = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/living-being/types/`;
   save(list_living_being, __dir, "en.json");
 
-  __dir = path.join(__dirname, "../../being");
+  __dir = path.join(__dirname, "../../../logs/being");
   file.save(__dir, JSON.stringify(list_living_being), "type.json");
 
   return list_living_being;

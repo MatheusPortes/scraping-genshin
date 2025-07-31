@@ -69,7 +69,7 @@ const scraping = async (
 
 const getFromFile = async (folder: "character" | "weapon" | "enemy") => {
   const data = moment().format("MM-DD-YYYY");
-  const filePath = path.join(__dirname, `../logs/${folder}`, `${data}.json`);
+  const filePath = path.join(__dirname, `../../logs/${folder}`, `${data}.json`);
   let urls: string[] | undefined;
 
   if (fs.existsSync(filePath)) {
