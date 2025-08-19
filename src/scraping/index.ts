@@ -1,18 +1,21 @@
-import { terminal } from "../terminal";
-import { common } from "../common";
-import { url } from "../url";
-import { scraping as scrapingCharacter } from "./character/intex";
-import { scraping as scrapingWeapon } from "./weapon";
 import puppeteer from "puppeteer";
 import moment from "moment";
+import path from "path";
 import fs from "fs";
+
+import { scraping as scrapingCharacter } from "./character/intex";
+import { scraping as scrapingWeapon } from "./weapon";
+
+import { collections } from "./collection/collection";
+import { ListBeing, Metadade } from "../types";
+import { beings } from "./beings/intex";
+import { terminal } from "../terminal";
+import { metadata } from "./metadata";
 import { release } from "./release";
 import { enemies } from "./enemies";
-import path from "path";
-import { ListBeing, Metadade } from "../types";
+import { common } from "../common";
 import { file } from "../file";
-import { collections } from "./collection/collection";
-import { beings } from "./beings/intex";
+import { url } from "../url";
 
 const character = async () => {
   await terminal.start();
@@ -115,10 +118,15 @@ const collection = async () => {
   return { beings_family, beings_group, beings_type };
 };
 
+const metadade = async () => {
+  metadata.processing();
+};
+
 export const scraping = {
   character,
   weapon,
   release,
   enemy,
   collection,
+  metadade,
 };

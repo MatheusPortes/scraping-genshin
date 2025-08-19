@@ -16,7 +16,7 @@ const save = (path: string, content: Content, file: string = "pt.json") => {
     return;
   }
 
-  fs.mkdirSync(path);
+  fs.mkdirSync(path, { recursive: true });
   fs.writeFileSync(`${path}/${file}`, content, { encoding: "utf8" });
 };
 

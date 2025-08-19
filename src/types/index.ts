@@ -106,6 +106,11 @@ export interface Infos {
   values: Value[];
 }
 
+export interface Figure {
+  icon?: string;
+  portrait?: string | null;
+}
+
 export interface DropCards {
   name?: string;
   rarity: number[];
@@ -131,16 +136,13 @@ export interface Drop {
 export interface Metadade {
   name: string;
   info: {
-    figure: {
-      icon: string | undefined;
-      portrait: string | null | undefined;
-    };
+    figure: Figure;
     infos: Infos[];
   };
   drop: DropCards[] | undefined;
   resistance: Drop[];
   description: string | undefined;
-  element?: string;
+  element?: Vision;
 }
 
 export interface Card {
@@ -171,6 +173,33 @@ export interface ListBeing extends Omit<ListLivingBeing, "link"> {
   adventurer_handbook?: string;
   description: string;
   list?: CardList[];
+}
+
+export interface ProcessingDrop {
+  name: string;
+  rarity: number[];
+}
+
+export interface ResistanceStage {
+  resistance: { name: string; value: string }[];
+  name: string;
+}
+
+export interface ProcessingResistance {
+  phase?: string;
+  stages: ResistanceStage[];
+}
+
+export interface ProcessingData {
+  id: string;
+  name: string;
+  drop?: ProcessingDrop[];
+  resistance?: ProcessingResistance[];
+  description?: string;
+  element?: Vision;
+  damageType: Vision[];
+  livingBeingCategory: string[];
+  faction?: string[];
 }
 
 export type WeaponTypeKeysMap =

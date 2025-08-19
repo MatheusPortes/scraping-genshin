@@ -11,6 +11,7 @@ import {
   Resistance,
   Stage,
   Value,
+  Vision,
 } from "../../types";
 import { file } from "../../file";
 
@@ -449,7 +450,7 @@ const metadade = async (urls: string[]) => {
     const resistance = await onResistance(page);
     const description = await onDescription(page);
     const gallery = await onGallery(page);
-    const element = await onEnergyType(page);
+    const element = (await onEnergyType(page)) as Vision;
 
     page.close();
     info.figure.icon = gallery ?? "";

@@ -1,6 +1,7 @@
 import moment from "moment";
 import path from "path";
-import fs from "fs";
+import fs, { WriteStream } from "fs";
+import https from "https";
 import { Browser, Page } from "puppeteer";
 
 const autoScroll = async (page: Page, selector: string, interval: number) => {
@@ -114,4 +115,21 @@ export const similarity = (str1: string, str2: string) => {
   return 1 - distance / maxLength;
 };
 
-export const url = { scraping, autoScroll, getFromFile };
+export const httpsDownload = (file: WriteStream, url: string, path: string) => {
+  https.get(url, (res) => {
+    res.pipe(file);
+
+    file
+      .on("finish", () => {
+        file.close();
+
+        console.log(`Image downloaded successfully to ${path}`);
+      })
+      .on("error", (err) => {
+        fs.unlink(path, () => {}); // Delete the file if there's an error
+        console.error("Error downloading image:", err.message);
+      });
+  });
+};
+
+export const url = { scraping, autoScroll, getFromFile, httpsDownload };

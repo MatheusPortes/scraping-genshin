@@ -1,5 +1,5 @@
 import { scraping } from "./src/scraping";
 
 (async () => {
-  await scraping.collection();
+  await scraping.metadade();
 })();
