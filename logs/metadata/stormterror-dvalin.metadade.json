@@ -2,8 +2,9 @@
   "name": "Stormterror Dvalin",
   "info": {
     "figure": {
-      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/3/36/Anemo_Sprites.jpg/revision/latest/scale-to-width-down/185?cb=20201012211846",
-      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Enemy_Dvalin.png/revision/latest?cb=20210426200736"
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/Stormterror_Icon.png/revision/latest/scale-to-width-down/185?cb=20200724104101",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Enemy_Dvalin.png/revision/latest?cb=20210426200736",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Enemy_Dvalin_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20230820204530"
     },
     "infos": [
       {

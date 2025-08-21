@@ -109,6 +109,7 @@ export interface Infos {
 export interface Figure {
   icon?: string;
   portrait?: string | null;
+  gallery?: string;
 }
 
 export interface DropCards {

@@ -2,7 +2,7 @@
   "name": "Unusual Hilichurl",
   "info": {
     "figure": {
-      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/Unusual_Hilichurl_Location_Cape_Oath.png/revision/latest/scale-to-width-down/185?cb=20230928220028",
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Unusual_Hilichurl_Icon.png/revision/latest/scale-to-width-down/185?cb=20201206015647",
       "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/ae/Enemy_Unusual_Hilichurl.png/revision/latest?cb=20210507082406"
     },
     "infos": [
@@ -27,7 +27,13 @@
   "drop": [
     { "name": "Mora", "rarity": [3] },
     { "name": "Adventure EXP", "rarity": [3] },
-    { "name": "Cabbage", "rarity": [0] }
+    { "name": "Cabbage", "rarity": [0] },
+    { "name": "Hilichurl", "rarity": [0] },
+    { "name": "Mitachurl", "rarity": [0] },
+    { "name": "Anemo Samachurl", "rarity": [0] },
+    { "name": "Dendro Samachurl", "rarity": [0] },
+    { "name": "Hydro Samachurl", "rarity": [0] },
+    { "name": "Stonehide Lawachurl", "rarity": [0] }
   ],
   "resistance": [
     {

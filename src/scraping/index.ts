@@ -16,6 +16,7 @@ import { enemies } from "./enemies";
 import { common } from "../common";
 import { file } from "../file";
 import { url } from "../url";
+import { fixs } from "../fix";
 
 const character = async () => {
   await terminal.start();
@@ -119,8 +120,12 @@ const collection = async () => {
 };
 
 const metadade = async () => {
+  await terminal.start();
+
   metadata.processing();
 };
+
+const fix = () => {};
 
 export const scraping = {
   character,
@@ -129,4 +134,5 @@ export const scraping = {
   enemy,
   collection,
   metadade,
+  fix,
 };

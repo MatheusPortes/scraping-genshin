@@ -383,9 +383,9 @@ const onGallery = async (page: Page) => {
 
   for (const element of lightbox_el) {
     const link = await element.evaluate((el) => {
-      const text = el.textContent?.trim();
+      const text = el.textContent?.trim().toLocaleLowerCase();
 
-      if (!text && text !== "icon") return;
+      if (text && text !== "icon") return;
 
       const parent_el = el.parentElement;
 
@@ -425,18 +425,15 @@ const onEnergyType = async (page: Page) => {
 };
 
 const metadade = async (urls: string[]) => {
-  const browser = await puppeteer.launch({ headless: true });
-  const ts = [
-    "https://genshin-impact.fandom.com/wiki/Electro_Hilichurl_Grenadier",
-  ];
+  const browser = await puppeteer.launch({ headless: false });
+  const ts = [];
 
   let metadades = [] as Metadade[];
   for (const url of urls) {
-    console.log("##################\n", url);
+    console.log("##===>\n", url);
     const page = await browser.newPage();
 
     try {
-      // let selector = "span.widget-header-count";
       let selector = "div.rail-module.recent-images-module";
 
       await common.startPage(page, url, selector);
@@ -450,6 +447,7 @@ const metadade = async (urls: string[]) => {
     const resistance = await onResistance(page);
     const description = await onDescription(page);
     const gallery = await onGallery(page);
+
     const element = (await onEnergyType(page)) as Vision;
 
     page.close();
