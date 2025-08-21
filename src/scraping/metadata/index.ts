@@ -130,6 +130,8 @@ const processing = async () => {
 
     downloadAndSave(info.figure, directory);
   }
+
+  console.log("Processing finish!!! ✅");
 };
 
 export const metadata = { processing };
