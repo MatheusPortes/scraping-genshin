@@ -2,7 +2,7 @@ import moment from "moment";
 import path from "path";
 import fs, { WriteStream } from "fs";
 import https from "https";
-import { Browser, Page } from "puppeteer";
+import { Browser, ElementHandle, Page } from "puppeteer";
 
 const autoScroll = async (page: Page, selector: string, interval: number) => {
   await page.waitForSelector(selector);
@@ -31,7 +31,7 @@ const scraping = async (
   page: Page,
   browser: Browser,
   selector: string,
-  callback?: () => Promise<string[]>
+  callback?: () => Promise<string[]>,
 ) => {
   const elements = await page.$$(selector);
 
@@ -100,7 +100,7 @@ function levenshteinDistance(a: string, b: string) {
         matrix[i][j] = Math.min(
           matrix[i - 1][j - 1] + 1,
           matrix[i][j - 1] + 1,
-          matrix[i - 1][j] + 1
+          matrix[i - 1][j] + 1,
         );
       }
     }
@@ -132,4 +132,51 @@ export const httpsDownload = (file: WriteStream, url: string, path: string) => {
   });
 };
 
-export const url = { scraping, autoScroll, getFromFile, httpsDownload };
+const scrapingNew = async (
+  browser: Browser,
+  elements: ElementHandle<Element>[],
+) => {
+  let navigationURLs = [] as string[];
+
+  for (const element of elements) {
+    const el_for_click = await element.$("a");
+
+    if (!el_for_click)
+      throw new Error("element not exist!element:" + el_for_click);
+
+    await el_for_click.evaluate((el) => {
+      const mouseEvent = new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        button: 1, // Middle button code
+      });
+      el.dispatchEvent(mouseEvent);
+    });
+
+    const [tab] = await Promise.all<Page | null>([
+      new Promise((resolve) =>
+        browser.once("targetcreated", async (target) => {
+          await new Promise((res) => setTimeout(res, 3000));
+          resolve(target.page());
+        }),
+      ),
+    ]);
+
+    if (!tab) throw new Error("tab not exist!\ntab: " + tab);
+
+    await tab.waitForSelector("div.rail-module.recent-images-module");
+
+    const newUrl = tab.url();
+    navigationURLs = [...navigationURLs, newUrl];
+
+    await tab.close(); // Fecha a aba se quiser
+  }
+
+  console.log("Scraping URLs ✅");
+  return navigationURLs;
+};
+
+const click = { scraping: scrapingNew };
+
+export const url = { scraping, autoScroll, getFromFile, httpsDownload, click };

@@ -16,7 +16,7 @@ import { enemies } from "./enemies";
 import { common } from "../common";
 import { file } from "../file";
 import { url } from "../url";
-import { fixs } from "../fix";
+import { materials } from "../materials";
 
 const character = async () => {
   await terminal.start();
@@ -30,7 +30,7 @@ const character = async () => {
     await common.startPage(
       page,
       "https://wiki.hoyolab.com/pc/genshin/aggregate/2",
-      ".genshin-show-character-wrapper"
+      ".genshin-show-character-wrapper",
     );
 
     await common.changeLanguage(page, { selected: "PT", name: "Português" });
@@ -58,7 +58,7 @@ const weapon = async () => {
     await common.startPage(
       page,
       "https://wiki.hoyolab.com/pc/genshin/aggregate/4",
-      "div.genshin-show-weapon-wrapper"
+      "div.genshin-show-weapon-wrapper",
     );
 
     await common.changeLanguage(page, { selected: "PT", name: "Português" });
@@ -125,7 +125,38 @@ const metadade = async () => {
   metadata.processing();
 };
 
-const fix = () => {};
+const drop = async () => {
+  await terminal.start();
+
+  const browser = await puppeteer.launch({ headless: false });
+  const page = await browser.newPage();
+
+  let urls;
+
+  await common.startPage(
+    page,
+    "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
+    "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
+  );
+
+  const [
+    global,
+    common_el,
+    levelUp_el,
+    ascension_el,
+    talent_el,
+    ascension_weapon_el,
+  ] = await page.$$("table.nowraplinks.mw-collapsible");
+
+  materials.common([], common_el, browser);
+  // materials.character.levelUp();
+  // materials.character.talent();
+  // materials.character.ascension();
+  // materials.weapon.ascension();
+  // materials.weapon.refinement();
+
+  console.log("Drops Scraping ✅");
+};
 
 export const scraping = {
   character,
@@ -134,5 +165,5 @@ export const scraping = {
   enemy,
   collection,
   metadade,
-  fix,
+  drop,
 };

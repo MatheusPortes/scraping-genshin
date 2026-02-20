@@ -14,6 +14,7 @@ import {
   Vision,
 } from "../../types";
 import { file } from "../../file";
+import { url } from "../../url";
 
 const modalEvade = async (page: Page) => {
   await page.waitForSelector("div button#onetrust-accept-btn-handler");
@@ -30,7 +31,7 @@ const urls = async () => {
   await common.startPage(
     page,
     "https://genshin-impact.fandom.com/wiki/Enemy/List",
-    "div.mw-content-ltr.mw-parser-output"
+    "div.mw-content-ltr.mw-parser-output",
   );
 
   await modalEvade(page);
@@ -41,43 +42,7 @@ const urls = async () => {
   for (const element of card_list) {
     const cards_el = await element.$$("div.card-container");
 
-    for (const element of cards_el) {
-      const el_for_click = await element.$("a");
-
-      if (!el_for_click)
-        throw new Error("element not exist!element:" + el_for_click);
-
-      await el_for_click.evaluate((el) => {
-        const mouseEvent = new MouseEvent("click", {
-          view: window,
-          bubbles: true,
-          cancelable: true,
-          button: 1, // Middle button code
-        });
-        el.dispatchEvent(mouseEvent);
-      });
-
-      const [tab] = await Promise.all<Page | null>([
-        new Promise((resolve) =>
-          browser.once("targetcreated", async (target) => {
-            await new Promise((res) => setTimeout(res, 3000));
-            resolve(target.page());
-          })
-        ),
-      ]);
-
-      if (!tab) throw new Error("tab not exist!\ntab: " + tab);
-
-      // Espera a nova aba carregar
-      // div.rail-module.recent-images-module
-      // div div.widget-header
-      await tab.waitForSelector("div.rail-module.recent-images-module");
-
-      const newUrl = tab.url();
-      navigationURLs = [...navigationURLs, newUrl];
-
-      await tab.close(); // Fecha a aba se quiser
-    }
+    navigationURLs = await url.click.scraping(browser, cards_el);
   }
   browser.close();
 
@@ -342,7 +307,7 @@ const onDescription = async (page: Page) => {
     const parent = el.parentElement;
 
     const description_child_nodes_el = parent?.querySelector(
-      "div.description-content"
+      "div.description-content",
     )?.childNodes;
 
     if (description_child_nodes_el)
