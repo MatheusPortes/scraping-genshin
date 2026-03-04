@@ -1,4 +1,4 @@
-import puppeteer from "puppeteer";
+import puppeteer, { ElementHandle, Page } from "puppeteer";
 import moment from "moment";
 import path from "path";
 import fs from "fs";
@@ -131,8 +131,6 @@ const drop = async () => {
   const browser = await puppeteer.launch({ headless: false });
   const page = await browser.newPage();
 
-  let urls;
-
   await common.startPage(
     page,
     "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
@@ -148,7 +146,19 @@ const drop = async () => {
     ascension_weapon_el,
   ] = await page.$$("table.nowraplinks.mw-collapsible");
 
-  materials.common([], common_el, browser);
+  let urls = await url.getFromFile("materials/common/urls");
+
+  if (!urls) {
+    urls = await materials.common.urls(common_el);
+  }
+  // urls = await enemies.urls();
+
+  const data = moment().format("MM-DD-YYYY");
+  // fs.writeFileSync(
+  //   `logs/materials/common/urls/${data}.json`,
+  //   JSON.stringify(urls),
+  // );
+
   // materials.character.levelUp();
   // materials.character.talent();
   // materials.character.ascension();

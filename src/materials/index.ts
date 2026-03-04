@@ -1,18 +1,36 @@
-import { Browser, ElementHandle } from "puppeteer";
-import { url } from "../url";
+import { ElementHandle } from "puppeteer";
+
+export interface CommonUrls {
+  href: string | null;
+  img_url: string | null;
+}
+
+const urls = async (
+  element: ElementHandle<HTMLTableElement>,
+): Promise<CommonUrls[]> => {
+  const cards_el = await element.$$("div.card-container.mini-card");
+
+  let urls: { href: string | null; img_url: string | null }[] = [];
+
+  for (const el of cards_el) {
+    const a_el = await el.$("a");
+    if (!a_el) throw new Error("element not found!");
+    const href = await a_el.evaluate((el) => el.getAttribute("href"));
+
+    const img_el = await el.$("img");
+    if (!img_el) throw new Error("element not found!");
+    const img_url = await img_el.evaluate((el) => el.getAttribute("data-src"));
+
+    urls.push({ href, img_url });
+  }
+
+  return urls;
+};
 
 // Character and Weapon Enhancement Materials
-const common = async (
-  element: ElementHandle<HTMLTableElement>,
-  browser: Browser,
-  urls?: string[],
-) => {
-  if (!urls || !urls.length) {
-    const cards_el = await element.$$("div.card-container.mini-card");
-
-    urls = await url.click.scraping(browser, cards_el);
-    console.log(urls);
-  }
+const common = {
+  urls,
+  scraping: () => {},
 };
 // Character Level-Up Materials
 const levelUp = () => {};

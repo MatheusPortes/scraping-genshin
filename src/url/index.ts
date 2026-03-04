@@ -68,7 +68,9 @@ const scraping = async (
   return navigationURLs;
 };
 
-const getFromFile = async (folder: "character" | "weapon" | "enemy") => {
+const getFromFile = async (
+  folder: "character" | "weapon" | "enemy" | string,
+) => {
   const data = moment().format("MM-DD-YYYY");
   const filePath = path.join(__dirname, `../../logs/${folder}`, `${data}.json`);
   let urls: string[] | undefined;
