@@ -1,37 +1,19 @@
-import { ElementHandle } from "puppeteer";
+import puppeteer, { LaunchOptions, Page } from "puppeteer";
+import { common } from "./common";
 
-export interface CommonUrls {
-  href: string | null;
-  img_url: string | null;
-}
+const noRecaptcha = async <T>(
+  callback: (page: Page) => T,
+  options?: LaunchOptions,
+) => {
+  const browser = await puppeteer.launch(options);
+  const page = await browser.newPage();
 
-const urls = async (
-  element: ElementHandle<HTMLTableElement>,
-): Promise<CommonUrls[]> => {
-  const cards_el = await element.$$("div.card-container.mini-card");
+  const response = await callback(page);
 
-  let urls: { href: string | null; img_url: string | null }[] = [];
-
-  for (const el of cards_el) {
-    const a_el = await el.$("a");
-    if (!a_el) throw new Error("element not found!");
-    const href = await a_el.evaluate((el) => el.getAttribute("href"));
-
-    const img_el = await el.$("img");
-    if (!img_el) throw new Error("element not found!");
-    const img_url = await img_el.evaluate((el) => el.getAttribute("data-src"));
-
-    urls.push({ href, img_url });
-  }
-
-  return urls;
+  browser.close();
+  return response;
 };
 
-// Character and Weapon Enhancement Materials
-const common = {
-  urls,
-  scraping: () => {},
-};
 // Character Level-Up Materials
 const levelUp = () => {};
 // Character Ascension Materials
@@ -50,4 +32,5 @@ export const materials = {
   common,
   weapon,
   character,
+  noRecaptcha,
 };

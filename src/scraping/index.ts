@@ -128,29 +128,45 @@ const metadade = async () => {
 const drop = async () => {
   await terminal.start();
 
-  const browser = await puppeteer.launch({ headless: false });
-  const page = await browser.newPage();
+  const get = await materials.noRecaptcha(
+    async (page) => {
+      await common.startPage(
+        page,
+        "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
+        "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
+      );
 
-  await common.startPage(
-    page,
-    "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
-    "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
+      const [
+        global,
+        common_el,
+        levelUp_el,
+        ascension_el,
+        talent_el,
+        ascension_weapon_el,
+      ] = await page.$$("table.nowraplinks.mw-collapsible");
+
+      const enhancementMaterialsUrls = await materials.common.metadata(
+        page,
+        common_el,
+      );
+
+      return {
+        elements: [
+          global,
+          common_el,
+          levelUp_el,
+          ascension_el,
+          talent_el,
+          ascension_weapon_el,
+        ],
+        enhancementMaterialsUrls,
+      };
+    },
+    { headless: false },
   );
 
-  const [
-    global,
-    common_el,
-    levelUp_el,
-    ascension_el,
-    talent_el,
-    ascension_weapon_el,
-  ] = await page.$$("table.nowraplinks.mw-collapsible");
+  console.log(get);
 
-  let urls = await url.getFromFile("materials/common/urls");
-
-  if (!urls) {
-    urls = await materials.common.urls(common_el);
-  }
   // urls = await enemies.urls();
 
   const data = moment().format("MM-DD-YYYY");
