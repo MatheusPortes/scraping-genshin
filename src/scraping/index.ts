@@ -19,177 +19,230 @@ import { url } from "../url";
 import { materials } from "../materials";
 
 const character = async () => {
-  await terminal.start();
+    await terminal.start();
 
-  let urls = await url.getFromFile("character");
+    let urls = await url.getFromFile("character");
 
-  if (!urls) {
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
+    if (!urls) {
+        const browser = await puppeteer.launch({ headless: false });
+        const page = await browser.newPage();
 
-    await common.startPage(
-      page,
-      "https://wiki.hoyolab.com/pc/genshin/aggregate/2",
-      ".genshin-show-character-wrapper",
-    );
+        await common.startPage(
+            page,
+            "https://wiki.hoyolab.com/pc/genshin/aggregate/2",
+            ".genshin-show-character-wrapper",
+        );
 
-    await common.changeLanguage(page, { selected: "PT", name: "Português" });
+        await common.changeLanguage(page, { selected: "PT", name: "Português" });
 
-    await url.autoScroll(page, ".genshin-show-character-wrapper", 10000); // Executa o scroll
+        await url.autoScroll(page, ".genshin-show-character-wrapper", 10000); // Executa o scroll
 
-    urls = await url.scraping(page, browser, "article.character-card");
+        urls = await url.scraping(page, browser, "article.character-card");
 
-    const data = moment().format("MM-DD-YYYY");
-    fs.writeFileSync(`logs/character/${data}.json`, JSON.stringify(urls));
-  }
+        const data = moment().format("MM-DD-YYYY");
+        fs.writeFileSync(`logs/character/${data}.json`, JSON.stringify(urls));
+    }
 
-  if (urls?.length) await scrapingCharacter.dateScraping(urls);
+    if (urls?.length) await scrapingCharacter.dateScraping(urls);
 };
 
 const weapon = async () => {
-  await terminal.start();
+    await terminal.start();
 
-  let urls = await url.getFromFile("weapon");
+    let urls = await url.getFromFile("weapon");
 
-  if (!urls) {
-    const browser = await puppeteer.launch({ headless: false });
-    const page = await browser.newPage();
+    if (!urls) {
+        const browser = await puppeteer.launch({ headless: false });
+        const page = await browser.newPage();
 
-    await common.startPage(
-      page,
-      "https://wiki.hoyolab.com/pc/genshin/aggregate/4",
-      "div.genshin-show-weapon-wrapper",
-    );
+        await common.startPage(
+            page,
+            "https://wiki.hoyolab.com/pc/genshin/aggregate/4",
+            "div.genshin-show-weapon-wrapper",
+        );
 
-    await common.changeLanguage(page, { selected: "PT", name: "Português" });
+        await common.changeLanguage(page, { selected: "PT", name: "Português" });
 
-    await url.autoScroll(page, "div.genshin-show-weapon", 12000); // Executa o scroll
+        await url.autoScroll(page, "div.genshin-show-weapon", 12000); // Executa o scroll
 
-    urls = await url.scraping(page, browser, "div.weapon-card.pc");
+        urls = await url.scraping(page, browser, "div.weapon-card.pc");
 
-    const data = moment().format("MM-DD-YYYY");
-    fs.writeFileSync(`logs/weapon/${data}.json`, JSON.stringify(urls));
-  }
+        const data = moment().format("MM-DD-YYYY");
+        fs.writeFileSync(`logs/weapon/${data}.json`, JSON.stringify(urls));
+    }
 
-  if (urls?.length) await scrapingWeapon.onScraping(urls);
+    if (urls?.length) await scrapingWeapon.onScraping(urls);
 };
 
 const enemy = async () => {
-  await terminal.start();
+    await terminal.start();
 
-  let urls = await url.getFromFile("enemy");
+    let urls = await url.getFromFile("enemy");
 
-  if (!urls) {
-    urls = await enemies.urls();
+    if (!urls) {
+        urls = await enemies.urls();
 
-    const data = moment().format("MM-DD-YYYY");
-    fs.writeFileSync(`logs/enemy/${data}.json`, JSON.stringify(urls));
-  }
+        const data = moment().format("MM-DD-YYYY");
+        fs.writeFileSync(`logs/enemy/${data}.json`, JSON.stringify(urls));
+    }
 
-  const enemies_metadade = await enemies.metadade(urls);
+    const enemies_metadade = await enemies.metadade(urls);
 
-  console.log(enemies_metadade);
+    console.log(enemies_metadade);
 };
 
 const collection = async () => {
-  let diretorio = path.join(__dirname, "../../logs/metadata");
-  let metadades = [] as Metadade[];
+    let diretorio = path.join(__dirname, "../../logs/metadata");
+    let metadades = [] as Metadade[];
 
-  const file_name = fs.readdirSync(diretorio, { encoding: "utf-8" });
+    const file_name = fs.readdirSync(diretorio, { encoding: "utf-8" });
 
-  for (const name of file_name) {
-    const data = file.get<Metadade>(diretorio, name);
+    for (const name of file_name) {
+        const data = file.get<Metadade>(diretorio, name);
 
-    if (data) metadades = [...metadades, data];
-  }
+        if (data) metadades = [...metadades, data];
+    }
 
-  const { family, group, type } = await collections.groupingEnemies(metadades);
+    const { family, group, type } = await collections.groupingEnemies(metadades);
 
-  diretorio = path.join(__dirname, "../../logs/being");
+    diretorio = path.join(__dirname, "../../logs/being");
 
-  let beings_group = file.get<ListBeing[]>(`${diretorio}`, "group.json");
-  if (!beings_group) beings_group = await beings.group(group);
+    let beings_group = file.get<ListBeing[]>(`${diretorio}`, "group.json");
+    if (!beings_group) beings_group = await beings.group(group);
 
-  let beings_family = file.get<ListBeing[]>(`${diretorio}`, "family.json");
-  if (!beings_family) beings_family = await beings.family(family);
+    let beings_family = file.get<ListBeing[]>(`${diretorio}`, "family.json");
+    if (!beings_family) beings_family = await beings.family(family);
 
-  let beings_type = file.get<ListBeing[]>(`${diretorio}`, "type.json");
-  if (!beings_type) beings_type = await beings.type(type);
+    let beings_type = file.get<ListBeing[]>(`${diretorio}`, "type.json");
+    if (!beings_type) beings_type = await beings.type(type);
 
-  return { beings_family, beings_group, beings_type };
+    return { beings_family, beings_group, beings_type };
 };
 
 const metadade = async () => {
-  await terminal.start();
+    await terminal.start();
 
-  metadata.processing();
+    metadata.processing();
 };
 
 const drop = async () => {
-  await terminal.start();
+    await terminal.start();
 
-  const get = await materials.noRecaptcha(
-    async (page) => {
-      await common.startPage(
-        page,
-        "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
-        "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
-      );
+    const commonMaterials = await materials.noRecaptcha(
+        async (page) => {
+            await common.startPage(
+                page,
+                "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
+                "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
+            );
 
-      const [
-        global,
-        common_el,
-        levelUp_el,
-        ascension_el,
-        talent_el,
-        ascension_weapon_el,
-      ] = await page.$$("table.nowraplinks.mw-collapsible");
+            const [_, common_el] = await page.$$("table.nowraplinks.mw-collapsible");
 
-      const enhancementMaterialsUrls = await materials.common.metadata(
-        page,
-        common_el,
-      );
+            const enhancementMaterialsUrls = await materials.common.metadata(page, common_el);
 
-      return {
-        elements: [
-          global,
-          common_el,
-          levelUp_el,
-          ascension_el,
-          talent_el,
-          ascension_weapon_el,
-        ],
-        enhancementMaterialsUrls,
-      };
-    },
-    { headless: false },
-  );
+            return {
+                elements: [common_el],
+                enhancementMaterialsUrls,
+            };
+        },
+        { headless: false, close: true },
+    );
 
-  console.log(get);
+    for (const [index, { href }] of commonMaterials.enhancementMaterialsUrls.entries()) {
+        await materials.noRecaptcha(
+            async (page) => {
+                await common.startPage(
+                    page,
+                    `https://genshin-impact.fandom.com${href}`,
+                    "div.dynamicCarousel__wrapper",
+                );
 
-  // urls = await enemies.urls();
+                const name = await page.$eval("h1.page-header__title", (el) => el.textContent.trim());
 
-  const data = moment().format("MM-DD-YYYY");
-  // fs.writeFileSync(
-  //   `logs/materials/common/urls/${data}.json`,
-  //   JSON.stringify(urls),
-  // );
+                const { descrition, enimies } = await page.$eval("div#toc", (el) => {
+                    function getEnemies(el: Element | null) {
+                        const p_el = previousElement(el);
+                        if (!p_el) return;
+                        const title_el = previousElement(p_el);
 
-  // materials.character.levelUp();
-  // materials.character.talent();
-  // materials.character.ascension();
-  // materials.weapon.ascension();
-  // materials.weapon.refinement();
+                        let enimies: string[] = [];
+                        if (p_el.nodeName === "P" && title_el?.textContent.trim().includes("Drops")) {
+                            const a_el = el?.querySelectorAll("span.card-caption.auto-width");
+                            a_el?.forEach((el) => enimies.push(el.textContent.trim()));
+                        }
 
-  console.log("Drops Scraping ✅");
+                        return enimies;
+                    }
+
+                    function nextElement(el: Element | null) {
+                        return el?.nextElementSibling;
+                    }
+
+                    function previousElement(el: Element | null) {
+                        return el?.previousElementSibling;
+                    }
+
+                    let el_: Element | null | undefined = el;
+                    do {
+                        if (!el_) throw new Error("not fount element");
+
+                        el_ = nextElement(el_);
+                    } while (el_?.nodeName !== "SPAN");
+
+                    const descrition_el = previousElement(el);
+
+                    const enimies = getEnemies(el_);
+
+                    return {
+                        enimies,
+                        descrition: descrition_el?.textContent.trim(),
+                    };
+                });
+
+                const nextPage = await page.$$eval("div.pi-item.pi-data.pi-item-spacing.pi-border-color", (el) => {
+                    for (const element of el) {
+                        const key = element.firstElementChild?.textContent.trim();
+
+                        if (key === "Item Group") {
+                            const lastElementChild = element.lastElementChild?.querySelector("a");
+
+                            return lastElementChild?.getAttribute("href");
+                        }
+                    }
+                });
+
+                !enimies?.length && console.log("Index:\n" + index, name, descrition, enimies, nextPage);
+
+                console.log("Close page 🛑");
+                return;
+            },
+            { close: false, headless: false },
+        );
+    }
+
+    // urls = await enemies.urls();
+
+    const data = moment().format("MM-DD-YYYY");
+    // fs.writeFileSync(
+    //   `logs/materials/common/urls/${data}.json`,
+    //   JSON.stringify(urls),
+    // );
+
+    // materials.character.levelUp();
+    // materials.character.talent();
+    // materials.character.ascension();
+    // materials.weapon.ascension();
+    // materials.weapon.refinement();
+
+    console.log("Drops Scraping ✅");
 };
 
 export const scraping = {
-  character,
-  weapon,
-  release,
-  enemy,
-  collection,
-  metadade,
-  drop,
+    character,
+    weapon,
+    release,
+    enemy,
+    collection,
+    metadade,
+    drop,
 };

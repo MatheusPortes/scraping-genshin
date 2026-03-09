@@ -1,16 +1,20 @@
 import puppeteer, { LaunchOptions, Page } from "puppeteer";
 import { common } from "./common";
 
+interface Options extends LaunchOptions {
+  close?: boolean;
+}
+
 const noRecaptcha = async <T>(
   callback: (page: Page) => T,
-  options?: LaunchOptions,
+  options: Options = { headless: false, close: false },
 ) => {
   const browser = await puppeteer.launch(options);
   const page = await browser.newPage();
 
   const response = await callback(page);
 
-  browser.close();
+  options.close && browser.close();
   return response;
 };
 
