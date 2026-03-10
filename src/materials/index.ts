@@ -2,20 +2,17 @@ import puppeteer, { LaunchOptions, Page } from "puppeteer";
 import { common } from "./common";
 
 interface Options extends LaunchOptions {
-  close?: boolean;
+    close?: boolean;
 }
 
-const noRecaptcha = async <T>(
-  callback: (page: Page) => T,
-  options: Options = { headless: false, close: false },
-) => {
-  const browser = await puppeteer.launch(options);
-  const page = await browser.newPage();
+const noRecaptcha = async <T>(callback: (page: Page) => T, options: Options = { headless: false, close: false }) => {
+    const browser = await puppeteer.launch(options);
+    const page = await browser.newPage();
 
-  const response = await callback(page);
+    const response = await callback(page);
 
-  options.close && browser.close();
-  return response;
+    options.close && browser.close();
+    return response;
 };
 
 // Character Level-Up Materials
@@ -33,8 +30,8 @@ const character = { levelUp, ascension, talent };
 const weapon = { refinement, ascension: ascensionWeapon };
 
 export const materials = {
-  common,
-  weapon,
-  character,
-  noRecaptcha,
+    common,
+    weapon,
+    character,
+    noRecaptcha,
 };

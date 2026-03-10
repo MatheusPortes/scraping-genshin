@@ -140,6 +140,7 @@ const drop = async () => {
 
             const enhancementMaterialsUrls = await materials.common.metadata(page, common_el);
 
+            console.log("Close page 🛑");
             return {
                 elements: [common_el],
                 enhancementMaterialsUrls,
@@ -148,9 +149,10 @@ const drop = async () => {
         { headless: false, close: true },
     );
 
-    for (const [index, { href }] of commonMaterials.enhancementMaterialsUrls.entries()) {
+    for (const [index, { href }] of [commonMaterials.enhancementMaterialsUrls[139]].entries()) {
         await materials.noRecaptcha(
             async (page) => {
+                console.log("Index:" + index);
                 await common.startPage(
                     page,
                     `https://genshin-impact.fandom.com${href}`,
@@ -161,8 +163,12 @@ const drop = async () => {
 
                 const { descrition, enimies } = await page.$eval("div#toc", (el) => {
                     function getEnemies(el: Element | null) {
+                        if (!el) return [] as string[];
+
                         const p_el = previousElement(el);
-                        if (!p_el) return;
+
+                        if (!p_el) return [] as string[];
+
                         const title_el = previousElement(p_el);
 
                         let enimies: string[] = [];
@@ -175,19 +181,17 @@ const drop = async () => {
                     }
 
                     function nextElement(el: Element | null) {
-                        return el?.nextElementSibling;
+                        return el?.nextElementSibling ?? null;
                     }
 
                     function previousElement(el: Element | null) {
-                        return el?.previousElementSibling;
+                        return el?.previousElementSibling ?? null;
                     }
 
-                    let el_: Element | null | undefined = el;
+                    let el_: Element | null = el;
                     do {
-                        if (!el_) throw new Error("not fount element");
-
-                        el_ = nextElement(el_);
-                    } while (el_?.nodeName !== "SPAN");
+                        if (el_) el_ = nextElement(el_);
+                    } while (!!el_ && el_.nodeName !== "SPAN");
 
                     const descrition_el = previousElement(el);
 
@@ -199,19 +203,76 @@ const drop = async () => {
                     };
                 });
 
-                const nextPage = await page.$$eval("div.pi-item.pi-data.pi-item-spacing.pi-border-color", (el) => {
-                    for (const element of el) {
-                        const key = element.firstElementChild?.textContent.trim();
+                const { nextPage, quality } = await page.$$eval(
+                    "div.pi-item.pi-data.pi-item-spacing.pi-border-color",
+                    (el) => {
+                        let quality: number | string | null | undefined;
+                        let nextPage: string | null | undefined;
 
-                        if (key === "Item Group") {
-                            const lastElementChild = element.lastElementChild?.querySelector("a");
+                        for (const element of el) {
+                            const key = element.firstElementChild?.textContent.trim();
 
-                            return lastElementChild?.getAttribute("href");
+                            if (key === "Item Group") {
+                                const lastElementChild = element.lastElementChild?.querySelector("a");
+
+                                nextPage = lastElementChild?.getAttribute("href");
+                            }
+
+                            if (key === "Quality") {
+                                const lastElementChild = element.lastElementChild?.querySelector("img");
+                                const alt = lastElementChild?.getAttribute("alt");
+                                quality = alt?.replace(/\D/g, "");
+                                if (quality) Number(quality);
+                            }
                         }
+
+                        return { quality, nextPage };
+                    },
+                );
+
+                await page.$eval("div#toc", (el) => {
+                    function getEnemies(el: Element | null) {
+                        if (!el) return [] as string[];
+
+                        const p_el = previousElement(el);
+
+                        if (!p_el) return [] as string[];
+
+                        const title_el = previousElement(p_el);
+
+                        let enimies: string[] = [];
+                        if (p_el.nodeName === "P" && title_el?.textContent.trim().includes("Drops")) {
+                            const a_el = el?.querySelectorAll("span.card-caption.auto-width");
+                            a_el?.forEach((el) => enimies.push(el.textContent.trim()));
+                        }
+
+                        return enimies;
                     }
+
+                    function nextElement(el: Element | null) {
+                        return el?.nextElementSibling ?? null;
+                    }
+
+                    function previousElement(el: Element | null) {
+                        return el?.previousElementSibling ?? null;
+                    }
+
+                    let el_: Element | null = el;
+                    do {
+                        if (el_) el_ = previousElement(el_);
+                    } while (!!el_ && el_.nodeName !== "SPAN");
+
+                    const descrition_el = previousElement(el);
+
+                    const enimies = getEnemies(el_);
+
+                    return {
+                        enimies,
+                        descrition: descrition_el?.textContent.trim(),
+                    };
                 });
 
-                !enimies?.length && console.log("Index:\n" + index, name, descrition, enimies, nextPage);
+                console.log(name, descrition, enimies, quality, nextPage);
 
                 console.log("Close page 🛑");
                 return;
