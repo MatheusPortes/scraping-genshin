@@ -231,26 +231,23 @@ const drop = async () => {
                 );
 
                 await page.$eval("div#toc", (el) => {
-                    function getEnemies(el: Element | null) {
-                        if (!el) return [] as string[];
+                    function getSharedString(arr: string[]) {
+                        if (!arr.length) return "";
 
-                        const p_el = previousElement(el);
+                        // Start by assuming the first string is the common one
+                        let common = arr[0];
 
-                        if (!p_el) return [] as string[];
+                        for (let i = 1; i < arr.length; i++) {
+                            // While the current item doesn't contain the 'common' string
+                            while (arr[i].indexOf(common) === -1) {
+                                // Shorten the common string by one character from the end
+                                // You can also shorten from the start depending on your needs
+                                common = common.substring(1);
 
-                        const title_el = previousElement(p_el);
-
-                        let enimies: string[] = [];
-                        if (p_el.nodeName === "P" && title_el?.textContent.trim().includes("Drops")) {
-                            const a_el = el?.querySelectorAll("span.card-caption.auto-width");
-                            a_el?.forEach((el) => enimies.push(el.textContent.trim()));
+                                if (common === "") return "";
+                            }
                         }
-
-                        return enimies;
-                    }
-
-                    function nextElement(el: Element | null) {
-                        return el?.nextElementSibling ?? null;
+                        return common.trim();
                     }
 
                     function previousElement(el: Element | null) {
@@ -260,15 +257,18 @@ const drop = async () => {
                     let el_: Element | null = el;
                     do {
                         if (el_) el_ = previousElement(el_);
+                        if (el_?.className === "card-container") {
+                            console.log(el_);
+                        }
                     } while (!!el_ && el_.nodeName !== "SPAN");
 
-                    const descrition_el = previousElement(el);
+                    // const descrition_el = previousElement(el);
 
-                    const enimies = getEnemies(el_);
+                    // const enimies = getEnemies(el_);
 
                     return {
-                        enimies,
-                        descrition: descrition_el?.textContent.trim(),
+                        // enimies,
+                        // descrition: descrition_el?.textContent.trim(),
                     };
                 });
 
