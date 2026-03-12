@@ -125,6 +125,23 @@ const metadade = async () => {
     metadata.processing();
 };
 
+interface Materials {
+    name: string | undefined;
+    quality: string | undefined;
+}
+interface Group {
+    materials: Materials[];
+    name: string;
+}
+interface CommonMaterials {
+    name: string;
+    descrition: string | undefined;
+    enimies: string[];
+    quality: string | number | null | undefined;
+    nextPage: string | null | undefined;
+    group: Group | undefined;
+}
+
 const drop = async () => {
     await terminal.start();
 
@@ -149,10 +166,10 @@ const drop = async () => {
         { headless: false, close: true },
     );
 
-    for (const [index, { href }] of [commonMaterials.enhancementMaterialsUrls[139]].entries()) {
-        await materials.noRecaptcha(
+    let commonMaterialsMeta: CommonMaterials[] = [];
+    for (const { href } of commonMaterials.enhancementMaterialsUrls) {
+        const data = await materials.noRecaptcha(
             async (page) => {
-                console.log("Index:" + index);
                 await common.startPage(
                     page,
                     `https://genshin-impact.fandom.com${href}`,
@@ -230,7 +247,7 @@ const drop = async () => {
                     },
                 );
 
-                await page.$eval("div#toc", (el) => {
+                const group = await page.$eval("div#toc", (el) => {
                     function getSharedString(arr: string[]) {
                         if (!arr.length) return "";
 
@@ -255,29 +272,55 @@ const drop = async () => {
                     }
 
                     let el_: Element | null = el;
+                    let cards_el: Element[] = [];
                     do {
                         if (el_) el_ = previousElement(el_);
-                        if (el_?.className === "card-container") {
-                            console.log(el_);
-                        }
+                        if (el_?.className === "card-container") cards_el.push(el_);
                     } while (!!el_ && el_.nodeName !== "SPAN");
 
-                    // const descrition_el = previousElement(el);
+                    let materials: { name: string | undefined; quality: string | undefined }[] = [];
+                    for (const el of cards_el) {
+                        const name = el.querySelector(".card-caption")?.textContent.trim();
+                        const class_list = el.querySelector("span.card-image-container")?.classList;
+                        const quality = class_list?.item(1)?.replace(/\D/g, "");
 
-                    // const enimies = getEnemies(el_);
+                        materials.push({ name, quality });
+                    }
 
-                    return {
-                        // enimies,
-                        // descrition: descrition_el?.textContent.trim(),
-                    };
+                    if (materials.length) {
+                        const name = getSharedString(materials.map(({ name }) => name ?? ""));
+
+                        return {
+                            materials,
+                            name,
+                        };
+                    }
                 });
 
-                console.log(name, descrition, enimies, quality, nextPage);
+                console.log("Close page 🛑");
+                return { name, descrition, enimies, quality, nextPage, group };
+            },
+            { close: true, headless: false },
+        );
+
+        commonMaterialsMeta.push(data);
+    }
+
+    for (const { nextPage } of commonMaterialsMeta) {
+        const data = await materials.noRecaptcha(
+            async (page) => {
+                if (!nextPage) return;
+
+                await common.startPage(
+                    page,
+                    `https://genshin-impact.fandom.com${nextPage}`,
+                    "div.dynamicCarousel__wrapper",
+                );
 
                 console.log("Close page 🛑");
-                return;
+                return {};
             },
-            { close: false, headless: false },
+            { close: true, headless: false },
         );
     }
 
