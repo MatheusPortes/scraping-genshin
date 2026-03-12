@@ -129,7 +129,6 @@ const drop = async () => {
     await terminal.start();
 
     let filePath = path.join(__dirname, `/logs/material`);
-
     let commonMaterials = file.get(filePath, "common");
 
     if (!commonMaterials) {
@@ -139,13 +138,6 @@ const drop = async () => {
     }
 
     console.log(commonMaterials);
-    // urls = await enemies.urls();
-
-    const data = moment().format("MM-DD-YYYY");
-    // fs.writeFileSync(
-    //   `logs/materials/common/urls/${data}.json`,
-    //   JSON.stringify(urls),
-    // );
 
     // materials.character.levelUp();
     // materials.character.talent();
