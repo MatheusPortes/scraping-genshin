@@ -1,0 +1,69 @@
+{
+  "name": "Spiritspeaker Warrior: Contemplator",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/Spiritspeaker_Warrior_Contemplator_Icon.png/revision/latest/scale-to-width-down/185?cb=20241120023207",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/84/Enemy_Spiritspeaker_Warrior_Contemplator.png/revision/latest?cb=20241120084803"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Cryo", "link": "/wiki/Cryo" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          {
+            "name": "Other Human Factions",
+            "link": "/wiki/Other_Human_Factions"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          {
+            "name": "Sauroform Tribal Warriors",
+            "link": "/wiki/Sauroform_Tribal_Warriors"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Sentry's Wooden Whistle", "rarity": [1] },
+    { "name": "Warrior's Metal Whistle", "rarity": [2] },
+    { "name": "Saurian-Crowned Warrior's Golden Whistle", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "-20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A warrior from the Night-Wind, and a tribal guardian that patrols the misty canyons.\nOnly sentries whose strength has been tested are permitted to daub themselves with such body paint, infused as it is with mysterious powers. This also signifies that these warriors have reached a new phase in their mental training.",
+  "element": "Non-Elemental"
+}

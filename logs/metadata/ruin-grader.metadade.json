@@ -1,0 +1,99 @@
+{
+  "name": "Ruin Grader",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/Ruin_Grader_Icon.png/revision/latest/scale-to-width-down/185?cb=20201223150423",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Enemy_Ruin_Grader.png/revision/latest?cb=20210716143615"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Physical", "link": "/wiki/Physical" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          {
+            "name": "Humanoid Ruin Machines",
+            "link": "/wiki/Humanoid_Ruin_Machines"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Dragonspine", "link": "/wiki/Dragonspine" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" },
+          { "name": "The Chasm (Area)", "link": "/wiki/The_Chasm_(Area)" },
+          {
+            "name": "The Chasm: Underground Mines",
+            "link": "/wiki/The_Chasm:_Underground_Mines"
+          },
+          { "name": "Enkanomiya", "link": "/wiki/Enkanomiya" },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" },
+          { "name": "Fontaine", "link": "/wiki/Fontaine" },
+          { "name": "Natlan", "link": "/wiki/Natlan" }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=150"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Anomalous Model Ruin Grader",
+            "link": "/wiki/Anomalous_Model_Ruin_Grader"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Chaos Device", "rarity": [2] },
+    { "name": "Chaos Circuit", "rarity": [3] },
+    { "name": "Chaos Core", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "70%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "An ancient humanoid war machine.\nTheir form is similar to that of Ruin Guards, but is more distorted and more powerful. Energy cores have been installed in both its legs, as though to power its overly heavy form.",
+  "element": "Non-Elemental"
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Dendro Hypostasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/9/9c/Dendro_Hypostasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20221102024609",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/5/5f/Enemy_Dendro_Hypostasis.png/revision/latest?cb=20221202224907"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Dendro", "link": "/wiki/Dendro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hypostases", "link": "/wiki/Hypostases" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Land of Lower Setekh",
+            "link": "/wiki/Land_of_Lower_Setekh"
+          },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Quelled Creeper", "link": "/wiki/Quelled_Creeper" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Quelled Creeper", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Sliver", "rarity": [2] },
+    { "name": "Na­ga­dus Em­er­ald Fragment", "rarity": [3] },
+    { "name": "Na­ga­dus Em­er­ald Chunk", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "Immune" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Code Name: Zayin. A high-purity Dendro entity.\nThere are significant deviations in behavior between this being and the other Elemental Hypostases, though no one has yet produced a reliable conclusion as to why this is the case.",
+  "element": "Dendro"
+}

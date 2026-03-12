@@ -1,0 +1,69 @@
+{
+  "name": "Iktomisaurus Warrior: Icy Tidebearer",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/Iktomisaurus_Warrior_Icy_Tidebearer_Icon.png/revision/latest/scale-to-width-down/185?cb=20241120023159",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/5/56/Enemy_Iktomisaurus_Warrior_Icy_Tidebearer.png/revision/latest?cb=20241121030153"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Cryo", "link": "/wiki/Cryo" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          {
+            "name": "Other Human Factions",
+            "link": "/wiki/Other_Human_Factions"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          {
+            "name": "Sauroform Tribal Warriors",
+            "link": "/wiki/Sauroform_Tribal_Warriors"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Sentry's Wooden Whistle", "rarity": [1] },
+    { "name": "Warrior's Metal Whistle", "rarity": [2] },
+    { "name": "Saurian-Crowned Warrior's Golden Whistle", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "-20%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A powerful warrior from the Night-Wind, whose bravery has been acknowledged and for which they may wear the Saurian Crown.\nTribal warriors from the Masters of the Night-Wind do not typically excel when it comes to conventional strength. Their ability to manipulate weapons with ease comes instead from years of mental training. Thus, compared to combat prowess in itself, warriors from the Masters of the Night-Wind place greater value on the gift of \"Spiritspeaking.\" Drawing upon the power of special graffiti and willpower alone, it is said that the most exceptional of Spiritspeakers can lift boulders as tall as people.",
+  "element": "Cryo"
+}

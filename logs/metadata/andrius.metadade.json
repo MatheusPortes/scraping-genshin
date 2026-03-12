@@ -1,0 +1,101 @@
+{
+  "name": "Andrius",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/Andrius_Icon.png/revision/latest/scale-to-width-down/185?cb=20200724104034",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/0c/Enemy_Boreas.png/revision/latest?cb=20210426192800",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/Enemy_Andrius_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20230820204531"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Wolvendom", "link": "/wiki/Wolvendom" },
+          { "name": "Windwail Highland", "link": "/wiki/Windwail_Highland" },
+          { "name": "Mondstadt", "link": "/wiki/Mondstadt" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Tail of Boreas", "link": "/wiki/Tail_of_Boreas" },
+          { "name": "Ring of Boreas", "link": "/wiki/Ring_of_Boreas" },
+          {
+            "name": "Spirit Locket of Boreas",
+            "link": "/wiki/Spirit_Locket_of_Boreas"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Tail of Boreas", "rarity": [5] },
+    { "name": "Ring of Boreas", "rarity": [5] },
+    { "name": "Spirit Locket of Boreas", "rarity": [5] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Prithiva Topaz Sliver", "rarity": [2] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Prithiva Topaz Frag­ment", "rarity": [3] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Prithiva Topaz Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Prithiva Topaz Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "North­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Pole­arm Bil­let", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "Immune" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "Immune" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Rumor has it that a great eternal power rests at Wolvendom, watching over the wolves..."
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Shatterstone Breacher Primus",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/Shatterstone_Breacher_Primus_Icon.png/revision/latest/scale-to-width-down/185?cb=20230816022805",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/Enemy_Shatterstone_Breacher_Primus.png/revision/latest?cb=20240916083229"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Geo", "link": "/wiki/Geo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Breacher Primuses", "link": "/wiki/Breacher_Primuses" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Rift Core", "rarity": [2] },
+    { "name": "Foreign Synapse", "rarity": [3] },
+    { "name": "Alien Life Core", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "30%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A strange life form that mostly appears in Elynas.\nReceives a powerful shock from encountering ousia or pneuma energy, and thus Breacher Primuses can be driven away using this relatively nonaggressive and noninvasive means.",
+  "element": "Geo"
+}

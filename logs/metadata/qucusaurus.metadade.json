@@ -1,0 +1,60 @@
+{
+  "name": "Qucusaurus",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Qucusaurus_Icon.png/revision/latest/scale-to-width-down/185?cb=20241120023201",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/Enemy_Qucusaurus.png/revision/latest?cb=20241120072314"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Pyro", "link": "/wiki/Pyro" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Juvenile Fang", "rarity": [1] },
+    { "name": "Seasoned Fang", "rarity": [2] },
+    { "name": "Tyrant's Fang", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "50%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A Saurian with large, supple wings that can glide through the air for long periods.\nIt is said that the ancestors of the Qucusaurs were the closest in form to the mighty winged dragons, and that they could soar through the sky like clouds. According to the storytellers, when the greatest of such dragons spread its wings, the entire sky would be blotted out. Of course, the Qucusaurs we see today no longer possess such forms, but the claws they hide within their downy feather coats remain as sharp as ever.",
+  "element": "Pyro"
+}

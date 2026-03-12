@@ -1,0 +1,139 @@
+{
+  "name": "Icewind Suite",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/Icewind_Suite_Icon.png/revision/latest/scale-to-width-down/185?cb=20230816022754",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/86/Enemy_Icewind_Suite.png/revision/latest?cb=20240921063407"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Clockwork Meka", "link": "/wiki/Clockwork_Meka" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Court of Fontaine Region",
+            "link": "/wiki/Court_of_Fontaine_Region"
+          },
+          { "name": "Fontaine", "link": "/wiki/Fontaine" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Ar­ti­ficed Spare Clock­work Com­po­nent — Cop­pe­li­a",
+            "link": "/wiki/Artificed_Spare_Clockwork_Component_%E2%80%94_Coppelia"
+          },
+          {
+            "name": "Ar­ti­ficed Spare Clock­work Com­po­nent — Cop­pe­li­us",
+            "link": "/wiki/Artificed_Spare_Clockwork_Component_%E2%80%94_Coppelius"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Titles", "link": "" },
+        "values": [
+          {
+            "name": "Icewind Suite: Duality, Side AIcewind Suite: Duality, Side B",
+            "link": null
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    {
+      "name": "Ar­ti­ficed Spare Clock­work Com­po­nent — Cop­pe­li­a",
+      "rarity": [4]
+    },
+    {
+      "name": "Ar­ti­ficed Spare Clock­work Com­po­nent — Cop­pe­li­us",
+      "rarity": [4]
+    },
+    { "name": "Va­yu­da Tur­quoise Sli­ver", "rarity": [2] },
+    { "name": "Va­yu­da Tur­quoise Frag­ment", "rarity": [3] },
+    { "name": "Vayuda Turquoise Chunk", "rarity": [4] },
+    { "name": "Vayuda Turquoise Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "Prayers to Springtime", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "70%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "70%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "310%" },
+            { "name": "pyro", "value": "310%" },
+            { "name": "hydro", "value": "310%" },
+            { "name": "electro", "value": "310%" },
+            { "name": "cryo", "value": "370%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "370%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Beginning of Fight"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "35%" },
+            { "name": "pyro", "value": "35%" },
+            { "name": "hydro", "value": "35%" },
+            { "name": "electro", "value": "35%" },
+            { "name": "cryo", "value": "95%" },
+            { "name": "dendro", "value": "35%" },
+            { "name": "anemo", "value": "95%" },
+            { "name": "geo", "value": "35%" }
+          ],
+          "name": "Coppelia's Climax"
+        }
+      ]
+    }
+  ],
+  "description": "A gift from the Fontaine Research Institute, it is composed of two pieces, Dirge of Coppelia and Nemesis of Coppelius.\n\nThe dialogue choices selected determine the challenge and the reward attributes.",
+  "element": "Non-Elemental"
+}

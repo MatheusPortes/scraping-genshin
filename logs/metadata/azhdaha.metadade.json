@@ -1,0 +1,115 @@
+{
+  "name": "Azhdaha",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/Azhdaha_Icon.png/revision/latest/scale-to-width-down/185?cb=20210428062041",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/Enemy_Azhdaha.png/revision/latest?cb=20210508225637",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Enemy_Azhdaha_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20230820204535"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Geo", "link": "/wiki/Geo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" },
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Vishaps", "link": "/wiki/Vishaps" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Beneath the Dragon-Queller",
+            "link": "/wiki/Beneath_the_Dragon-Queller"
+          }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          { "name": "Character Card", "link": "/wiki/Azhdaha_(Character_Card)" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Drag­on Lord's Crown", "rarity": [5] },
+    { "name": "Blood­jade Branch", "rarity": [5] },
+    { "name": "Gil­ded Scale", "rarity": [5] },
+    { "name": "Prithiva Topaz Sliver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Vaj­ra­da A­me­thyst Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Prithiva Topaz Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Vaj­ra­da A­me­thyst Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Prithiva Topaz Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Prithiva Topaz Gem­stone", "rarity": [5] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Vaj­ra­da A­me­thyst Gem­stone", "rarity": [5] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "North­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Pole­arm Bil­let", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "40%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "70%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "An enormous dragon as ancient as the mountains themselves. In an age that has all but faded from memory, he stood shoulder to shoulder with one who ruled over a harbor of stone. But in the end, the two came into conflict, and the dragon was banished to a dark place deep underground.\nOver the long years of his imprisonment, his power has slowly dissipated. He has also become disfigured from the various kinds of erosion he has been subjected to.\nThe faint rattling of this dragon lord's shackles and his deep, angry growl echo through the bowels of the mountains like memories of a bygone era."
+}

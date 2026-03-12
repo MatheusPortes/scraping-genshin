@@ -1,0 +1,106 @@
+{
+  "name": "Magatsu Mitake Narukami no Mikoto",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/Magatsu_Mitake_Narukami_no_Mikoto_Icon.png/revision/latest/scale-to-width-down/185?cb=20220216065534",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/Enemy_Magatsu_Mitake_Narukami_no_Mikoto.png/revision/latest?cb=20240607205122",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/Enemy_Magatsu_Mitake_Narukami_no_Mikoto_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20220507195941"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Electro", "link": "/wiki/Electro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "End of the Oneiric Euthymia",
+            "link": "/wiki/End_of_the_Oneiric_Euthymia"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mudra of the Malefic General", "rarity": [5] },
+    { "name": "Tears of the Calami­tous God", "rarity": [5] },
+    { "name": "The Meaning of Aeons", "rarity": [5] },
+    { "name": "Vaj­ra­da A­me­thyst Sli­ver", "rarity": [2] },
+    { "name": "Vaj­ra­da A­me­thyst Frag­ment", "rarity": [3] },
+    { "name": "Vaj­ra­da A­me­thyst Chunk", "rarity": [4] },
+    { "name": "Vaj­ra­da A­me­thyst Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "North­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "North­lan­der Pole­arm Bil­let", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Normal"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "210%" },
+            { "name": "pyro", "value": "210%" },
+            { "name": "hydro", "value": "210%" },
+            { "name": "electro", "value": "210%" },
+            { "name": "cryo", "value": "210%" },
+            { "name": "dendro", "value": "210%" },
+            { "name": "anemo", "value": "210%" },
+            { "name": "geo", "value": "210%" }
+          ],
+          "name": "Baleful Shadowlord"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "−50%" },
+            { "name": "pyro", "value": "−50%" },
+            { "name": "hydro", "value": "−50%" },
+            { "name": "electro", "value": "−50%" },
+            { "name": "cryo", "value": "−50%" },
+            { "name": "dendro", "value": "−50%" },
+            { "name": "anemo", "value": "−50%" },
+            { "name": "geo", "value": "−50%" }
+          ],
+          "name": "Stunned"
+        }
+      ]
+    }
+  ],
+  "description": "This is the form of the puppet that inherited the Raiden Shogun's authority takes when she is opposing those who threaten Eternity.\nAs the Raiden Shogun's assistant in pursuing eternity, she has never doubted, never felt fear, never given anything less than her best, never been disturbed by idle thoughts.\nShe once heard about how Ei had shouldered a similar duty when Makoto was also present, suffering much agonizing loss in the process. When the two shadows overlapped once more, however, she could only see the countless fine fractures in what should have been \"her\" eternal will. Since fate is destined for cyclicality, she must fulfill her promise and declare war on \"her.\"\n\nMine is the most supreme and noble form. Power over the realm has been vested within me, and I am the essence of all that is the \"Raiden Shogun.\"\"Naturally, I have also inherited the pain of Ei's countless losses and her will to attain eternity.\"Resolve, valor, love, hate... They will all twist in the river of time.\"But the 'rules' will never change\""
+}

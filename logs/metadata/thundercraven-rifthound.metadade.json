@@ -1,0 +1,101 @@
+{
+  "name": "Thundercraven Rifthound",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/Thundercraven_Rifthound_Icon.png/revision/latest/scale-to-width-down/185?cb=20230412030500",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/Enemy_Thundercraven_Rifthound.png/revision/latest?cb=20211029030254"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Electro", "link": "/wiki/Electro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "The Abyss", "link": "/wiki/The_Abyss" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Riftwolves", "link": "/wiki/Riftwolves" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Tsurumi Island", "link": "/wiki/Tsurumi_Island" },
+          { "name": "Inazuma", "link": "/wiki/Inazuma" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Thundercraven_Rifthound_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=265"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Concealed Claw", "rarity": [2] },
+    { "name": "Concealed Unguis", "rarity": [3] },
+    { "name": "Concealed Talon", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "25%" },
+            { "name": "pyro", "value": "25%" },
+            { "name": "hydro", "value": "25%" },
+            { "name": "electro", "value": "25%" },
+            { "name": "cryo", "value": "25%" },
+            { "name": "dendro", "value": "25%" },
+            { "name": "anemo", "value": "25%" },
+            { "name": "geo", "value": "25%" }
+          ],
+          "name": "Normal"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "25%" },
+            { "name": "pyro", "value": "25%" },
+            { "name": "hydro", "value": "25%" },
+            { "name": "electro", "value": "-40%" },
+            { "name": "cryo", "value": "25%" },
+            { "name": "dendro", "value": "25%" },
+            { "name": "anemo", "value": "25%" },
+            { "name": "geo", "value": "25%" }
+          ],
+          "name": "Elemental Devourer"
+        }
+      ]
+    }
+  ],
+  "description": "A beast with monstrous blood that is capable of eroding the boundaries of the world. They were created by \"Gold\". \nOnce upon a time, they ran riot across the continent, but they went extinct for a time due to resistance and mass hunts. Recently, however, they have re-emerged. The pack of black wolves that now threaten Springvale and Wolvendom are such creatures.",
+  "element": "Electro"
+}

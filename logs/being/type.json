@@ -1,0 +1,708 @@
+[
+  {
+    "id": "elite-enemies",
+    "name": "Elite Enemies",
+    "position": [
+      0, 1, 2, 3, 8, 21, 22, 23, 24, 29, 32, 33, 34, 35, 36, 38, 39, 54, 77, 79,
+      80, 81, 82, 95, 99, 100, 104, 105, 106, 112, 113, 126, 128, 143, 165, 167,
+      173, 179, 181, 182, 183, 184, 186, 188, 202, 204, 205, 206, 207, 208, 209,
+      210, 211, 212, 213, 214, 215, 218, 221, 222, 223, 224, 231, 241, 242, 247,
+      256, 257, 258, 259, 278, 285, 286
+    ],
+    "enemies": [
+      "abyss-herald-frost-fall",
+      "abyss-herald-wicked-torrents",
+      "abyss-lector-fathomless-flames",
+      "abyss-lector-violet-lightning",
+      "anemo-hilichurl-rogue",
+      "biting-cold-wayob-manifestation",
+      "black-serpent-knight-rockbreaker-ax",
+      "black-serpent-knight-windcutter",
+      "blazing-axe-mitachurl",
+      "burning-aflame-wayob-manifestation",
+      "consecrated-fanged-beast",
+      "consecrated-flying-serpent",
+      "consecrated-horned-crocodile",
+      "consecrated-red-vulture",
+      "consecrated-scorpion",
+      "crackling-axe-mitachurl",
+      "cryo-abyss-mage",
+      "electro-abyss-mage",
+      "eroding-avatar-of-lava",
+      "eye-of-the-storm",
+      "fatui-cryo-cicin-mage",
+      "fatui-electro-cicin-mage",
+      "fatui-pyro-agent",
+      "flow-inverted-wayob-manifestation",
+      "fluid-avatar-of-lava",
+      "foliar-swift-wayob-manifestation",
+      "frost-operative",
+      "frostarm-lawachurl",
+      "furnace-shell-mountain-weasel",
+      "geovishap-hatchling",
+      "geovishap",
+      "hydro-abyss-mage",
+      "hydro-hilichurl-rogue",
+      "ice-shieldwall-mitachurl",
+      "large-overgrown-breacher-primus",
+      "large-shatterstone-breacher-primus",
+      "mirror-maiden",
+      "overgrown-breacher-primus",
+      "praetorian-golem",
+      "primal-construct-prospector",
+      "primal-construct-repulsor",
+      "primal-construct-reshaper",
+      "primordial-bathysmal-vishap",
+      "pyro-abyss-mage",
+      "rock-cavernous-wayob-manifestation",
+      "rock-shieldwall-mitachurl",
+      "rockfond-rifthound-whelp",
+      "rockfond-rifthound",
+      "ruin-cruiser",
+      "ruin-defender",
+      "ruin-destroyer",
+      "ruin-drake-earthguard",
+      "ruin-drake-skywatch",
+      "ruin-grader",
+      "ruin-guard",
+      "ruin-hunter",
+      "ruin-scout",
+      "secret-source-automaton-hunter-seeker",
+      "shadowy-husk-defender",
+      "shadowy-husk-line-breaker",
+      "shadowy-husk-standard-bearer",
+      "shatterstone-breacher-primus",
+      "stonehide-lawachurl",
+      "tainted-water-splitting-phantasm",
+      "tainted-water-spouting-phantasm",
+      "tenebrous-mimiflora",
+      "thundercraven-rifthound-whelp",
+      "thundercraven-rifthound",
+      "thunderhelm-lawachurl",
+      "thundering-wayob-manifestation",
+      "wind-operative",
+      "wooden-shieldwall-mitachurl",
+      "xuanwen-beast"
+    ],
+    "description": " Players will often find Elite Enemies in the open world while exploring, or in Domains and the Spiral Abyss. \n These enemies are stronger than Common Enemies, and are generally found in sparsely throughout the overworld, either with other Elite Enemies or by themselves. Some Elite Enemies share some drops with Common Enemies, but most Elite Enemies generally have their own unique drop of ascension materials. While some Common Enemies are on par with Elite Enemies in terms of attacks and strength (such as Kairagi and high-leveled Eremites), they are not considered Elite Enemies. At low World Levels, elite enemies have also been noted to drop 1 and 2 star Weapons. Some Elite Enemies will serve as a mini-boss in certain quests.\n Note: There are a limited number of spawns per day, which will reset daily according to whatever the Daily Reset Time is for the player's server/region.\n Elite Enemies generally drop 5 Mora per level, although the values vary based on difficulty - weak Elite Enemies, like Mitachurls, cap at 200, moderates like adult Rifthounds cap at 400, while particularly strong and/or rares like Lawachurls cap at 600 Mora. Rocky Avildsen and Liam drop 50 Mora per level and cap at 3000. They drop three times as much Character EXP compared to Common Enemies at their level bracket. All Elite Enemies may also drop the following Artifacts:\n Drops from Elite Enemies are capped at 400 per day; after this, any Elite Enemies killed afterwards will not award any experience or drops, and is not restricted to World Level.\n",
+    "list": [
+      {
+        "name": "all",
+        "artefact": [
+          {
+            "name": "Traveling Doctor",
+            "rarity": [3],
+            "link": "/wiki/Traveling_Doctor"
+          },
+          {
+            "name": "Ber­ser­ker",
+            "rarity": [3, 4],
+            "link": "/wiki/Berserker"
+          },
+          {
+            "name": "In­struc­tor",
+            "rarity": [3, 4],
+            "link": "/wiki/Instructor"
+          },
+          { "name": "The Exile", "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "normal-bosses",
+    "name": "Normal Bosses",
+    "position": [
+      4, 5, 9, 43, 44, 50, 58, 59, 64, 107, 114, 124, 129, 141, 144, 149, 150,
+      157, 168, 171, 172, 180, 185, 187, 190, 191, 200, 216, 217, 219, 220, 225,
+      229, 248, 255, 274
+    ],
+    "enemies": [
+      "aeonblight-drake",
+      "algorithm-of-semi-intransient-matrix-of-overseer-network",
+      "anemo-hypostasis",
+      "cryo-hypostasis",
+      "cryo-regisvine",
+      "dendro-hypostasis",
+      "electro-hypostasis",
+      "electro-regisvine",
+      "emperor-of-fire-and-iron",
+      "geo-hypostasis",
+      "golden-wolflord",
+      "holawaqa-ngoubou",
+      "hydro-hypostasis",
+      "hydro-tulpa",
+      "icewind-suite",
+      "iniquitous-baptist",
+      "jadeplume-terrorshroom",
+      "kongamato",
+      "lava-dragon-statue",
+      "maguu-kenki",
+      "millennial-pearl-seahorse",
+      "perpetual-mechanical-array",
+      "primo-geovishap",
+      "prototype-cal-breguet",
+      "pyro-hypostasis",
+      "pyro-regisvine",
+      "rhodeia-of-loch",
+      "ruin-serpent",
+      "secret-source-automaton-configuration-device",
+      "secret-source-automaton-overseer-device",
+      "setekh-wenut",
+      "solitary-suanni",
+      "statue-of-marble-and-brass",
+      "tenebrous-papilla",
+      "thunder-manifestation",
+      "wayward-hermetic-spiritspeaker"
+    ],
+    "description": " Normal Boss challenges contain enemies much stronger than Elite Enemies, but also provide better rewards for defeating them.  \n Most Normal Bosses are placed near a Teleport Waypoint, though some are further than others. Some Normal Bosses may require the player to progress to a certain point in a World Quest or complete a fairly simple puzzle in order to access them for the first time. Most Normal Bosses consist of a single main enemy, but a few fights consist of several enemies, such as the Coral Defenders and the Icewind Suite.\n A Normal Boss is usually idle in the center of their arena and will not react to the player unless they get too close or attack it. Some bosses may not be present in the arena, instead having an environmental effect which requires the player to get close to it in order to trigger the fight. The lone exception is the Icewind Suite, which requires players to talk to Maillardet in order to initiate the fight.\n Normal Bosses are more resistant to crowd control effects such as displacement, have significantly higher Interruption Resistance and are immune to freeze caused by Frozen, barring some mechanics that the Solitary Suanni uses.\n Unlike Elite Enemies, once they have been defeated a Trounce Blossom will spawn in the area, and players can use  Original Resin ×40 to open them to claim their rewards. \n Normal Boss enemies reward  Adventure EXP ×200 along with a certain amount of  Mora and  Companionship EXP. Each Normal Boss has a unique Character Level-Up Material, which is required to ascend characters. They also drop a small array of 3, 4 and 5-star artifacts, depending on the player's World Level.\n After claiming rewards from the Trounce Blossom, the boss will respawn in roughly 5 seconds, to give the player some time to prepare if necessary. If the rewards from the blossom are not claimed, the boss will not respawn unless the player teleports out of the area.\n",
+    "list": [
+      {
+        "name": "all",
+        "artefact": [
+          { "rarity": [4, 5], "link": "/wiki/Gladiator%27s_Finale" },
+          { "rarity": [4, 5], "link": "/wiki/Wanderer%27s_Troupe" }
+        ]
+      },
+      {
+        "name": "Anemo Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Electro Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" }
+        ]
+      },
+      {
+        "name": "Cryo Regisvine",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Cryo Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Geo Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      },
+      {
+        "name": "Pyro Regisvine",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Rhodeia of Loch",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Destiny" }
+        ]
+      },
+      {
+        "name": "Primo Geovishap",
+        "artefact": [
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Destiny" }
+        ]
+      },
+      {
+        "name": "Ruin Serpent",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      },
+      {
+        "name": "Solitary Suanni",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" }
+        ]
+      },
+      {
+        "name": "Maguu Kenki",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Perpetual Mechanical Array",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Pyro Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Hydro Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Destiny" }
+        ]
+      },
+      {
+        "name": "Thunder Manifestation",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" }
+        ]
+      },
+      {
+        "name": "Golden Wolflord",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      },
+      {
+        "name": "Coral Defenders",
+        "artefact": [
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3], "link": "/wiki/Lucky_Dog" }
+        ]
+      },
+      {
+        "name": "Jadeplume Terrorshroom",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Electro Regisvine",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" }
+        ]
+      },
+      {
+        "name": "Aeonblight Drake",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Dendro Hypostasis",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Setekh Wenut",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Iniquitous Baptist",
+        "artefact": [
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Destiny" }
+        ]
+      },
+      {
+        "name": "Icewind Suite",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Emperor of Fire and Iron",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Millennial Pearl Seahorse",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" }
+        ]
+      },
+      {
+        "name": "Prototype Cal. Breguet",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      },
+      {
+        "name": "Hydro Tulpa",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Traveling_Doctor" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" }
+        ]
+      },
+      {
+        "name": "\"Statue of Marble and Brass\"",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Holawaqa Ngoubou",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Kongamato",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" }
+        ]
+      },
+      {
+        "name": "Secret Source Automaton: Configuration Device",
+        "artefact": [
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Wisdom" }
+        ]
+      },
+      {
+        "name": "Tenebrous Papilla",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Wayward Hermetic Spiritspeaker",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Lucky_Dog" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_to_Springtime" }
+        ]
+      },
+      {
+        "name": "Lava Dragon Statue",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Illumination" }
+        ]
+      },
+      {
+        "name": "Secret Source Automaton: Overseer Device",
+        "artefact": [
+          { "rarity": [2, 3], "link": "/wiki/Adventurer" },
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [3, 4], "link": "/wiki/Prayers_for_Destiny" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "weekly-bosses",
+    "name": "Weekly Bosses",
+    "position": [6, 7, 19, 31, 78, 117, 158, 169, 170, 232, 253, 254],
+    "enemies": [
+      "all-devouring-narwhal",
+      "andrius",
+      "azhdaha",
+      "childe",
+      "everlasting-lord-of-arcane-wisdom",
+      "guardian-of-apep-s-oasis",
+      "la-signora",
+      "lord-of-eroded-primal-fire",
+      "magatsu-mitake-narukami-no-mikoto",
+      "stormterror-dvalin",
+      "the-game-before-the-gate",
+      "the-knave"
+    ],
+    "description": " Weekly Bosses are bosses whose rewards can be claimed once per week. After defeating each boss, a Trounce Blossom will spawn where players can choose to spend  Original Resin ×30 to claim the rewards from the first three weekly bosses of their choice, and then  Original Resin ×60 subsequently. Availability of rewards and reduced resin costs reset at 4 AM server time every Monday.\n As with Normal Bosses, Weekly Bosses are immune to displacement, possess significant interruption resistance and are immune to Frozen reactions.\n Weekly Bosses are generally fought in a Trounce Domain (thus players can teleport to them) apart from Andrius, who is fought in the open world. These bosses are unlocked by completing Archon Quests or a specific character's Story Quest. Once the player reaches Adventure Rank 40, they can Quick Challenge locked Trounce Domains through the Adventurer Handbook in Single Player Mode if they have not met the requirements to normally access it.\n All weekly bosses drop their own specific Character Level-Up Materials, which are used to upgrade Talents above Level 6. In addition to this, weekly bosses drop  Adventure EXP ×300, a certain amount of  Mora,  Companionship EXP, Character Ascension Materials, and Artifacts depending on the player's World Level.\n In addition, there is a 12% chance to drop a Northlander Billet (for Weekly Bosses in Mondstadt, Liyue, and Inazuma), a Midlander Billet (Sumeru and Fontaine), or a Borderland Billet (Natlan) and a fixed 33% chance to drop a  Dream Solvent.\n",
+    "list": [
+      {
+        "name": "all",
+        "artefact": [
+          { "rarity": [3, 4], "link": "/wiki/Berserker" },
+          { "rarity": [3, 4], "link": "/wiki/Instructor" },
+          { "rarity": [3, 4], "link": "/wiki/The_Exile" },
+          { "rarity": [4, 5], "link": "/wiki/Gladiator%27s_Finale" },
+          { "rarity": [4, 5], "link": "/wiki/Wanderer%27s_Troupe" }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "common-enemies",
+    "name": "Common Enemies",
+    "position": [
+      10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 25, 27, 28, 30, 37, 40, 41, 42,
+      45, 46, 47, 48, 49, 51, 52, 53, 55, 56, 57, 60, 61, 62, 63, 65, 66, 67,
+      68, 69, 70, 71, 72, 73, 74, 75, 76, 83, 84, 85, 86, 87, 88, 89, 90, 91,
+      92, 93, 94, 96, 97, 98, 101, 102, 103, 108, 109, 110, 111, 115, 116, 118,
+      119, 120, 121, 122, 123, 125, 127, 138, 139, 140, 142, 145, 146, 147, 148,
+      151, 152, 153, 154, 155, 156, 159, 160, 161, 162, 163, 164, 166, 174, 175,
+      176, 177, 178, 189, 192, 193, 194, 195, 196, 197, 198, 199, 203, 226, 227,
+      228, 230, 233, 234, 235, 236, 237, 238, 239, 240, 243, 244, 245, 246, 249,
+      250, 251, 252, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271,
+      272, 273, 275, 276, 277, 279, 280, 281, 282, 283, 284, 287, 288, 289, 290
+    ],
+    "enemies": [
+      "anemo-samachurl",
+      "anemo-slime",
+      "anemo-specter",
+      "angelic-sea-hare",
+      "annihilation-specialist-mek",
+      "area-alert-mek",
+      "arithmetic-enhancer-mek",
+      "armored-crab",
+      "assault-specialist-mek",
+      "ball-octopus",
+      "blubberbeast",
+      "bubbler-seahorse",
+      "bubbly-seahorse",
+      "cherubic-sea-hare",
+      "construction-specialist-mek",
+      "cryo-cicin",
+      "cryo-hilichurl-grenadier",
+      "cryo-hilichurl-shooter",
+      "cryo-samachurl",
+      "cryo-slime",
+      "cryo-specter",
+      "cryo-whopperflower",
+      "deepwater-assault-mek",
+      "dendro-samachurl",
+      "dendro-slime",
+      "dendro-specter",
+      "electro-cicin",
+      "electro-hilichurl-grenadier",
+      "electro-hilichurl-shooter",
+      "electro-samachurl",
+      "electro-slime",
+      "electro-specter",
+      "electro-whopperflower",
+      "eremite-axe-vanguard",
+      "eremite-crossbow",
+      "eremite-daythunder",
+      "eremite-desert-clearwater",
+      "eremite-floral-ring-dancer",
+      "eremite-galehunter",
+      "eremite-linebreaker",
+      "eremite-ravenbeak-halberdier",
+      "eremite-scorching-loremaster",
+      "eremite-stone-enchanter",
+      "eremite-sunfrost",
+      "eremite-sword-dancer",
+      "fatui-skirmisher-anemoboxer-vanguard",
+      "fatui-skirmisher-cryogunner-legionnaire",
+      "fatui-skirmisher-electrohammer-vanguard",
+      "fatui-skirmisher-geochanter-bracer",
+      "fatui-skirmisher-hydrogunner-legionnaire",
+      "fatui-skirmisher-pyroslinger-bracer",
+      "ferocious-warrior-grappler",
+      "ferocious-warrior-human-ram",
+      "ferocious-warrior-wrestler",
+      "floating-anemo-fungus",
+      "floating-dendro-fungus",
+      "floating-hydro-fungus",
+      "flowing-blade-grease-saw",
+      "flowing-blade-harpoon-thrower",
+      "flowing-blade-skirmisher",
+      "forged-sand-interrogator",
+      "forged-sand-javelineer",
+      "forged-sand-shieldbreaker",
+      "geo-samachurl",
+      "geo-slime",
+      "geo-specter",
+      "geological-survey-mek",
+      "grounded-geoshroom",
+      "grounded-hydroshroom",
+      "hat-jellyfish",
+      "hilichurl-berserker",
+      "hilichurl-fighter",
+      "hilichurl-grenadier",
+      "hilichurl-shooter",
+      "hilichurl",
+      "hunter-s-ray",
+      "hydro-cicin",
+      "hydro-samachurl",
+      "hydro-slime",
+      "hydro-specter",
+      "ice-shield-hilichurl-guard",
+      "iktomisaurus-chick",
+      "iktomisaurus-warrior-cryocrystal-cannon",
+      "iktomisaurus-warrior-icy-tidebearer",
+      "iktomisaurus",
+      "kairagi-dancing-thunder",
+      "kairagi-fiery-might",
+      "koholasaur-whelp",
+      "koholasaurus-warrior-reefsplitter",
+      "koholasaurus-warrior-waveshuttler",
+      "koholasaurus",
+      "large-anemo-slime",
+      "large-cryo-slime",
+      "large-dendro-slime",
+      "large-electro-slime",
+      "large-geo-slime",
+      "large-hydro-slime",
+      "large-pyro-slime",
+      "mutant-electro-slime",
+      "nimble-harvester-mek",
+      "nobushi-hitsukeban",
+      "nobushi-jintouban",
+      "nobushi-kikouban",
+      "pyro-hilichurl-shooter",
+      "pyro-slime",
+      "pyro-specter",
+      "pyro-whopperflower",
+      "qucusaurus-chick",
+      "qucusaurus-warrior-blazing-sky",
+      "qucusaurus-warrior-heartstar-hammer",
+      "qucusaurus",
+      "recon-log-mek",
+      "rock-shield-hilichurl-guard",
+      "spiritspeaker-warrior-contemplator",
+      "spiritspeaker-warrior-determinator",
+      "spiritspeaker-warrior-psychokinetic",
+      "sternshield-crab",
+      "stretchy-anemo-fungus",
+      "stretchy-electro-fungus",
+      "stretchy-geo-fungus",
+      "stretchy-pyro-fungus",
+      "suppression-specialist-mek",
+      "swiftstep-armed-courier",
+      "swiftstep-seeker",
+      "swiftstep-storm-scout",
+      "tatankasaur-whelp",
+      "tatankasaurus-warrior-skybreaker",
+      "tatankasaurus-warrior-spiritlight-chaser",
+      "tatankasaurus",
+      "tepetlisaur-whelp",
+      "tepetlisaurus-warrior-rockbreaker-blade",
+      "tepetlisaurus-warrior-shard-striker",
+      "tepetlisaurus",
+      "treasure-hoarders-crusher",
+      "treasure-hoarders-cryo-potioneer",
+      "treasure-hoarders-electro-potioneer",
+      "treasure-hoarders-gravedigger",
+      "treasure-hoarders-handyman",
+      "treasure-hoarders-hydro-potioneer",
+      "treasure-hoarders-marksman",
+      "treasure-hoarders-pugilist",
+      "treasure-hoarders-pyro-potioneer",
+      "treasure-hoarders-scout",
+      "treasure-hoarders-seaman",
+      "underwater-patrol-mek",
+      "underwater-survey-mek",
+      "unusual-hilichurl",
+      "whirling-cryo-fungus",
+      "whirling-electro-fungus",
+      "whirling-pyro-fungus",
+      "winged-cryoshroom",
+      "winged-dendroshroom",
+      "winged-warrior-feathershedder",
+      "winged-warrior-skymaster",
+      "winged-warrior-skysoarer",
+      "wooden-shield-hilichurl-guard",
+      "yumkasaur-whelp",
+      "yumkasaurus-warrior-flowing-skyfire",
+      "yumkasaurus-warrior-whirling-leaves",
+      "yumkasaurus"
+    ],
+    "description": " Players will often find Common Enemies in the open world while exploring, or in Domains and Spiral Abyss. These enemies may occasionally drop Character and Weapon Enhancement Materials. They always drop a varied amount of Mora upon killing them, although usually in small amounts and provide very little Character EXP.\n",
+    "list": []
+  }
+]

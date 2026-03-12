@@ -1,0 +1,114 @@
+{
+  "name": "Aeonblight Drake",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/Aeonblight_Drake_Icon.png/revision/latest/scale-to-width-down/185?cb=20220928021456",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/Enemy_Aeonblight_Drake.png/revision/latest?cb=20240414145707"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Physical", "link": "/wiki/Physical" },
+          { "name": "Anemo", "link": "/wiki/Anemo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" },
+          { "name": "Dendro", "link": "/wiki/Dendro" },
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Geo", "link": "/wiki/Geo" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Ruin Drakes", "link": "/wiki/Ruin_Drakes" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Devantaka Mountain", "link": "/wiki/Devantaka_Mountain" },
+          { "name": "Ardravi Valley", "link": "/wiki/Ardravi_Valley" },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Per­pet­u­al Cal­iber", "link": "/wiki/Perpetual_Caliber" }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Aeonblight Drake (Heavy Assault Pack)",
+            "link": "/wiki/Aeonblight_Drake_(Heavy_Assault_Pack)"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Per­pet­u­al Cal­iber", "rarity": [4] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "70%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "170%" },
+            { "name": "pyro", "value": "110%" },
+            { "name": "hydro", "value": "110%" },
+            { "name": "electro", "value": "110%" },
+            { "name": "cryo", "value": "110%" },
+            { "name": "dendro", "value": "110%" },
+            { "name": "anemo", "value": "110%" },
+            { "name": "geo", "value": "110%" }
+          ],
+          "name": "Beginning of Fight"
+        }
+      ]
+    }
+  ],
+  "description": "This dragon-shaped combat machine is a being that inspires fear, much like the lord who once ruled these vast lands.\nThis mysterious, tireless mechanical monstrosity seems to be proof that the now-destroyed realm had reached heights that mortals should never have.",
+  "element": "Non-Elemental"
+}

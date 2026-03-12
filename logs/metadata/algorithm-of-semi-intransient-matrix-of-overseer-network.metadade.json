@@ -1,0 +1,121 @@
+{
+  "name": "Algorithm of Semi-Intransient Matrix of Overseer Network",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/Algorithm_of_Semi-Intransient_Matrix_of_Overseer_Network_Icon.png/revision/latest/scale-to-width-down/185?cb=20220928021458",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Enemy_Algorithm_of_Semi-Intransient_Matrix_of_Overseer_Network.png/revision/latest?cb=20221123114148"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Physical", "link": "/wiki/Physical" }]
+      },
+      {
+        "key": { "name": "Other Elements", "link": "/wiki/Element" },
+        "values": [{ "name": "Dendro", "link": "/wiki/Dendro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Primal Constructs", "link": "/wiki/Primal_Constructs" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "The Dune of Elusion",
+            "link": "/wiki/The_Dune_of_Elusion"
+          },
+          { "name": "Hypostyle Desert", "link": "/wiki/Hypostyle_Desert" },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Light Guid­ing Tetra­he­dron",
+            "link": "/wiki/Light_Guiding_Tetrahedron"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Light Guid­ing Tetra­he­dron", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Sli­ver", "rarity": [2] },
+    { "name": "Va­yu­da Tur­quoise Sli­ver", "rarity": [2] },
+    { "name": "Ag­ni­dus A­gate Frag­ment", "rarity": [3] },
+    { "name": "Va­yu­da Tur­quoise Frag­ment", "rarity": [3] },
+    { "name": "Ag­ni­dus A­gate Chunk", "rarity": [4] },
+    { "name": "Vayuda Turquoise Chunk", "rarity": [4] },
+    { "name": "Ag­ni­dus A­gate Gem­stone", "rarity": [5] },
+    { "name": "Vayuda Turquoise Gem­stone", "rarity": [5] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "210%" },
+            { "name": "pyro", "value": "210%" },
+            { "name": "hydro", "value": "210%" },
+            { "name": "electro", "value": "210%" },
+            { "name": "cryo", "value": "210%" },
+            { "name": "dendro", "value": "210%" },
+            { "name": "anemo", "value": "210%" },
+            { "name": "geo", "value": "210%" }
+          ],
+          "name": "Invisible"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "110%" },
+            { "name": "pyro", "value": "110%" },
+            { "name": "hydro", "value": "110%" },
+            { "name": "electro", "value": "110%" },
+            { "name": "cryo", "value": "110%" },
+            { "name": "dendro", "value": "110%" },
+            { "name": "anemo", "value": "110%" },
+            { "name": "geo", "value": "110%" }
+          ],
+          "name": "Beginning of Fight"
+        }
+      ]
+    }
+  ],
+  "description": "A perpetual-motion device from an ancient civilization.\nIt governs the many ruin machines that are scattered throughout the desert and still seems to carry the will of its lonely ruler.",
+  "element": "Non-Elemental"
+}

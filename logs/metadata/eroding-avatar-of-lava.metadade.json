@@ -1,0 +1,95 @@
+{
+  "name": "Eroding Avatar of Lava",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/8/8c/Eroding_Avatar_of_Lava_Icon.png/revision/latest/scale-to-width-down/185?cb=20240828020051",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/b/b7/Enemy_Eroding_Avatar_of_Lava.png/revision/latest?cb=20240828101635"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Geo", "link": "/wiki/Geo" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Avatars of Lava", "link": "/wiki/Avatars_of_Lava" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Ignited Stone", "rarity": [2] },
+    { "name": "Ignited Seed of Life", "rarity": [3] },
+    { "name": "Ignited Seeing Eye", "rarity": [4] },
+    { "name": "Traveling Doctor", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Local Legend",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "130%" },
+            { "name": "pyro", "value": "130%" },
+            { "name": "hydro", "value": "130%" },
+            { "name": "electro", "value": "130%" },
+            { "name": "cryo", "value": "130%" },
+            { "name": "dendro", "value": "130%" },
+            { "name": "anemo", "value": "130%" },
+            { "name": "geo", "value": "130%" }
+          ],
+          "name": "Unfilled Fury Bar"
+        }
+      ]
+    }
+  ],
+  "description": "A strange monster that must continually absorb heat to stay in an active state.\nThe ancient civilization used many different types of golden designs to drive the flow of phlogiston, allowing massive constructs and magnificent cities to operate under the wisdom of the golden patterns. It is said that in addition to machines with fixed structures, the creatures known as Avatars of Lava are actually badly damaged lifeforms that were once created in the same way. However, after the flames of the sacred mountain were extinguished, most of them lost their sense of purpose and direction.",
+  "element": "Non-Elemental"
+}

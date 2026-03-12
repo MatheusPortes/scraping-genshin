@@ -1,0 +1,126 @@
+{
+  "name": "Jadeplume Terrorshroom",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e8/Jadeplume_Terrorshroom_Icon.png/revision/latest/scale-to-width-down/185?cb=20220824024707",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/9d/Enemy_Jadeplume_Terrorshroom.png/revision/latest?cb=20221123113655"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Dendro", "link": "/wiki/Dendro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Fungi", "link": "/wiki/Fungi" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Vissudha Field", "link": "/wiki/Vissudha_Field" },
+          { "name": "Sumeru", "link": "/wiki/Sumeru" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Jadeplume_Terrorshroom_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Majestic Hooked Beak",
+            "link": "/wiki/Majestic_Hooked_Beak"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Titles", "link": "" },
+        "values": [
+          {
+            "name": "The Beloved King of FungiDeepwood Shroomlord",
+            "link": null
+          }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Metastable Jadeplume Terrorshroom",
+            "link": "/wiki/Metastable_Jadeplume_Terrorshroom"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Majestic Hooked Beak", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Sliver", "rarity": [2] },
+    { "name": "Na­ga­dus Em­er­ald Fragment", "rarity": [3] },
+    { "name": "Na­ga­dus Em­er­ald Chunk", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "25%" },
+            { "name": "pyro", "value": "25%" },
+            { "name": "hydro", "value": "25%" },
+            { "name": "electro", "value": "25%" },
+            { "name": "cryo", "value": "25%" },
+            { "name": "dendro", "value": "80%" },
+            { "name": "anemo", "value": "25%" },
+            { "name": "geo", "value": "25%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "0%" },
+            { "name": "pyro", "value": "0%" },
+            { "name": "hydro", "value": "0%" },
+            { "name": "electro", "value": "0%" },
+            { "name": "cryo", "value": "0%" },
+            { "name": "dendro", "value": "55%" },
+            { "name": "anemo", "value": "0%" },
+            { "name": "geo", "value": "0%" }
+          ],
+          "name": "Stunned"
+        }
+      ]
+    }
+  ],
+  "description": "The lord of fungal beasts that lives in the heart of the woods and in the company of its kin.\nFungi grow wherever it is damp and fertile. They can always adapt to adversity, and their spores can spread anywhere there is room. Given time, this proud-looking bird-like beast might evolve into something yet more magnificent.",
+  "element": "Dendro"
+}

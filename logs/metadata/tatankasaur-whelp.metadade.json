@@ -1,0 +1,60 @@
+{
+  "name": "Tatankasaur Whelp",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/2/2b/Tatankasaur_Whelp_Icon.png/revision/latest/scale-to-width-down/185?cb=20250326014646",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Enemy_Tatankasaur_Whelp.png/revision/latest?cb=20250326062929"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Electro", "link": "/wiki/Electro" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Juvenile Fang", "rarity": [1] },
+    { "name": "Seasoned Fang", "rarity": [2] },
+    { "name": "Tyrant's Fang", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "30%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A young Tatankasaurus that has not yet mastered full control of its powerful frame, leaving its movements clumsy.\nIts second set of horns are still growing out, and its back and snout are not quite strong enough to smash through rocks that block the road. Given the time to grow, it will one day be able to roam freely across the fertile plains.",
+  "element": "Electro"
+}

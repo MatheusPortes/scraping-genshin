@@ -1,0 +1,644 @@
+[
+  {
+    "id": "abyss-heralds",
+    "name": "Abyss Heralds",
+    "position": [0, 1],
+    "enemies": ["abyss-herald-frost-fall", "abyss-herald-wicked-torrents"],
+    "description": " Abyss Heralds are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy. They are melee counterparts to Abyss Lectors, though they also have some ranged attacks at their disposal.\n In combat, Abyss Heralds perform aggressive elemental attacks with their blades, some of which can apply a debuff to the player. When their HP is low, they will generate a durable elemental Shield which is most efficiently destroyed using the correct Elemental Reactions. After the shield is destroyed, they will be immediately defeated.\n"
+  },
+  {
+    "id": "abyss-lectors",
+    "name": "Abyss Lectors",
+    "position": [2, 3],
+    "enemies": [
+      "abyss-lector-fathomless-flames",
+      "abyss-lector-violet-lightning"
+    ],
+    "description": " Abyss Lectors are an elite enemy group part of the Abyss Order and who are capable of manipulating intense abyssal energy. They are ranged counterparts to Abyss Heralds.\n In combat, Abyss Lectors perform ranged elemental attacks with their catalysts, some of which that can apply a debuff to the player. When their HP is low, they will generate a durable elemental Shield which are most efficiently destroyed using the correct Elemental Reactions. After the shield is destroyed, the Lector will be immediately defeated.\n"
+  },
+  {
+    "id": "ruin-drakes",
+    "name": "Ruin Drakes",
+    "position": [4, 210, 211],
+    "enemies": [
+      "aeonblight-drake",
+      "ruin-drake-earthguard",
+      "ruin-drake-skywatch"
+    ],
+    "description": " Ruin Drakes are an enemy group found in Sumeru and Fontaine. As their name indicates, their appearance and abilities of these Ruin Machines are inspired by dragons and vishaps.\n In combat, Ruin Drakes mainly use Physical attacks and have high Physical RES. Ruin Drakes have the unique special ability to adapt to use and counteract elements, which occurs every time after using their special attack, Energy Surge, where they absorb element that they have taken the most DMG from, gaining Resistance to that element and converting the next surge damage type to that of absorbed element. The absorbed element is reflected by the color of Chaos Storage embedded in their neck. \n While using specific attacks, Ruin Drakes will expose their weak spots. Like Ruin Sentinels, Ruin Drakes expose their weak spot(s) specific attacks. Attacking it once will paralyze the Ruin Drake, removing any absorbed element if applicable. Airborne Ruin Drakes additionally have two weak spots on their thrusters which are always active, and attacking both in quick succession will likewise paralyze them.\n",
+    "adventurer_handbook": "A war machine that is said to be left behind by a now-destroyed nation. It mimics the appearance of the beings known as Vishaps. As an ancient life form, Vishaps have the ability to \"absorb\" — or perhaps the right word is \"counteract\" — elemental powers. To enhance that ability, the Ruin Drakes were built with some structural and functional enhancements, and its energy system has a unique design."
+  },
+  {
+    "id": "primal-constructs",
+    "name": "Primal Constructs",
+    "position": [5, 182, 183, 184],
+    "enemies": [
+      "algorithm-of-semi-intransient-matrix-of-overseer-network",
+      "primal-construct-prospector",
+      "primal-construct-repulsor",
+      "primal-construct-reshaper"
+    ],
+    "description": " Primal Constructs are an elite enemy group. As leftover technology of King Deshret's civilization, they are primarily found across the Great Red Sand.\n In combat, they perform Physical attacks and may enter an invisible state after deploying parts on the battlefield. While a Primal Construct is in this state, the player can destroy its deployed parts, forcing it to repair them. If an Electro attack hits a part while it is being repaired, the Primal Construct will become paralyzed. Alternatively, the player may inflict Quicken, Frozen, or Petrification onto the invisible construct to immediately end this state.\n Like Ruin Machines, some Primal Constructs may be dormant instead of patrolling a set route. Using Elemental Sight helps distinguish dormant constructs from those serving as scenery.\n",
+    "adventurer_handbook": "The guardians of the lost ancient desert ruins have power enough to punish any who would presume to disturb the pure dreams of their lord.It is said that the master of the sands once dreamed of an eternal paradise. Today, that utopia is long gone, and the dreams and oaths, forgotten by the world, are now only found in the mantras inscribed upon these machines."
+  },
+  {
+    "id": "hilichurl-rogues",
+    "name": "Hilichurl Rogues",
+    "position": [8, 128],
+    "enemies": ["anemo-hilichurl-rogue", "hydro-hilichurl-rogue"],
+    "description": " Hilichurl Rogues are an enemy group and part of the Hilichurl family and are found in Liyue, Sumeru, Fontaine, and Natlan. Wanderers seeking a bygone splendor that once belonged to their people, these hilichurls live solitary lives, though they will occasionally help smaller groups of hilichurls before resuming their journey and are said to be more intelligent than the common hilichurl.\n In combat, Hilichurl Rogues deal Elemental DMG, and will sometimes summon slimes of their corresponding element and use them to attack the player. Destroying these slimes will knock the rogue down for a few seconds.\n",
+    "adventurer_handbook": "Hilichurl wanderers unaffiliated to any specific tribe or group. They can often be found roving the wilds.Sometimes, they may also lend their aid to other hilichurls for a variety of reasons."
+  },
+  {
+    "id": "hypostases",
+    "name": "Hypostases",
+    "position": [9, 43, 50, 58, 107, 129, 190],
+    "enemies": [
+      "anemo-hypostasis",
+      "cryo-hypostasis",
+      "dendro-hypostasis",
+      "electro-hypostasis",
+      "geo-hypostasis",
+      "hydro-hypostasis",
+      "pyro-hypostasis"
+    ],
+    "description": " Hypostases are a Normal Boss group. They are lifeforms that have reached the highest level of elemental purity.\n Hypostases are invulnerable when their cube-like shells are surrounding them and can only be damaged when their diamond-shaped cores are exposed, typically during or after they perform an attack. Their attacks deal elemental damage of their type and they are immune to said type.\n After losing 95% of their health, Hypostases will typically enter a revival phase (with the exception of the Pyro Hypostasis) in which it spawns several elemental objects of its type that must be dealt with within a time limit, which if done successfully, will either immediately defeat the Hypostasis or allow it to be defeated the next time it takes lethal DMG.\n",
+    "adventurer_handbook": "Elemental hypostases are life forms which have completely abandoned their former appearance and biological structure, making them able to reach the highest level of elemental purity. They are ultra-compact structures with a high mass, and are the highest forms of elemental structures, usually formed either at a location bursting with elemental energy or at a clogged ley line."
+  },
+  {
+    "id": "samachurls",
+    "name": "Samachurls",
+    "position": [10, 45, 51, 60, 108, 138],
+    "enemies": [
+      "anemo-samachurl",
+      "cryo-samachurl",
+      "dendro-samachurl",
+      "electro-samachurl",
+      "geo-samachurl",
+      "hydro-samachurl"
+    ],
+    "description": " Samachurls are shamans and spiritual leaders of Hilichurl tribes.\n In combat, Samachurls mainly cast spells from range, but will perform a single melee strike with their staff if close to the player. They have a great range of offensive and supportive abilities depending on their elemental type.\n",
+    "adventurer_handbook": "Shamans of the hilichurl tribes. They display a limited ability to harness elemental energy.\"While their masks are made with the intent of instilling fear in their enemies, their designs come across as more charming than frightening.\" — Jacob Musk"
+  },
+  {
+    "id": "slimes",
+    "name": "Slimes",
+    "position": [
+      11, 46, 52, 61, 109, 139, 159, 160, 161, 162, 163, 164, 166, 174, 192
+    ],
+    "enemies": [
+      "anemo-slime",
+      "cryo-slime",
+      "dendro-slime",
+      "electro-slime",
+      "geo-slime",
+      "hydro-slime",
+      "large-anemo-slime",
+      "large-cryo-slime",
+      "large-dendro-slime",
+      "large-electro-slime",
+      "large-geo-slime",
+      "large-hydro-slime",
+      "large-pyro-slime",
+      "mutant-electro-slime",
+      "pyro-slime"
+    ],
+    "description": " Slimes are Common Enemies found all over Teyvat.\n In combat, they act like almost all other Elemental Lifeforms, being immune to a specific element that is also applied to them at all times. Some slimes are larger and stronger than normal.\n",
+    "adventurer_handbook": "A pudgy elemental life form.It's said that desserts made from slimes of different elements will have incredibly distinctive flavors."
+  },
+  {
+    "id": "specters",
+    "name": "Specters",
+    "position": [12, 47, 53, 62, 110, 140, 193],
+    "enemies": [
+      "anemo-specter",
+      "cryo-specter",
+      "dendro-specter",
+      "electro-specter",
+      "geo-specter",
+      "hydro-specter",
+      "pyro-specter"
+    ],
+    "description": " Specters are Common Enemies found in Inazuma, Enkanomiya, and Sumeru.\n Specters are immune to their own element. In combat, they are capable of floating and have a Fury meter that fills up when they take high DMG from a single hit. When the Fury meter is full, they will enter an enraged state where they grow larger and gain enhanced attacks. When defeated, Specters will also charge up briefly before exploding, dealing AoE DMG.\n",
+    "adventurer_handbook": "A monster born from highly-concentrated elements that can float in the air.On the whole, they are little sprites that have a gentle temperament, much like Slimes, but they can sometimes explode into a rage."
+  },
+  {
+    "id": "fontemer-aberrants",
+    "name": "Fontemer Aberrants",
+    "position": [13, 17, 20, 25, 27, 28, 30, 64, 118, 125, 172, 230],
+    "enemies": [
+      "angelic-sea-hare",
+      "armored-crab",
+      "ball-octopus",
+      "blubberbeast",
+      "bubbler-seahorse",
+      "bubbly-seahorse",
+      "cherubic-sea-hare",
+      "emperor-of-fire-and-iron",
+      "hat-jellyfish",
+      "hunter-s-ray",
+      "millennial-pearl-seahorse",
+      "sternshield-crab"
+    ],
+    "description": " Fontemer Aberrants are an enemy group found in Fontaine, both on land and underwater. Standard Fontemer Aberrants are usually tolerant of the player unless attacked or another enemy initiates aggression, while adult Fontemer Aberrants and Local Legends aggro as normal.\n Fontemer Aberrants mostly deal Physical and Hydro DMG. Adult Fontemer Aberrants are able to gain elemental shields while on land, which increases their RES and allows them to use attacks of elements other than Hydro.\n",
+    "adventurer_handbook": "An aquatic creature found throughout Fontaine.Perhaps due to environmental requirements, it can seemingly only be found in Fontaine."
+  },
+  {
+    "id": "clockwork-meka",
+    "name": "Clockwork Meka",
+    "position": [
+      14, 15, 16, 18, 37, 49, 111, 144, 175, 187, 199, 237, 271, 272
+    ],
+    "enemies": [
+      "annihilation-specialist-mek",
+      "area-alert-mek",
+      "arithmetic-enhancer-mek",
+      "assault-specialist-mek",
+      "construction-specialist-mek",
+      "deepwater-assault-mek",
+      "geological-survey-mek",
+      "icewind-suite",
+      "nimble-harvester-mek",
+      "prototype-cal-breguet",
+      "recon-log-mek",
+      "suppression-specialist-mek",
+      "underwater-patrol-mek",
+      "underwater-survey-mek"
+    ],
+    "description": " Clockwork Meka are an enemy group. They were made by Fontaine to serve as laborers, but were eventually modified for combat purposes.\n Clockwork Meka are imbued with Arkhe energy, either Pneuma or Ousia, allowing them to deal Elemental DMG with their attacks, and will use different abilities depending on Arkhe alignment. The alignment can be determined based on the artificied clockwork — a bright white color indicates Pneuma, while a dark blue color indicates Ousia. If they are hit with the opposite energy of their alignment, they will temporarily lose their Arkhe energy, resulting in them being restricted to Physical attacks or unable to attack entirely for a period of time.\n",
+    "adventurer_handbook": "A machine made possible by the advanced engineering technology of Fontaine and its energy sources.Also an excellent assistant to thieves and brigands."
+  },
+  {
+    "id": "vishaps",
+    "name": "Vishaps",
+    "position": [19, 112, 113, 185],
+    "enemies": [
+      "azhdaha",
+      "geovishap-hatchling",
+      "geovishap",
+      "primo-geovishap"
+    ],
+    "description": " Vishaps are a species of dragon-like creatures that once followed each of the Seven Sovereigns with their corresponding elements and were formerly the dominant race of the world. Over time, they will evolve into true Dragons.\n From each vishap species, the Seven Sovereigns will be born anew, so long as they remain biologically pure.\n They belonged to the Vishap Realm, also known as the Elemental Realm or the Light Realm.\n"
+  },
+  {
+    "id": "wayob-manifestations",
+    "name": "Wayob Manifestations",
+    "position": [21, 29, 95, 100, 202, 259],
+    "enemies": [
+      "biting-cold-wayob-manifestation",
+      "burning-aflame-wayob-manifestation",
+      "flow-inverted-wayob-manifestation",
+      "foliar-swift-wayob-manifestation",
+      "rock-cavernous-wayob-manifestation",
+      "thundering-wayob-manifestation"
+    ],
+    "description": " Wayob Manifestations are an elite enemy group found in Natlan.\n Manifestations of the Wayobs that inhabit Natlan, these enemies are capable of setting up shields by deploying a field that drains all Energy from the player's party. The manifestation will generate a generic shield while the field is active. If this first shield is not destroyed before the field expires, the manifestation will proceed to create an elemental shield of its type that requires Elemental Reactions in order to remove. If the shield is destroyed before the field expires, a large amount of Energy will be restored to the entire party.\n",
+    "adventurer_handbook": "The Wayob worshipped by the various tribes of Natlan manifest themselves in the form of these obsidian totems."
+  },
+  {
+    "id": "the-black-serpents",
+    "name": "The Black Serpents",
+    "position": [22, 23, 221, 222, 223],
+    "enemies": [
+      "black-serpent-knight-rockbreaker-ax",
+      "black-serpent-knight-windcutter",
+      "shadowy-husk-defender",
+      "shadowy-husk-line-breaker",
+      "shadowy-husk-standard-bearer"
+    ],
+    "description": " The Black Serpents are an elite enemy group. Members of Khaenri'ah's royal guard who once served under their captain, Dainsleif, they have been since affected by the curse and have lost their memories and honor.\n Outside of quests and the Spiral Abyss, they are found in The Chasm: Underground Mines.\n In combat, the Black Serpents are fairly durable enemies that use slow elemental attacks. When one of their attacks is fully absorbed by a player's Shield, they will grant themselves and/or other nearby Black Serpents a buff at the cost of a percentage of their current HP.\n",
+    "adventurer_handbook": "Once upon a time, these were knights of the realm and carriers of significant status. The long years and a curse seems to have robbed them of their reason and memory. Now, all that remains within that armor is the will to \"fight for something, someone, and some matter.\"Depending on how much wear and tear they have undergone, they are by turns known as \"Shadowy Husks\" or \"Black Serpent Knights.\""
+  },
+  {
+    "id": "mitachurls",
+    "name": "Mitachurls",
+    "position": [24, 38, 143, 204, 285],
+    "enemies": [
+      "blazing-axe-mitachurl",
+      "crackling-axe-mitachurl",
+      "ice-shieldwall-mitachurl",
+      "rock-shieldwall-mitachurl",
+      "wooden-shieldwall-mitachurl"
+    ],
+    "description": " Mitachurls are an elite enemy group.\n In combat, Mitachurls use melee attacks to cause heavy damage and knockback. If the player is out of range, they will grab Slimes of varying types from the ground and throw them at the player.\n",
+    "adventurer_handbook": "The most formidable warriors of the hilichurl tribes.Fighting and eating meat are the two most important things to hilichurls, because those are what make them grow stronger. All young hilichurls dream of growing up to become a big and strong mitachurl, because that way they can eat more meat, and fight more battles."
+  },
+  {
+    "id": "bathysmal-vishaps",
+    "name": "Bathysmal Vishaps",
+    "position": [26, 186, 201],
+    "enemies": [
+      "bolteater-bathysmal-vishap",
+      "primordial-bathysmal-vishap",
+      "rimebiter-bathysmal-vishap"
+    ],
+    "description": " Bathysmal Vishaps, also known as Dragonheirs of the Depths or Hydro Vishaps, are a race of Vishaps found in Enkanomiya. They can also be seen in Fontaine.\n They are described as pure, primordial elemental creatures, wild spirits who never bent the knee to any god or worldly power.\n Bathysmal Vishaps have a special attack known as \"Cleansing Shower\", which drains a set amount of Energy if the attack hits. If the hit target does not have sufficient energy, they will lose HP. This HP loss ignores shields, but can be negated using Elemental Burst i-frames. A purple HP bar indicates HP loss by a Bathysmal Vishap.\n",
+    "adventurer_handbook": "A mighty race of vishaps that dwell within the deep seas.That they hate light is not due to an overly fragile sense of sight. Instead, it is because they have had the selfless sunlight and the surface world taken from them that they refuse to countenance man-made light."
+  },
+  {
+    "id": "consecrated-beasts",
+    "name": "Consecrated Beasts",
+    "position": [32, 33, 34, 35, 36],
+    "enemies": [
+      "consecrated-fanged-beast",
+      "consecrated-flying-serpent",
+      "consecrated-horned-crocodile",
+      "consecrated-red-vulture",
+      "consecrated-scorpion"
+    ],
+    "description": " Consecrated Beasts are an elite enemy group. While the majority can be found in Sumeru, they can also be found in Inazuma and Fontaine.\n They are wildlife that have grown larger and stronger as a result of mutations from eating greater lifeforms, such as gods and surviving the highly painful process. As a result of being unable to fully consume said lifeforms, they have grown bone-like features across their bodies.\n In combat, they perform aggressive and high-damage elemental attacks. Upon spotting a player, they will immediately enter a Phagocytic Form, which increases their RES. They will periodically exit this state to perform a special attack and spawn a Phagocytic Energy Block, which the player can destroy using elemental attacks and use to paralyze the beast temporarily and cause it to lose a portion of its HP.\n",
+    "adventurer_handbook": "A lifeform that became twisted and warped by eating some great being."
+  },
+  {
+    "id": "abyss-mages",
+    "name": "Abyss Mages",
+    "position": [39, 54, 126, 188],
+    "enemies": [
+      "cryo-abyss-mage",
+      "electro-abyss-mage",
+      "hydro-abyss-mage",
+      "pyro-abyss-mage"
+    ],
+    "description": " Abyss Mages are an elite enemy group part of the Abyss Order. They are usually found with hilichurls and/or their fellow mages.\n Abyss Mages can commonly be seen performing rituals or patrolling a set area. When performing a ritual, the mage will not have a shield up, but will quickly generate one if not killed in the first hit. Patrolling mages always have their shield active. Their shields are most effectively destroyed using the appropriate Elemental Reactions (see Shield/Shield Gauge Data). When their shields are destroyed, they will become stunned for a long time and can take direct damage. If the mage is not defeated while stunned, they will attempt to regenerate their shield.\n",
+    "adventurer_handbook": "Abyss creatures who can command the power of the elements in combat to a certain extent.For unknown reasons, Abyss Mages are able to communicate with the hilichurls, thus enabling them to manipulate their minds easily. They say Abyss Mages utter a long-forgotten language from which they draw magical power."
+  },
+  {
+    "id": "cicins",
+    "name": "Cicins",
+    "position": [40, 55, 127],
+    "enemies": ["cryo-cicin", "electro-cicin", "hydro-cicin"],
+    "description": " Cicins are Common Enemies found across Teyvat. They appear as small bat-like creatures.\n In combat, Cicins make up for their low HP with agility and the ability to fly, and attack by firing elemental bolts at the player. When summoned by Fatui Cicin Mages, they will perform certain special attacks.\n"
+  },
+  {
+    "id": "hilichurl-grenadiers",
+    "name": "Hilichurl Grenadiers",
+    "position": [41, 56, 121],
+    "enemies": [
+      "cryo-hilichurl-grenadier",
+      "electro-hilichurl-grenadier",
+      "hilichurl-grenadier"
+    ],
+    "description": " Hilichurl Grenadiers are Hilichurls that hurl Slimes at the player to deal DMG upon impact.\n"
+  },
+  {
+    "id": "hilichurl-shooters",
+    "name": "Hilichurl Shooters",
+    "position": [42, 57, 122, 189],
+    "enemies": [
+      "cryo-hilichurl-shooter",
+      "electro-hilichurl-shooter",
+      "hilichurl-shooter",
+      "pyro-hilichurl-shooter"
+    ],
+    "description": " Hilichurl Shooters are Hilichurls who use crossbows in battle.\n In combat, they fire single bolts at the player matching their elemental type. In some Domains, Events and Commissions, they will fire five bolts in a ~45 degree spread in front of them instead.\n",
+    "adventurer_handbook": "Hilichurls that use crossbows to attack at range.Given their limited mental capacity, learning to wield a crossbow is extremely difficult for them, which leads one to wonder how they could craft such intricate equipment in the first place. One could speculate that there's an organization working behind the scenes to provide equipment and training to these hilichurls, seemingly scattered across the land..."
+  },
+  {
+    "id": "regisvines",
+    "name": "Regisvines",
+    "position": [44, 59, 191],
+    "enemies": ["cryo-regisvine", "electro-regisvine", "pyro-regisvine"],
+    "description": " Regisvines are a Normal Boss group. They are Whopperflowers that have fed for a long time without interruption, their elemental properties are more refined but they lose the mobility their brethren had.\n In combat, Regisvines start with an elemental shield located at their roots or their corolla that significantly increases their RES. If the shield is destroyed with the appropriate Elemental Reactions, the Regisvine will become paralyzed and lose their increased RES.\n"
+  },
+  {
+    "id": "whopperflowers",
+    "name": "Whopperflowers",
+    "position": [48, 63, 194],
+    "enemies": [
+      "cryo-whopperflower",
+      "electro-whopperflower",
+      "pyro-whopperflower"
+    ],
+    "description": " Whopperflowers are dangerous plants that can be found all over Teyvat. Whopperflowers often disguise themselves as Sweet Flowers, Mints or Small Lamp Grasses in the wild, ambushing the player if they try to pick up the fake plant. \n Whopperflowers possess higher than average RES to all damage types. In combat, they use aggressive elemental attacks and can burrow underground to quickly reposition. They will also periodically generate an elemental shield while charging up and unleash a special attack if the shield is not destroyed in time. If the shield is destroyed, they will instead become paralyzed with reduced RES.\n",
+    "adventurer_handbook": "A bizarre mimetic plant monster that harnesses the elements in combat.These plants lurk under the surface and ambush unsuspecting prey. With the passage of years, sufficient nutrition, and the right environment, it could even take root somewhere and grow into a giant tree that sways and spews elemental power..."
+  },
+  {
+    "id": "the-eremites",
+    "name": "The Eremites",
+    "position": [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76],
+    "enemies": [
+      "eremite-axe-vanguard",
+      "eremite-crossbow",
+      "eremite-daythunder",
+      "eremite-desert-clearwater",
+      "eremite-floral-ring-dancer",
+      "eremite-galehunter",
+      "eremite-linebreaker",
+      "eremite-ravenbeak-halberdier",
+      "eremite-scorching-loremaster",
+      "eremite-stone-enchanter",
+      "eremite-sunfrost",
+      "eremite-sword-dancer"
+    ],
+    "description": ""
+  },
+  {
+    "id": "avatars-of-lava",
+    "name": "Avatars of Lava",
+    "position": [77, 99, 168],
+    "enemies": [
+      "eroding-avatar-of-lava",
+      "fluid-avatar-of-lava",
+      "lava-dragon-statue"
+    ],
+    "description": " \n\nAvatars of Lava are an elite enemy group found in Natlan.\n Similarly to Automatons, Avatars of Lava can be found in a dormant state that can be spotted with Elemental Sight. \n The Eroding Avatar of Lava and the boss variant, the Lava Dragon Statue, are unique in that they make use of a Fury gauge that fills as they are hit with Pyro attacks. When the gauge reaches specific intervals, they will take DMG equal to a proportion of their HP. Filling the bar automatically defeats the former, while the latter enters a different state depending on its current form.\n The Fluid Avatar of Lava does not make use of the Fury gauge but this enemy shares a high Pyro RES with Lava Dragon Statue while last one is not in a weakness state.\n",
+    "adventurer_handbook": "A strange monster that needs to constantly absorb thermal energy to survive. Their characteristics may vary depending on the conditions of their formation — namely, the heat of their cores, known as \"Seeing Eyes,\" as well as the composition of the surrounding rocks."
+  },
+  {
+    "id": "fatui-cicin-mages",
+    "name": "Fatui Cicin Mages",
+    "position": [80, 81],
+    "enemies": ["fatui-cryo-cicin-mage", "fatui-electro-cicin-mage"],
+    "description": " Fatui Cicin Mages are an elite enemy group belonging to the Fatui who use Delusions to command elements. They are found all across Teyvat and are most commonly found alone.\n In combat, they will summon Cicins corresponding to their element which will attack alongside the mage and provide the mage other forms of support. The mage will also command summoned Cicins to perform certain special attacks that they normally cannot use.\n",
+    "adventurer_handbook": "A Fatui mage who can command Cicins in battle.Similarly to the way that Cicins go crazy for Mist Grass, Cicin Mages take great pleasure in toying with their prey.They seem to wander the land aimlessly, as if compelled by some unknown duty."
+  },
+  {
+    "id": "fatui-skirmishers",
+    "name": "Fatui Skirmishers",
+    "position": [83, 84, 85, 86, 87, 88],
+    "enemies": [
+      "fatui-skirmisher-anemoboxer-vanguard",
+      "fatui-skirmisher-cryogunner-legionnaire",
+      "fatui-skirmisher-electrohammer-vanguard",
+      "fatui-skirmisher-geochanter-bracer",
+      "fatui-skirmisher-hydrogunner-legionnaire",
+      "fatui-skirmisher-pyroslinger-bracer"
+    ],
+    "description": " Fatui Skirmishers are Common Enemies found across found across Teyvat. They are foot soldiers of the Fatui.\n In combat, most Fatui Skirmishers are capable of generating an elemental shield that greatly increases their RES and enhances their attacks. If their shields are destroyed with the appropriate Elemental Reactions, they will become stunned.\n",
+    "adventurer_handbook": "A soldier encased within a Fatui war machine.These skirmishers do not question if they shall live or die as they advance into nations far from home to complete reconnaissance missions and lay the groundwork for operations to come.Unlike the elite Mages and Agents, Fatui Skirmishers are soldiers of lesser individual might.To complete their tasks and reduce losses in men and material, their tactics are thus more reliant on teamwork."
+  },
+  {
+    "id": "sauroform-tribal-warriors",
+    "name": "Sauroform Tribal Warriors",
+    "position": [
+      89, 90, 91, 96, 97, 98, 101, 102, 103, 146, 147, 154, 155, 196, 197, 226,
+      227, 228, 238, 239, 240, 244, 245, 250, 251, 274, 281, 282, 283, 288, 289
+    ],
+    "enemies": [
+      "ferocious-warrior-grappler",
+      "ferocious-warrior-human-ram",
+      "ferocious-warrior-wrestler",
+      "flowing-blade-grease-saw",
+      "flowing-blade-harpoon-thrower",
+      "flowing-blade-skirmisher",
+      "forged-sand-interrogator",
+      "forged-sand-javelineer",
+      "forged-sand-shieldbreaker",
+      "iktomisaurus-warrior-cryocrystal-cannon",
+      "iktomisaurus-warrior-icy-tidebearer",
+      "koholasaurus-warrior-reefsplitter",
+      "koholasaurus-warrior-waveshuttler",
+      "qucusaurus-warrior-blazing-sky",
+      "qucusaurus-warrior-heartstar-hammer",
+      "spiritspeaker-warrior-contemplator",
+      "spiritspeaker-warrior-determinator",
+      "spiritspeaker-warrior-psychokinetic",
+      "swiftstep-armed-courier",
+      "swiftstep-seeker",
+      "swiftstep-storm-scout",
+      "tatankasaurus-warrior-skybreaker",
+      "tatankasaurus-warrior-spiritlight-chaser",
+      "tepetlisaurus-warrior-rockbreaker-blade",
+      "tepetlisaurus-warrior-shard-striker",
+      "wayward-hermetic-spiritspeaker",
+      "winged-warrior-feathershedder",
+      "winged-warrior-skymaster",
+      "winged-warrior-skysoarer",
+      "yumkasaurus-warrior-flowing-skyfire",
+      "yumkasaurus-warrior-whirling-leaves"
+    ],
+    "description": " Sauroform Tribal Warriors are an enemy group encountered in Natlan.\n Hailing from the Nanatzcayan, Huitztlan, Meztli, Tlalocan, Mictlan, and Teotecan tribes, all warriors are capable of inflicting Physical DMG and their tribe's corresponding Elemental DMG.\n",
+    "adventurer_handbook": "The warriors of Natlan's six great tribes who fight for the honor and glory of their people.Over long years of living and fighting alongside their Saurian companions, these tribal warriors have gradually acquired their traits and learned how to apply them on the field of battle."
+  },
+  {
+    "id": "fungi",
+    "name": "Fungi",
+    "position": [
+      92, 93, 94, 115, 116, 150, 233, 234, 235, 236, 275, 276, 277, 279, 280
+    ],
+    "enemies": [
+      "floating-anemo-fungus",
+      "floating-dendro-fungus",
+      "floating-hydro-fungus",
+      "grounded-geoshroom",
+      "grounded-hydroshroom",
+      "jadeplume-terrorshroom",
+      "stretchy-anemo-fungus",
+      "stretchy-electro-fungus",
+      "stretchy-geo-fungus",
+      "stretchy-pyro-fungus",
+      "whirling-cryo-fungus",
+      "whirling-electro-fungus",
+      "whirling-pyro-fungus",
+      "winged-cryoshroom",
+      "winged-dendroshroom"
+    ],
+    "description": " Fungi, singular fungus, are an enemy group found in Sumeru and Liyue. They are an evolved species of mushrooms with increased abilities to reproduce and protect the flora, though most people consider them to be monsters. Attempts to domesticate fungi are ongoing with some success.\n They are considered Tri-Lakshana Creatures and thus Pyro and Electro will have adverse effects on them. When inflicted with Pyro, they enter a Scorched state, attacking significantly slower but dealing more damage. On the other hand, Electro causes them to enter an Activated state, attacking significantly faster.\n Unlike other Tri-Lakshana Creatures (barring the Jadeplume Terrorshroom), once they enter a Scorched or Activated state, they stay that way until killed.\n",
+    "adventurer_handbook": "To put it shortly, the Fungus is the congregation of overgrown and over-evolved spores.Exposing it to Pyro or Electro will Scorch or Activate it, respectively. While in either one of said states, the Fungus will drop special materials.It is said that the infestation of Fungi is the result of a lab accident. At first, a certain sage had hopes of utilizing spores for medical purposes. If that is true, the person had clearly underestimated the spores' adaptive and reproductive powers."
+  },
+  {
+    "id": "fatui-operatives",
+    "name": "Fatui Operatives",
+    "position": [104, 278],
+    "enemies": ["frost-operative", "wind-operative"],
+    "description": " Fatui Operatives are an elite enemy group found in Fontaine. They are servants of Arlecchino and part of her special force of elite operatives.\n In combat, they can use their Hunt Down skill to apply Bond of Life and Corrosion to characters they hit, sacrificing some of their health in the process. Upon a successful first hit, they will perform additional follow-up attacks. Hunt Down deals greatly increased DMG to characters affected by the Life Bond.\n",
+    "adventurer_handbook": "An elite agent among the Fatui possessing extraordinary skill and an indomitable will."
+  },
+  {
+    "id": "lawachurls",
+    "name": "Lawachurls",
+    "position": [105, 231, 258],
+    "enemies": [
+      "frostarm-lawachurl",
+      "stonehide-lawachurl",
+      "thunderhelm-lawachurl"
+    ],
+    "description": " \n\nLawachurls, also known as \"Hilichurl Chieftains\", are an elite enemy group. They are mutated Mitachurls that stand atop the Hilichurl hierarchy.\n In combat, Lawachurls will enter an enhanced state and obtain an elemental Shield, enabling them to use more aggressive and high-damage attacks. The shield will naturally decay and can be further damaged to speed up the process. When the shield is destroyed, the enhanced state will end, causing the Lawachurl's attacks to become significantly weaker.\n",
+    "adventurer_handbook": "A Mitachurl that has mutated due to an accumulation of a large amount of elements in its body. They are bigger, stronger, and absolutely ferocious.Hilichurls worship no gods and follow no order or discipline. The strongest and the most ferocious one among them is seen as fit to lead the tribe."
+  },
+  {
+    "id": "riftwolves",
+    "name": "Riftwolves",
+    "position": [114, 205, 206, 256, 257],
+    "enemies": [
+      "golden-wolflord",
+      "rockfond-rifthound-whelp",
+      "rockfond-rifthound",
+      "thundercraven-rifthound-whelp",
+      "thundercraven-rifthound"
+    ],
+    "description": " Riftwolves, also known as Wolves of the Rift or Rifthounds, are an elite enemy group hailing from the Abyss. They are mainly found in Tsurumi Island, Inazuma but can also be found in The Chasm, Enkanomiya, Sumeru, Fontaine, Natlan, and Wolvendom (after completing Lupus Minor Chapter: Act I).\n In combat, Riftwolves use elemental attacks, and any attacks that make contact (including those absorbed by shields) will apply a party-wide corrosion debuff, which continuously drains HP from all party members while active. Riftwolves also utilize a fury system, which accumulates when they are hit by Elemental DMG of their own type. When this bar fills, the Riftwolf enters an Elemental Devour state, which increases the ferocity of its attacks, but also decreases the Elemental RES of their own type.\n",
+    "adventurer_handbook": "Ominous, alien beasts with dull colors that travel in packs much as wolves do.It is said that they have the power to dissolve the world's borders."
+  },
+  {
+    "id": "natlan-saurians",
+    "name": "Natlan Saurians",
+    "position": [
+      124, 145, 148, 153, 156, 157, 195, 198, 243, 246, 249, 252, 287, 290
+    ],
+    "enemies": [
+      "holawaqa-ngoubou",
+      "iktomisaurus-chick",
+      "iktomisaurus",
+      "koholasaur-whelp",
+      "koholasaurus",
+      "kongamato",
+      "qucusaurus-chick",
+      "qucusaurus",
+      "tatankasaur-whelp",
+      "tatankasaurus",
+      "tepetlisaur-whelp",
+      "tepetlisaurus",
+      "yumkasaur-whelp",
+      "yumkasaurus"
+    ],
+    "description": " Natlan Saurians are an enemy group.\n Currently, there are six types of Saurians, each affiliated with a corresponding tribe. Adult Saurians can be indwelled, which allows the player to control them. Saurians indwelled this way do not award Character EXP, Character Ascension Materials or Mora.\n",
+    "adventurer_handbook": "The Saurians that inhabit the land of Natlan.According to legend, more ancient dragons were better able to adapt to their environments, taking on different shapes and forms based on their surroundings. It is said that after losing their power, they were forced to become ever more dependent on their environments for survival, finally settling into the forms they still have as Saurians today.But whether this is true or not, no one really knows."
+  },
+  {
+    "id": "hydro-mimics",
+    "name": "Hydro Mimics",
+    "position": [130, 131, 132, 133, 134, 135, 136, 137],
+    "enemies": [
+      "hydro-mimic-boar",
+      "hydro-mimic-crab",
+      "hydro-mimic-crane",
+      "hydro-mimic-finch",
+      "hydro-mimic-frog",
+      "hydro-mimic-mallard",
+      "hydro-mimic-raptor",
+      "hydro-mimic-squirrel"
+    ],
+    "description": " Hydro Mimics are summoned by the Oceanid, but can also be encountered on their own during quests and in the Spiral Abyss. They resemble normal Wildlife, but some are of giant proportions.\n They are similar to Hydro Slimes as they are pure Hydro beings and can \"walk\" on deep water, thus being immune to drowning.\n"
+  },
+  {
+    "id": "hilichurl-guards",
+    "name": "Hilichurl Guards",
+    "position": [142, 203, 284],
+    "enemies": [
+      "ice-shield-hilichurl-guard",
+      "rock-shield-hilichurl-guard",
+      "wooden-shield-hilichurl-guard"
+    ],
+    "description": " Hilichurl Guards are Hilichurls that are armed with a club and shield.\n In combat, Hilichurl Guards deal Physical DMG using their clubs. Their shields protect them from frontal attacks, although attacks with sufficient force can still bypass them by staggering the hilichurl. The shield can be destroyed, with some attacks being more effective than others. In the event that the shield is destroyed, they function identically as Hilichurl Fighters.\n"
+  },
+  {
+    "id": "kairagi",
+    "name": "Kairagi",
+    "position": [151, 152],
+    "enemies": ["kairagi-dancing-thunder", "kairagi-fiery-might"],
+    "description": " Kairagi (Japanese: 海乱鬼 Kairagi), are a type of Nobushi. Ochimusha are ghostly versions of Kairagi and are special one-time enemies.\n In combat, Kairagi are durable enemies that utilize aggressive and high-damaging attacks. They start by using Physical attacks, but can temporarily convert into Elemental DMG. Typically found in pairs, if a fellow Kairagi is defeated in battle, the remaining one will enter a frenzied state, obtaining an instance of Healing, enhanced attacks and immunity to Frozen and petrifying effects. To avoid this, the Kairagi need to be defeated simultaneously or before they enter their frenzied state.\n"
+  },
+  {
+    "id": "breacher-primuses",
+    "name": "Breacher Primuses",
+    "position": [165, 167, 179, 224],
+    "enemies": [
+      "large-overgrown-breacher-primus",
+      "large-shatterstone-breacher-primus",
+      "overgrown-breacher-primus",
+      "shatterstone-breacher-primus"
+    ],
+    "description": " Breacher Primuses are an elite enemy group. They are alien lifeforms created from the cells of Elynas, and are similarly aligned with the power of the Abyss.\n In combat, Breacher Primuses normally use Physical attacks, but will periodically enter a stressed state, where they will gain a shield of their respective element and continuously unleash powerful elemental attacks. If the shield is broken, either using Elemental Reactions or an Arkhe attack, they will become paralyzed for a long period of time.\n",
+    "adventurer_handbook": "A strange and mysterious life form.It has no known similarities with any other creatures on Teyvat."
+  },
+  {
+    "id": "tenebrous-mimesis",
+    "name": "Tenebrous Mimesis",
+    "position": [169, 247, 248],
+    "enemies": [
+      "lord-of-eroded-primal-fire",
+      "tenebrous-mimiflora",
+      "tenebrous-papilla"
+    ],
+    "description": " Tenebrous Mimesis are an enemy group that are found in Natlan.\n Unknown plant-like monsters from another world, Tenebrous Mimesis will take on the form of various enemies to attack the player. While in a transformed state, the mimesis is protected by a Void Ward and is invulnerable to damage until the ward is destroyed, which will briefly stun it in the process.\n They will also apply stacks of Attrition upon hitting the active character, causing them to lose a percentage of their Max HP after a delay, which ignores shields. \n"
+  },
+  {
+    "id": "nobushi",
+    "name": "Nobushi",
+    "position": [176, 177, 178],
+    "enemies": ["nobushi-hitsukeban", "nobushi-jintouban", "nobushi-kikouban"],
+    "description": " Nobushi (Japanese: 野伏 Nobushi), also called vagrants, ronin, and Absconders, are Common Enemies found in Inazuma. They are often wandering samurai who have fallen into banditry.\n All Nobushi share the same set of common Physical attacks. However, Nobushi: Hitsukeban and Nobushi: Kikouban have access to unique elemental attacks.\n",
+    "adventurer_handbook": "Despite often appearing in groups, the Nobushi do not have a centralized organization. Depending on the temperament or the nature of their crimes, they are also known as the \"homeless ones,\" \"vagabonds,\" \"Kairagi,\" \"ne'er-do-wells,\" or even \"the rioters,\" or just simply known collectively as \"those rogues.\"They are often samurai who haven fallen into banditry, and some will even ally themselves with the Treasure Hoarders or the Fatui for survival or monetary gain."
+  },
+  {
+    "id": "ruin-sentinels",
+    "name": "Ruin Sentinels",
+    "position": [180, 207, 208, 209, 215],
+    "enemies": [
+      "perpetual-mechanical-array",
+      "ruin-cruiser",
+      "ruin-defender",
+      "ruin-destroyer",
+      "ruin-scout"
+    ],
+    "description": " Ruin Sentinel is an enemy group of Automatons found throughout Teyvat, most commonly encountered in Inazuma. They are usually found in groups. They are designed to mimic different organisms found in Teyvat.\n As Ruin Machines, all Ruin Sentinels use Physical attacks and have increased Physical RES.\n When dormant, all Ruin Sentinels will take the form of a robotic cube.\n",
+    "adventurer_handbook": "Various bizarrely-shaped machines that have taken different forms and functions as an adaptation to different goals.Legend has it that they were war machines left behind by a nation that has now been destroyed. Leaving its hard armor and powerful abilities aside, some believe that the design of these ruin machines has greater value in the study of biomimesis than the more common Ruin Guards."
+  },
+  {
+    "id": "humanoid-ruin-machines",
+    "name": "Humanoid Ruin Machines",
+    "position": [212, 213, 214],
+    "enemies": ["ruin-grader", "ruin-guard", "ruin-hunter"],
+    "description": " Humanoid Ruin Machines (unofficial name) are mechanical war machines fallen from the lost nation of Khaenri'ah. They are part of the Automatons enemy family, along with the Ruin Sentinel enemy group.\n These machines will either be patrolling a fixed route or will be in a dormant state, activating when the player gets too close to them. They may also appear as scenery, although these are considerably different to enemy versions as Elemental Sight will not glow off them, are placed in various positions or are unusually smaller in size (for Ruin Hunters).\n",
+    "adventurer_handbook": "An ancient humanoid war machine.They are said to be remnants from a lost ancient nation. Some believe that they were developed not as war machines, but as protectors of the ruins.Though that hypothesis does not explain why would they [sic] choose to employ explosive weaponry inside the very ruins they are supposed to protect..."
+  },
+  {
+    "id": "ruin-machines",
+    "name": "Ruin Machines",
+    "position": [216],
+    "enemies": ["ruin-serpent"],
+    "description": " Ruin Machines are mechanical war machines created by the lost civilization of Khaenri'ah.\n",
+    "adventurer_handbook": "An ancient humanoid war machine. They are said to be remnants from a lost ancient nation."
+  },
+  {
+    "id": "secret-source-automatons",
+    "name": "Secret Source Automatons",
+    "position": [217, 218, 219],
+    "enemies": [
+      "secret-source-automaton-configuration-device",
+      "secret-source-automaton-hunter-seeker",
+      "secret-source-automaton-overseer-device"
+    ],
+    "description": " Secret Source Automatons are an enemy group found in Natlan.\n Strange machines from a time long past, these automatons are generally found in an idle state.\n In battle, the Secret Source Automaton will react to Nightsoul's Blessing; after its respective meter is filled, the automaton will counter with a more powerful attack, lowering its RES to all attacks in the process. \n In the case of the boss, the RES decrease will only occur when the attack is interrupted, and it is also stunned for the effect's duration.\n"
+  },
+  {
+    "id": "tainted-hydro-phantasms",
+    "name": "Tainted Hydro Phantasms",
+    "position": [241, 242],
+    "enemies": [
+      "tainted-water-splitting-phantasm",
+      "tainted-water-spouting-phantasm"
+    ],
+    "description": " Tainted Hydro Phantasms are an elite enemy group of Elemental Lifeforms. They can be found in both Fontaine and Liyue.\n In combat, Tainted Hydro Phantasms will periodically enter an enraged state where they grow in size and utilize stronger attacks. They are permanently imbued with Hydro and are immune to Hydro DMG, and cannot be Frozen while enraged.\n",
+    "adventurer_handbook": "An elemental life form that arose from the waters of Fontaine, and that replaced the elegant Oceanids."
+  },
+  {
+    "id": "treasure-hoarders",
+    "name": "Treasure Hoarders",
+    "position": [260, 263, 264, 266, 267, 269, 270],
+    "enemies": [
+      "treasure-hoarders-crusher",
+      "treasure-hoarders-gravedigger",
+      "treasure-hoarders-handyman",
+      "treasure-hoarders-marksman",
+      "treasure-hoarders-pugilist",
+      "treasure-hoarders-scout",
+      "treasure-hoarders-seaman"
+    ],
+    "description": " The Treasure Hoarders are a gang of bandits who search for treasures to obtain and are located all around Teyvat.\n",
+    "adventurer_handbook": "A ragtag group of bandits whose traces can be found all across the lands, even in the deepest depths of uncharted domains.Although their main purpose is hunting treasure, they are also known to get rough with unfortunate bystanders who happen to be nearby.It's said that the group's founder, Reed Miller, defined the Treasure Hoarders as \"an organization of mutual cooperation.\""
+  },
+  {
+    "id": "treasure-hoarder-potioneers",
+    "name": "Treasure Hoarder Potioneers",
+    "position": [261, 262, 265, 268],
+    "enemies": [
+      "treasure-hoarders-cryo-potioneer",
+      "treasure-hoarders-electro-potioneer",
+      "treasure-hoarders-hydro-potioneer",
+      "treasure-hoarders-pyro-potioneer"
+    ],
+    "description": " Treasure Hoarder Potioneers are a type of Treasure Hoarder enemies that throw elemental potions. They are lawless alchemists who tamper with elemental potions illegally.\n"
+  }
+]

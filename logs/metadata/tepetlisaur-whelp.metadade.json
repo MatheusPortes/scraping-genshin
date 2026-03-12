@@ -1,0 +1,60 @@
+{
+  "name": "Tepetlisaur Whelp",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/7/71/Tepetlisaur_Whelp_Icon.png/revision/latest/scale-to-width-down/185?cb=20240828020133",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/1/19/Enemy_Tepetlisaur_Whelp.png/revision/latest?cb=20241009002402"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Geo", "link": "/wiki/Geo" }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Common Enemies", "link": "/wiki/Common_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [
+          { "name": "Natlan Saurians", "link": "/wiki/Natlan_Saurians" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Juvenile Fang", "rarity": [1] },
+    { "name": "Seasoned Fang", "rarity": [2] },
+    { "name": "Tyrant's Fang", "rarity": [3] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "30%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A young Tepetlisaurus with the ability to tunnel between rocks and solid phlogiston.\nThey have not yet formed the horns on their forehead, and their digging skills are still developing as well. It is even common to hear about young Tepetlisaurs getting trapped by rocks while practicing their digging. However, one day, they will grow into a form that may travel freely through even the toughest of soils.",
+  "element": "Geo"
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Geo Hypostasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/4/4f/Geo_Hypostasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20201122050106",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/Enemy_Geo_Hypostasis.png/revision/latest?cb=20210817033300"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Geo", "link": "/wiki/Geo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hypostases", "link": "/wiki/Hypostases" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Guyun Stone Forest", "link": "/wiki/Guyun_Stone_Forest" },
+          { "name": "Sea of Clouds", "link": "/wiki/Sea_of_Clouds" },
+          { "name": "Liyue", "link": "/wiki/Liyue" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [{ "name": "Basalt Pillar", "link": "/wiki/Basalt_Pillar" }]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          { "name": "Pure Geo Hypostasis", "link": "/wiki/Pure_Geo_Hypostasis" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Basalt Pillar", "rarity": [4] },
+    { "name": "Prithiva Topaz Sliver", "rarity": [2] },
+    { "name": "Prithiva Topaz Frag­ment", "rarity": [3] },
+    { "name": "Prithiva Topaz Chunk", "rarity": [4] },
+    { "name": "Prithiva Topaz Gem­stone", "rarity": [5] },
+    { "name": "Traveling Doctor", "rarity": [1, 2, 3] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "Immune" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Code Name: Gimel. A high-purity Geo entity.\nElemental hypostases are ultra-compact structures with a high mass.\nConcentrated elemental energy forms a solid shell around the core of the hypostasis, leaving only the core reactive to the elemental stimuli.",
+  "element": "Geo"
+}

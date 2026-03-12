@@ -1,0 +1,131 @@
+{
+  "name": "Hydro Tulpa",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Hydro_Tulpa_Icon.png/revision/latest/scale-to-width-down/185?cb=20231108024359",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/23/Enemy_Hydro_Tulpa.png/revision/latest?cb=20231121124444"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Hydro", "link": "/wiki/Hydro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Beryl Region", "link": "/wiki/Beryl_Region" },
+          { "name": "Fontaine", "link": "/wiki/Fontaine" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Hydro_Tulpa_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Wa­ter That Failed To Tran­scend",
+            "link": "/wiki/Water_That_Failed_To_Transcend"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Hydro Tulpa: Flashflood",
+            "link": "/wiki/Hydro_Tulpa:_Flashflood"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Wa­ter That Failed To Tran­scend", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Hydro Tulpa",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "Immune" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Base"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "55%" },
+            { "name": "pyro", "value": "55%" },
+            { "name": "hydro", "value": "Immune" },
+            { "name": "electro", "value": "55%" },
+            { "name": "cryo", "value": "55%" },
+            { "name": "dendro", "value": "55%" },
+            { "name": "anemo", "value": "55%" },
+            { "name": "geo", "value": "55%" }
+          ],
+          "name": "Enhanced"
+        }
+      ]
+    },
+    {
+      "phase": "Half-Tulpa",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A human-shaped monster formed from the agglomeration of countless drops of water.",
+  "element": "Hydro"
+}

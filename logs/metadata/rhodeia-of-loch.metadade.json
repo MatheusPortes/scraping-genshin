@@ -1,0 +1,108 @@
+{
+  "name": "Rhodeia of Loch",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/6/6a/Oceanid_Icon.png/revision/latest/scale-to-width-down/185?cb=20201120070220",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/Enemy_Rhodeia_of_Loch.png/revision/latest?cb=20210718074221"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Hydro", "link": "/wiki/Hydro" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          { "name": "Wuwang Hill", "link": "/wiki/Wuwang_Hill" },
+          { "name": "Bishui Plain", "link": "/wiki/Bishui_Plain" },
+          { "name": "Liyue", "link": "/wiki/Liyue" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Rhodeia_of_Loch_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Cleans­ing Heart", "link": "/wiki/Cleansing_Heart" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Cleans­ing Heart", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Ad­ven­turer", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Prayers for Destiny", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "N/A" },
+            { "name": "pyro", "value": "N/A" },
+            { "name": "hydro", "value": "N/A" },
+            { "name": "electro", "value": "N/A" },
+            { "name": "cryo", "value": "N/A" },
+            { "name": "dendro", "value": "N/A" },
+            { "name": "anemo", "value": "N/A" },
+            { "name": "geo", "value": "N/A" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Special",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A life-form created from condensed Hydro elements of incredible purity.\nOften attached to bodies of water. It is said that as water bodies become purer, the Hydro elements within grow more abundant, causing the Oceanids to grow more powerful.\nIt is also said by some that Oceanids were once sea creatures from a home far away who carried the fragments of a long-dead god to the many corners of this world. Perhaps they did this so that the love their god held for this world could be spread through the waters to all the land...",
+  "element": "Hydro"
+}

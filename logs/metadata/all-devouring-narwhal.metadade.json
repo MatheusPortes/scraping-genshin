@@ -1,0 +1,128 @@
+{
+  "name": "All-Devouring Narwhal",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/All-Devouring_Narwhal_Icon.png/revision/latest/scale-to-width-down/185?cb=20231108024357",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/4/4f/Enemy_All-Devouring_Narwhal.png/revision/latest?cb=20241009001849",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/Enemy_All-Devouring_Narwhal_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20231108024348"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Hydro", "link": "/wiki/Hydro" },
+          { "name": "Pyro", "link": "/wiki/Pyro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Shadow of Another World",
+            "link": "/wiki/Shadow_of_Another_World"
+          }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/All-Devouring_Narwhal_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          {
+            "name": "Light­less Silk String",
+            "link": "/wiki/Lightless_Silk_String"
+          },
+          {
+            "name": "Light­less Eye of the Mael­strom",
+            "link": "/wiki/Lightless_Eye_of_the_Maelstrom"
+          },
+          { "name": "Light­less Mass", "link": "/wiki/Lightless_Mass" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Light­less Silk String", "rarity": [5] },
+    { "name": "Light­less Eye of the Mael­strom", "rarity": [5] },
+    { "name": "Light­less Mass", "rarity": [5] },
+    { "name": "Va­ru­na­da La­zu­rite Sli­ver", "rarity": [2] },
+    { "name": "Va­ru­na­da La­zu­rite Frag­ment", "rarity": [3] },
+    { "name": "Va­ru­na­da La­zu­rite Chunk", "rarity": [4] },
+    { "name": "Va­ru­na­da La­zu­rite Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "Mid­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Pole­arm Bil­let", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "All-Devouring Narwhal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "70%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Dark Shadow",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "70%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A mysterious and gargantuan creature from another world."
+}

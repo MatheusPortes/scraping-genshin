@@ -1,0 +1,117 @@
+{
+  "name": "Geovishap",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/Geovishap_Icon.png/revision/latest/scale-to-width-down/185?cb=20230412030518",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/Enemy_Geovishap.png/revision/latest?cb=20210523100556"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Types", "link": "/wiki/Damage" },
+        "values": [
+          { "name": "Geo", "link": "/wiki/Geo" },
+          { "name": "Cryo", "link": "/wiki/Cryo" },
+          { "name": "Pyro", "link": "/wiki/Pyro" },
+          { "name": "Electro", "link": "/wiki/Electro" },
+          { "name": "Hydro", "link": "/wiki/Hydro" }
+        ]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Elite Enemies", "link": "/wiki/Elite_Enemies" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Mystical Beasts", "link": "/wiki/Mystical_Beasts" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Vishaps", "link": "/wiki/Vishaps" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [{ "name": "Liyue", "link": "/wiki/Liyue" }]
+      },
+      {
+        "key": { "name": "Interactive Map Link", "link": "" },
+        "values": [
+          {
+            "name": "Teyvat",
+            "link": "https://act.hoyolab.com/ys/app/interactive-map/index.html?lang=en-us#/map/2?shown_types=169"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Mora", "rarity": [3] },
+    { "name": "Character EXP", "rarity": [3] },
+    { "name": "Fragile Bone Shard", "rarity": [2] },
+    { "name": "Sturdy Bone Shard", "rarity": [3] },
+    { "name": "Fossilized Bone Shard", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Normal",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "50%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Local Legend (Cryo)",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "70%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "50%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Local Legend (Pyro)",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "30%" },
+            { "name": "pyro", "value": "70%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "50%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A mature Geovishap.\nIt is said that after many years have passed, Geovishap Hatchlings will shed the armor that originally protected them and become Geovishaps. However these two and the older, greater Primo Geovishaps have spent many years hibernating under the mountains, and have only emerged and become active in recent times. As such, none can personally attest to have witnessed or recorded such a thing in person.",
+  "element": "Geo"
+}

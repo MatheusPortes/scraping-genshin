@@ -1,0 +1,98 @@
+{
+  "name": "Guardian of Apep's Oasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e2/Guardian_of_Apep%27s_Oasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20230412020920",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/72/Enemy_Warden_of_the_Last_Oasis.png/revision/latest?cb=20230414081250",
+      "gallery": "https://static.wikia.nocookie.net/gensin-impact/images/8/86/Enemy_Warden_of_Oasis_Prime_Full_Artwork.png/revision/latest/scale-to-width-down/185?cb=20230822110033"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Physical", "link": "/wiki/Physical" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Weekly Bosses", "link": "/wiki/Weekly_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Enemies of Note", "link": "/wiki/Enemies_of_Note" }
+        ]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "The Realm of Beginnings",
+            "link": "/wiki/The_Realm_of_Beginnings"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "World­span Fern", "rarity": [5] },
+    { "name": "Primor­dial Green­bloom", "rarity": [5] },
+    { "name": "Ever­amber", "rarity": [5] },
+    { "name": "Na­ga­dus Em­er­ald Sliver", "rarity": [2] },
+    { "name": "Na­ga­dus Em­er­ald Fragment", "rarity": [3] },
+    { "name": "Na­ga­dus Em­er­ald Chunk", "rarity": [4] },
+    { "name": "Na­ga­dus Em­er­ald Gem­stone", "rarity": [5] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] },
+    { "name": "Dream Solvent", "rarity": [4] },
+    { "name": "Mid­lan­der Sword Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Bow Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Clay­more Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Cat­a­lyst Bil­let", "rarity": [4] },
+    { "name": "Mid­lan­der Pole­arm Bil­let", "rarity": [4] }
+  ],
+  "resistance": [
+    {
+      "phase": "Phase 1",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "70%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    },
+    {
+      "phase": "Phase 3",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "70%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Apep walked through the water like a fish with its many offspring in a sea of fragrant grass, gigantic trees, and unimaginably long vines. Finally, the grass, trees, and vines withered and turned into dust, while countless beings as minute as grains of gravel built a fragile kingdom upon Apep's land.\nApep and its offspring let the sea of sand rage like boiling water and swept houses down as if they were falling leaves. Until the day when the new Lord of Sand reconciled with the king who lost their homeland, the dunes under the sun belonged to humanity, while the dragon's oasis remained in the hearts of the dragons.\nApep shared the knowledge of evolution with its many offspring, because spreading knowledge ensures dissemination while the stagnation of hoarded wisdom courted only decay. Till the day the promise between it and the Lord of Sand was finally attained, with ultimate wisdom claimed. Henceforth, it reaped only sights of oblivion, of an endless calamity.\nApep found itself swallowed alone amidst the scenery of the catastrophe. All the people, gods, dragons, beasts, birds, and fish. All memories, wisdom, words, and hatred were ground into colorless dust, and the last of the moonlight burned away into a rain of pale fire, falling on the barren land.\n...\nApep once deemed the bottom of the sea of sand to be its grave, not the palace of a dispossessed king. The poison of \"wisdom\" would soon free Apep from the hatred and anger festering within it over countless moons. Apep had grown weary of the colorless apocalypse. Then, finally, the young god and the golden Traveler let it recall once again, even though the verdant land it once ruled had been reduced to this gilded wasteland, even though Apep and its many offspring had grown twisted and wretched to secure their continued survival therein, Apep still treasured the sight and scenes of the oasis, sparkling in its heart."
+}

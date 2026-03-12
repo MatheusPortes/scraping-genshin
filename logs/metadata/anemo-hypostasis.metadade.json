@@ -1,0 +1,93 @@
+{
+  "name": "Anemo Hypostasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/Anemo_Hypostasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20201122050141",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/37/Enemy_Anemo_Hypostasis.png/revision/latest?cb=20210817033644"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Anemo", "link": "/wiki/Anemo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hypostases", "link": "/wiki/Hypostases" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Stormbearer Mountains",
+            "link": "/wiki/Stormbearer_Mountains"
+          },
+          { "name": "Starfell Valley", "link": "/wiki/Starfell_Valley" },
+          { "name": "Mondstadt", "link": "/wiki/Mondstadt" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Hur­ri­cane Seed", "link": "/wiki/Hurricane_Seed" }
+        ]
+      },
+      {
+        "key": { "name": "Variants", "link": "" },
+        "values": [
+          {
+            "name": "Pure Anemo Hypostasis",
+            "link": "/wiki/Pure_Anemo_Hypostasis"
+          }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Hur­ri­cane Seed", "rarity": [4] },
+    { "name": "Va­yu­da Tur­quoise Sli­ver", "rarity": [2] },
+    { "name": "Va­yu­da Tur­quoise Frag­ment", "rarity": [3] },
+    { "name": "Vayuda Turquoise Chunk", "rarity": [4] },
+    { "name": "Vayuda Turquoise Gem­stone", "rarity": [5] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "Immune" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "Code name: Beth. A high-purity Anemo entity.\nElemental hypostases are life forms which have completely abandoned their former appearance and biological structure, making them able to reach the highest level of elemental purity.\nResearch into hypostases is mainly led by scholars of Sumeru Akademiya, but due to the level of danger that they pose, little of substance is known about hypostases beyond their scientific name and code name.",
+  "element": "Anemo"
+}

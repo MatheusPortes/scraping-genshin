@@ -1,0 +1,97 @@
+{
+  "name": "Cryo Hypostasis",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/Cryo_Hypostasis_Icon.png/revision/latest/scale-to-width-down/185?cb=20210503233308",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/91/Enemy_Cryo_Hypostasis.png/revision/latest?cb=20210817033529"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Cryo", "link": "/wiki/Cryo" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✘", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [
+          { "name": "Elemental Lifeforms", "link": "/wiki/Elemental_Lifeforms" }
+        ]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Hypostases", "link": "/wiki/Hypostases" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "Entombed City - Outskirts",
+            "link": "/wiki/Entombed_City_-_Outskirts"
+          },
+          { "name": "Dragonspine", "link": "/wiki/Dragonspine" },
+          { "name": "Mondstadt", "link": "/wiki/Mondstadt" }
+        ]
+      },
+      {
+        "key": {
+          "name": "Genius Invokation TCG",
+          "link": "/wiki/Genius_Invokation_TCG"
+        },
+        "values": [
+          {
+            "name": "Character Card",
+            "link": "/wiki/Cryo_Hypostasis_(Character_Card)"
+          }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [
+          { "name": "Crys­tal­line Bloom", "link": "/wiki/Crystalline_Bloom" }
+        ]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Crys­tal­line Bloom", "rarity": [4] },
+    { "name": "Shivada Jade Sliver", "rarity": [2] },
+    { "name": "Shivada Jade Fragment", "rarity": [3] },
+    { "name": "Shivada Jade Chunk", "rarity": [4] },
+    { "name": "Shivada Jade Gemstone", "rarity": [5] },
+    { "name": "Lucky Dog", "rarity": [1, 2, 3] },
+    { "name": "Ber­ser­ker", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Prayers to Springtime", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "10%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "Immune" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "base"
+        }
+      ]
+    }
+  ],
+  "description": "A great nail fell down to Dragonspine in a bygone era, and has been pouring energy into the Ley Lines here ever since. Who knows what strange new phenomena might occur on the mountain when the nail is dislodged?",
+  "element": "Cryo"
+}

@@ -1,0 +1,96 @@
+{
+  "name": "Ruin Serpent",
+  "info": {
+    "figure": {
+      "icon": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/Ruin_Serpent_Icon.png/revision/latest/scale-to-width-down/185?cb=20220330115700",
+      "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/Enemy_Ruin_Serpent.png/revision/latest?cb=20220524190058"
+    },
+    "infos": [
+      {
+        "key": { "name": "Damage Type", "link": "/wiki/Damage" },
+        "values": [{ "name": "Physical", "link": "/wiki/Physical" }]
+      },
+      {
+        "key": { "name": "Has Weak Point", "link": "" },
+        "values": [{ "name": "✔", "link": null }]
+      },
+      {
+        "key": { "name": "Living Being Type", "link": "" },
+        "values": [{ "name": "Normal Bosses", "link": "/wiki/Normal_Bosses" }]
+      },
+      {
+        "key": { "name": "Living Being Family", "link": "" },
+        "values": [{ "name": "Automatons", "link": "/wiki/Automatons" }]
+      },
+      {
+        "key": { "name": "Living Being Group", "link": "" },
+        "values": [{ "name": "Ruin Machines", "link": "/wiki/Ruin_Machines" }]
+      },
+      {
+        "key": { "name": "Loca­tion(s)", "link": "" },
+        "values": [
+          {
+            "name": "The Serpent's Cave",
+            "link": "/wiki/The_Serpent%27s_Cave"
+          },
+          {
+            "name": "The Chasm: Underground Mines",
+            "link": "/wiki/The_Chasm:_Underground_Mines"
+          },
+          { "name": "Liyue", "link": "/wiki/Liyue" }
+        ]
+      },
+      {
+        "key": { "name": "Unique Drops", "link": "" },
+        "values": [{ "name": "Runic Fang", "link": "/wiki/Runic_Fang" }]
+      }
+    ]
+  },
+  "drop": [
+    { "name": "Runic Fang", "rarity": [4] },
+    { "name": "Prithiva Topaz Sliver", "rarity": [2] },
+    { "name": "Prithiva Topaz Frag­ment", "rarity": [3] },
+    { "name": "Prithiva Topaz Chunk", "rarity": [4] },
+    { "name": "Prithiva Topaz Gem­stone", "rarity": [5] },
+    { "name": "Traveling Doctor", "rarity": [1, 2, 3] },
+    { "name": "In­struc­tor", "rarity": [3, 4] },
+    { "name": "The Exile", "rarity": [3, 4] },
+    { "name": "Gla­dia­tor's Fi­nale", "rarity": [4, 5] },
+    { "name": "Wan­der­er's Troupe", "rarity": [4, 5] }
+  ],
+  "resistance": [
+    {
+      "phase": "Stats",
+      "stages": [
+        {
+          "resistance": [
+            { "name": "physical", "value": "70%" },
+            { "name": "pyro", "value": "10%" },
+            { "name": "hydro", "value": "10%" },
+            { "name": "electro", "value": "10%" },
+            { "name": "cryo", "value": "10%" },
+            { "name": "dendro", "value": "10%" },
+            { "name": "anemo", "value": "10%" },
+            { "name": "geo", "value": "10%" }
+          ],
+          "name": "Normal"
+        },
+        {
+          "resistance": [
+            { "name": "physical", "value": "370%" },
+            { "name": "pyro", "value": "310%" },
+            { "name": "hydro", "value": "310%" },
+            { "name": "electro", "value": "310%" },
+            { "name": "cryo", "value": "310%" },
+            { "name": "dendro", "value": "310%" },
+            { "name": "anemo", "value": "310%" },
+            { "name": "geo", "value": "310%" }
+          ],
+          "name": "Charging"
+        }
+      ]
+    }
+  ],
+  "description": "From within the depths of The Chasm come faint bursts of machine motion...",
+  "element": "Non-Elemental"
+}
