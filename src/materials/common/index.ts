@@ -28,7 +28,7 @@ const urls = async (page: Page) => {
     await tools.startPage(
         page,
         "https://genshin-impact.fandom.com/wiki/Tile_of_Decarabian%27s_Tower",
-        "table.nowraplinks.hlist.mw-collapsible.navbox-inner.mw-made-collapsible",
+        "aside.portable-infobox.pi-background",
     );
 
     const [_, common_el] = await page.$$("table.nowraplinks.mw-collapsible");
@@ -159,21 +159,23 @@ const group = async (page: Page, path?: string | null) => {
 };
 
 const common = async () => {
-    const urlsData = await noRecaptcha(urls, { headless: false, close: true });
+    const config = { close: true, headless: true };
+
+    const urlsData = await noRecaptcha(urls, config);
 
     let commonMaterialsMeta: CommonMaterialsMeta[] = [];
     let commonMaterials: CommonMaterials[] = [];
 
     for (const [index, urls] of urlsData.entries()) {
         console.log(`Etapa 1 => ${index}`);
-        const data = await noRecaptcha((page) => urls.href && materials(page, urls), { close: true, headless: false });
+        const data = await noRecaptcha((page) => urls.href && materials(page, urls), config);
 
         data && commonMaterialsMeta.push(data);
     }
 
     for (const [index, { nextPage, ...rest }] of commonMaterialsMeta.entries()) {
         console.log(`Etapa 2 => ${index}`);
-        const data = await noRecaptcha((page) => group(page, nextPage), { close: true, headless: false });
+        const data = await noRecaptcha((page) => group(page, nextPage), config);
 
         const related = data?.filter((name) => name !== rest.name).map((name) => toKebabCase(name)) ?? [];
 
