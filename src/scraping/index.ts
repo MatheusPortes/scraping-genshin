@@ -127,17 +127,29 @@ const metadade = async () => {
 
 const drop = async () => {
     await terminal.start();
+    console.log("Drops Scraping ✅");
+    console.log("Scraping common materials ✅");
 
-    let filePath = path.join(__dirname, `/logs/material`);
-    let commonMaterials = file.get(filePath, "common");
+    let filePath = path.join(__dirname, `../../logs/materials`);
+    let commonMaterials = file.get(filePath, "common.json");
 
     if (!commonMaterials) {
         commonMaterials = await materials.common();
 
         file.save(filePath, JSON.stringify(commonMaterials), "common.json");
+        console.log("Scraping common materials end 📌");
     }
 
-    console.log(commonMaterials);
+    console.log("Scraping level Up materials ✅");
+    filePath = path.join(__dirname, `../../logs/materials`);
+    let levelUpMaterials = file.get(filePath, "level-up.json");
+
+    if (!levelUpMaterials) {
+        levelUpMaterials = await materials.character.levelUp();
+
+        file.save(filePath, JSON.stringify(levelUpMaterials), "level-up.json");
+        console.log("Scraping level Up materials end 📌");
+    }
 
     // materials.character.levelUp();
     // materials.character.talent();
@@ -145,7 +157,7 @@ const drop = async () => {
     // materials.weapon.ascension();
     // materials.weapon.refinement();
 
-    console.log("Drops Scraping ✅");
+    console.log("Drops Scraping end 📌");
 };
 
 export const scraping = {
