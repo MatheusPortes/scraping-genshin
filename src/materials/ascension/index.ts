@@ -13,7 +13,7 @@ const group = async (page: Page, path?: string | null) => {
 
         let related: string[] = [];
         for (const [index, element] of trs_el.entries()) {
-            // if (index === 0) continue;
+            if (index === 0) continue;
 
             related.push(element.textContent.trim());
         }
@@ -24,14 +24,15 @@ const group = async (page: Page, path?: string | null) => {
     return related;
 };
 
-const common = async () => {
+// Character Ascension Materials
+const ascension = async () => {
     const config = { close: true, headless: false };
 
     const urlsData = await noRecaptcha(async (page) => {
         async function getTable(page: Page) {
-            const [_, common_el] = await page.$$("table.nowraplinks.mw-collapsible");
+            const [_, __, ___, ascension_el] = await page.$$("table.nowraplinks.mw-collapsible");
 
-            return common_el;
+            return ascension_el;
         }
 
         return urls(page, getTable);
@@ -42,13 +43,19 @@ const common = async () => {
 
     for (const [index, urls] of urlsData.entries()) {
         console.log(`Etapa 1 => ${index}`);
-        const data = await noRecaptcha((page) => urls.href && metadade(page, urls), config);
+        const data = await noRecaptcha((page) => urls.href && metadade(page, urls, false), config);
 
         data && commonMaterialsMeta.push(data);
     }
 
     for (const [index, { nextPage, ...rest }] of commonMaterialsMeta.entries()) {
         console.log(`Etapa 2 => ${index} # ${nextPage}`);
+
+        if (!nextPage) {
+            commonMaterials.push({ ...rest, id: toKebabCase(rest.name) });
+            continue;
+        }
+
         const data = await noRecaptcha((page) => group(page, nextPage), config);
 
         const related = data?.filter((name) => name !== rest.name).map((name) => toKebabCase(name)) ?? [];
@@ -59,5 +66,4 @@ const common = async () => {
     return commonMaterials;
 };
 
-// Character and Weapon Enhancement Materials
-export default common;
+export default ascension;
