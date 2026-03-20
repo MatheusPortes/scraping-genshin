@@ -4,6 +4,9 @@ import levelUp from "./level-up";
 import { common as tools } from "../common";
 import { toKebabCase } from "../utility";
 import ascension from "./ascension";
+import path from "path";
+import fs from "fs";
+import { httpsDownload } from "../url";
 
 interface Options extends LaunchOptions {
     close?: boolean;
@@ -39,6 +42,7 @@ interface CommonMaterialsBase {
     descrition: string | undefined;
     enimies: string[];
     quality: string | number | null | undefined;
+    image: string | null;
 }
 
 export interface CommonMaterialsMeta extends CommonMaterialsBase {
@@ -172,6 +176,16 @@ export const metadade = async (page: Page, urls: CommonUrls, useLink: boolean = 
     };
 };
 
+const downloadAndSave = (url: string, directory: string) => {
+    if (!fs.existsSync(directory)) {
+        fs.mkdirSync(directory, { recursive: true });
+    }
+
+    const file = fs.createWriteStream(directory);
+
+    httpsDownload(file, url, directory);
+};
+
 // Character Talent Materials
 const talent = () => {};
 
@@ -187,4 +201,5 @@ export const materials = {
     weapon,
     character,
     noRecaptcha,
+    downloadAndSave,
 };

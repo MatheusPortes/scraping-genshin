@@ -16,7 +16,7 @@ import { enemies } from "./enemies";
 import { common } from "../common";
 import { file } from "../file";
 import { url } from "../url";
-import { materials } from "../materials";
+import { CommonMaterials, materials } from "../materials";
 
 const character = async () => {
     await terminal.start();
@@ -131,7 +131,7 @@ const drop = async () => {
     console.log("Scraping common materials ✅");
 
     let filePath = path.join(__dirname, `../../logs/materials`);
-    let commonMaterials = file.get(filePath, "common.json");
+    let commonMaterials = file.get<CommonMaterials[]>(filePath, "common.json");
 
     if (!commonMaterials) {
         commonMaterials = await materials.common();
@@ -142,7 +142,7 @@ const drop = async () => {
 
     console.log("Scraping level Up materials ✅");
     filePath = path.join(__dirname, `../../logs/materials`);
-    let levelUpMaterials = file.get(filePath, "level-up.json");
+    let levelUpMaterials = file.get<CommonMaterials[]>(filePath, "level-up.json");
 
     if (!levelUpMaterials) {
         levelUpMaterials = await materials.character.levelUp();
@@ -153,7 +153,7 @@ const drop = async () => {
 
     console.log("Scraping talent materials ✅");
     filePath = path.join(__dirname, `../../logs/materials`);
-    let talentMaterials = file.get(filePath, "talent.json");
+    let talentMaterials = file.get<CommonMaterials[]>(filePath, "talent.json");
 
     if (!talentMaterials) {
         talentMaterials = await materials.character.ascension();
@@ -161,6 +161,18 @@ const drop = async () => {
         file.save(filePath, JSON.stringify(talentMaterials), "talent.json");
         console.log("Scraping talent materials end 📌");
     }
+
+    const allDrops = [...commonMaterials, ...levelUpMaterials, ...talentMaterials];
+
+    allDrops.forEach(({ image, ...drop }) => {
+        // let directory = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/living-being/enemies/${data.id}/`;
+        // file.save(directory, JSON.stringify(data), "en.json");
+        // directory = directory.replace("data", "images");
+        // materials.downloadAndSave(info.figure, directory);
+        // directory = path.join(__dirname, `../../../logs/images/${data.id}`);
+        // materials.downloadAndSave(info.figure, directory);
+    });
+    console.log(allDrops);
 
     // materials.character.talent();
     // materials.character.ascension();
