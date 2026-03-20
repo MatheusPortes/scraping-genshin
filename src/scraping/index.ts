@@ -151,7 +151,17 @@ const drop = async () => {
         console.log("Scraping level Up materials end 📌");
     }
 
-    // materials.character.levelUp();
+    console.log("Scraping talent materials ✅");
+    filePath = path.join(__dirname, `../../logs/materials`);
+    let talentMaterials = file.get(filePath, "talent.json");
+
+    if (!talentMaterials) {
+        talentMaterials = await materials.character.ascension();
+
+        file.save(filePath, JSON.stringify(talentMaterials), "talent.json");
+        console.log("Scraping talent materials end 📌");
+    }
+
     // materials.character.talent();
     // materials.character.ascension();
     // materials.weapon.ascension();

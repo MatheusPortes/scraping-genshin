@@ -3,6 +3,7 @@ import common from "./common";
 import levelUp from "./level-up";
 import { common as tools } from "../common";
 import { toKebabCase } from "../utility";
+import ascension from "./ascension";
 
 interface Options extends LaunchOptions {
     close?: boolean;
@@ -171,8 +172,6 @@ export const metadade = async (page: Page, urls: CommonUrls, useLink: boolean = 
     };
 };
 
-// Character Ascension Materials
-const ascension = () => {};
 // Character Talent Materials
 const talent = () => {};
 
