@@ -164,15 +164,29 @@ const drop = async () => {
 
     const allDrops = [...commonMaterials, ...levelUpMaterials, ...talentMaterials];
 
+    let directory = ``;
+    if (process.platform === "win32")
+        directory = "/Users/porte/OneDrive/Documentos/Development/Genshin-Builder/api/assets/data/materials/drop";
+    else if (process.platform === "linux")
+        directory = "/home/matheus/Documentos/MatheusGenshin-Builder/api/assets/data/materials/drop";
+
     allDrops.forEach(({ image, ...drop }) => {
-        // let directory = `/home/matheus/Documentos/Matheus/Genshin-Builder/api/assets/data/living-being/enemies/${data.id}/`;
-        // file.save(directory, JSON.stringify(data), "en.json");
-        // directory = directory.replace("data", "images");
-        // materials.downloadAndSave(info.figure, directory);
-        // directory = path.join(__dirname, `../../../logs/images/${data.id}`);
-        // materials.downloadAndSave(info.figure, directory);
+        file.save(path.join(directory, `${drop.id}`), JSON.stringify(drop), "en.json");
     });
-    console.log(allDrops);
+
+    allDrops.forEach(({ image, ...drop }) => {
+        if (image) {
+            directory = directory.replace("data", "images");
+            materials.downloadAndSave(image, path.join(directory, `${drop.id}`), `icon`);
+        }
+    });
+
+    allDrops.forEach(({ image, ...drop }) => {
+        if (image) {
+            directory = path.join(__dirname, `../../logs/images/drops`);
+            materials.downloadAndSave(image, directory, drop.id);
+        }
+    });
 
     // materials.character.talent();
     // materials.character.ascension();

@@ -176,11 +176,12 @@ export const metadade = async (page: Page, urls: CommonUrls, useLink: boolean = 
     };
 };
 
-const downloadAndSave = (url: string, directory: string) => {
+const downloadAndSave = (url: string, directory: string, name: string) => {
     if (!fs.existsSync(directory)) {
         fs.mkdirSync(directory, { recursive: true });
     }
 
+    directory = path.join(directory, name);
     const file = fs.createWriteStream(directory);
 
     httpsDownload(file, url, directory);
