@@ -168,7 +168,7 @@ const drop = async () => {
     if (process.platform === "win32")
         directory = "/Users/porte/OneDrive/Documentos/Development/Genshin-Builder/api/assets/data/materials/drop";
     else if (process.platform === "linux")
-        directory = "/home/matheus/Documentos/MatheusGenshin-Builder/api/assets/data/materials/drop";
+        directory = "/home/matheus-portes/Documentos/0 - Genshin-Builder/api/assets/data/materials/drop";
 
     allDrops.forEach(({ image, ...drop }) => {
         file.save(path.join(directory, `${drop.id}`), JSON.stringify(drop), "en.json");
