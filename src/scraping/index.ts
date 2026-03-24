@@ -16,7 +16,8 @@ import { enemies } from "./enemies";
 import { common } from "../common";
 import { file } from "../file";
 import { url } from "../url";
-import { materials } from "../materials";
+import { CommonMaterials, materials } from "../materials";
+import { toKebabCase } from "../utility";
 
 const character = async () => {
     await terminal.start();
@@ -131,7 +132,7 @@ const drop = async () => {
     console.log("Scraping common materials ✅");
 
     let filePath = path.join(__dirname, `../../logs/materials`);
-    let commonMaterials = file.get(filePath, "common.json");
+    let commonMaterials = file.get<CommonMaterials[]>(filePath, "common.json");
 
     if (!commonMaterials) {
         commonMaterials = await materials.common();
@@ -142,7 +143,7 @@ const drop = async () => {
 
     console.log("Scraping level Up materials ✅");
     filePath = path.join(__dirname, `../../logs/materials`);
-    let levelUpMaterials = file.get(filePath, "level-up.json");
+    let levelUpMaterials = file.get<CommonMaterials[]>(filePath, "level-up.json");
 
     if (!levelUpMaterials) {
         levelUpMaterials = await materials.character.levelUp();
@@ -153,7 +154,7 @@ const drop = async () => {
 
     console.log("Scraping talent materials ✅");
     filePath = path.join(__dirname, `../../logs/materials`);
-    let talentMaterials = file.get(filePath, "talent.json");
+    let talentMaterials = file.get<CommonMaterials[]>(filePath, "talent.json");
 
     if (!talentMaterials) {
         talentMaterials = await materials.character.ascension();
@@ -161,6 +162,49 @@ const drop = async () => {
         file.save(filePath, JSON.stringify(talentMaterials), "talent.json");
         console.log("Scraping talent materials end 📌");
     }
+
+    const mora: CommonMaterials = {
+        id: toKebabCase("Mora"),
+        name: "Mora",
+        image: "https://static.wikia.nocookie.net/gensin-impact/images/8/84/Item_Mora.png/revision/latest/scale-to-width-down/74?cb=20210106073715",
+        descrition: undefined,
+        enimies: [],
+        quality: undefined,
+    };
+    const exp: CommonMaterials = {
+        id: toKebabCase("Character EXP"),
+        name: "Character EXP",
+        image: "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Item_Character_EXP.png/revision/latest/scale-to-width-down/74?cb=20201116045223",
+        descrition: undefined,
+        enimies: [],
+        quality: undefined,
+    };
+
+    const allDrops = [...commonMaterials, ...levelUpMaterials, ...talentMaterials, exp, mora];
+
+    let directory = ``;
+    if (process.platform === "win32")
+        directory = "/Users/porte/OneDrive/Documentos/Development/Genshin-Builder/api/assets/data/materials/drop";
+    else if (process.platform === "linux")
+        directory = "/home/matheus-portes/Documentos/0 - Genshin-Builder/api/assets/data/materials/drop";
+
+    allDrops.forEach(({ image, ...drop }) => {
+        file.save(path.join(directory, `${drop.id}`), JSON.stringify(drop), "en.json");
+    });
+
+    allDrops.forEach(({ image, ...drop }) => {
+        if (image) {
+            directory = directory.replace("data", "images");
+            materials.downloadAndSave(image, path.join(directory, `${drop.id}`), `icon`);
+        }
+    });
+
+    allDrops.forEach(({ image, ...drop }) => {
+        if (image) {
+            directory = path.join(__dirname, `../../logs/images/drops`);
+            materials.downloadAndSave(image, directory, drop.id);
+        }
+    });
 
     // materials.character.talent();
     // materials.character.ascension();
