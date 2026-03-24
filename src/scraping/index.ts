@@ -17,6 +17,7 @@ import { common } from "../common";
 import { file } from "../file";
 import { url } from "../url";
 import { CommonMaterials, materials } from "../materials";
+import { toKebabCase } from "../utility";
 
 const character = async () => {
     await terminal.start();
@@ -162,7 +163,24 @@ const drop = async () => {
         console.log("Scraping talent materials end 📌");
     }
 
-    const allDrops = [...commonMaterials, ...levelUpMaterials, ...talentMaterials];
+    const mora: CommonMaterials = {
+        id: toKebabCase("Mora"),
+        name: "Mora",
+        image: "https://static.wikia.nocookie.net/gensin-impact/images/8/84/Item_Mora.png/revision/latest/scale-to-width-down/74?cb=20210106073715",
+        descrition: undefined,
+        enimies: [],
+        quality: undefined,
+    };
+    const exp: CommonMaterials = {
+        id: toKebabCase("Character EXP"),
+        name: "Character EXP",
+        image: "https://static.wikia.nocookie.net/gensin-impact/images/3/34/Item_Character_EXP.png/revision/latest/scale-to-width-down/74?cb=20201116045223",
+        descrition: undefined,
+        enimies: [],
+        quality: undefined,
+    };
+
+    const allDrops = [...commonMaterials, ...levelUpMaterials, ...talentMaterials, exp, mora];
 
     let directory = ``;
     if (process.platform === "win32")
